@@ -1,111 +1,122 @@
-# Project Template
+# ACF Tech Data Surge Team Project Scope Document
 
-This is a Template. On GitHub, click **Use this template** at the top right to create your own project based on this one.
+*Last updated: March 18, 2025*
 
-This template repo is meant to provide a basic structure to help organize code, data, and reports related to a particular project for the ACF Data Surge Team.
+## Project Title
+CCDF Data Aggregation and Normalization
 
-This repo is set up to run as an app in a docker containter, although not required. It is currently set to `python` but you can change the language and the launch script.
+## Project Overview
+**Goal:** Gather, aggregate, and normalize data about entities that receive Child Care and Development Fund (CCDF) funding through state block grants, with a focus on collecting business names and addresses.
 
-## Project Checklist
+The Administration for Children and Families (ACF) provides substantial funding to states through CCDF block grants. Due to the nature of block grants, states have flexibility in how they distribute these funds to childcare providers, resulting in limited visibility for ACF regarding the end recipients of funding. This project aims to address this gap by collecting data on CCDF-funded childcare providers across all states and territories.
 
-Below is a checklist of items to work on for a project. This is to help you reference, stay organized and on top of the work. There's some upfront lift needed to scope and set up the project but the intent is that it flows smoothly and predictable for you afterwards.
+This information will serve dual purposes:
+1. Enhance accountability by improving visibility into where CCDF funds are ultimately distributed
+2. Support disaster response planning by identifying childcare resources in potential disaster areas, helping to prevent the creation of "childcare deserts" during emergency situations
 
-Copy this checklist to a suitable location for your use. You can also edit the markdown file to check the individual boxes.
+## Objectives
+1. Assess data availability across state CCDF systems
+   a. Review each state's CCDF plan website and related resources
+   b. Identify states with accessible data and those requiring alternative approaches
+   c. Document data formats, accessibility methods, and completeness for each state
 
-**Project Scoping Document Outline**
+2. Develop and implement data collection strategies
+   a. Create web scraping solutions for states with online data
+   b. Establish alternative collection methods for states with limited online presence
+   c. Standardize collection approaches where possible
 
-* [ ] Title
-* [ ] Overview
-* [ ] Objectives
-* [ ] Scope and Approach
-* [ ] Partnership Model
-* [ ] Deliverables
-* [ ] Timeline
-* [ ] Assumptions
-* [ ] Roles
-* [ ] Revise, as needed
+3. Aggregate and normalize collected data
+   a. Create a unified data structure for provider information
+   b. Normalize address formats and other key data points
+   c. Implement data quality checks and validation
 
-**Jira Project**
+4. Develop visualization and distribution tools
+   a. Create an interactive map visualization of provider locations
+   b. Produce exportable datasets in standard formats
+   c. Document data dictionary and limitations
 
-* [ ] Create Scrum Project
-  * [ ] Use the following project title nomenclature: `ACF - <project name in ACF Confluence>`
-  * [ ] For the Key, start with ACF and use the remainder of the first letters for each word on the title. Example: `ACFDS`
-* [ ] Create Epics in timeline (think deliverables)
-* [ ] Create Stories in backlog (think features/components of the deliverable)
-* [ ] Create Tasks in backlog (think the tasks to complete Stories)
-* [ ] Create Sprint (1 week)
-* [ ] Create code review Tasks, as needed
-* [ ] Assign Stories and Tasks to sprint and team members (weekly basis)
-* [ ] Run Sprints weekly, move incomplete items to a new sprint
-* [ ] Document as part of the sprints, it'll make things easier later
-* [ ] Update status slide by Close of Business Thursdays (weekly)
+5. Establish a framework for periodic data updates
+   a. Document collection processes for repeatability
+   b. Recommend update frequency and maintenance approaches
 
-**Meetings with Customers**
+## Scope and Approach
+This project will focus on collecting business names and addresses of CCDF-funded childcare providers across all states and territories. The approach will vary by state based on data availability:
 
-* [ ] Have an agenda (if customer hosted, propose one)
-* [ ] Take meeting notes
-* [ ] Take note of actions for you/team and for the customer
-* [ ] Take note of completion dates for these actions
-* [ ] Paste notes into Project Confluence page
+- **Web Data Collection:** For states with interactive maps or downloadable datasets, automated collection methods will be developed using Python-based web scraping tools.
 
-**Project closeout**
+- **Manual Research:** For states with limited online data, manual research and direct outreach may be necessary, though this will be limited in scope for the initial project phase.
 
-* [ ] Finalize Documentation
-* [ ] Finalize Code
-* [ ] Finalize Visualizations
-* [ ] Finalize Reports
-* [ ] Capture Lessons Learned
-* [ ] Project Brief, if needed
-* [ ] Capture feedback through thought collector document and integrate to lessons learned
-* [ ] Conduct internal retrospective discussion and integrate to lessons learned
-* [ ] Provide Deliverables to customer
-* [ ] Validate that all Deliverables are accepted by the customer
-* [ ] Make changes to this repo and projects based on lessons learned, if any
+- **Data Processing Pipeline:** Once collected, data will be processed through a standardized pipeline that will:
+  - Clean and validate addresses and business names
+  - Normalize data formats across different state sources
+  - Geocode locations for mapping purposes
+  - Identify and flag potential duplicates or errors
 
-## Coding Standards
+- **Visualization:** The processed data will be visualized through:
+  - An interactive map showing provider locations
+  - Summary statistics by state/region
+  - Exportable datasets for further analysis
 
-Reference the [ACF Data Surge Team coding standards](https://github.com/HHS/acf-datasurge-standards/tree/feat/standards-version-1) for further details on coding practices.
+## Partnership Model
+Sprint syncs: Held weekly throughout the project duration.
 
-## Requirements
+Working sessions: Held weekly with the Data Surge Team and other stakeholders as needed.
 
-To ensure app dependencies are ported from your virtual environment/host machine into your container, run the following command:
+Asynchronous clarifications: An MS Teams channel will be established with the members of the Data Surge Team and other relevant stakeholders. Teams will be used for informal communication. Email will be used for more formal communication and deliverables.
 
-```bash
-pip install pipreqs
-```
+## Deliverables
+- **Data Availability Assessment:** Documentation of data availability and access methods for all states/territories
+- **Collection Code Repository:** Python-based tools for data collection and processing
+- **Aggregated Dataset:** Comprehensive CSV file containing normalized provider data
+- **Interactive Map:** Visualization tool showing the distribution of CCDF-funded providers
+- **Documentation:** Technical documentation detailing the collection methods, data structure, and update processes
+- **Update Framework:** Recommendations for maintaining data currency, including suggested frequency and methods
 
-Then run:
+## Timeline
+These timelines represent initial plans. Tasks may adjust based on findings from earlier weeks.
 
-```bash
-pipreqs --ignore .venv --scan-notebooks --force
-```
+- **Week 1: March 24-28, 2025**
+  - Complete initial assessment of data availability across all state CCDF plans
+  - Categorize states by data accessibility
+  - Begin developing collection strategies for states with readily accessible data
+  - Initial project sync with stakeholders
 
-If you encounter issues with connecting to pypi, you can change the server by adding the following: `--pypi-server <url>`
+- **Week 2: March 31-April 4, 2025**
+  - Complete data collection from states with accessible online data
+  - Begin data normalization and cleaning
+  - Develop initial data structure for aggregated dataset
+  - Begin outreach to states with limited online data
 
-## Docker
+- **Week 3: April 7-11, 2025**
+  - Continue data collection from remaining states
+  - Implement data validation and quality checks
+  - Begin development of visualization tools
+  - Document collection methods and challenges
 
-I like running things in linux. Docker makes it standardized through configuration files like `.dockerignore`, `docker-compose.yml`, and `Dockerfile`.
+- **Week 4: April 14-18, 2025**
+  - Finalize data collection and aggregation
+  - Complete interactive map and visualization tools
+  - Document data limitations and gaps
+  - Develop recommendations for ongoing data maintenance
+  - Final project review with stakeholders
 
-You can delete the docker files along with the .vscode folder containing launch.json and tasks.json if they're not needed for the project.
+## Assumptions
+- State CCDF plans and related websites will remain accessible during the project period
+- Most states have some form of provider data available, though the format and accessibility may vary
+- Python and related data processing tools will be sufficient for the technical requirements
+- The project scope is limited to data collection and organization; policy recommendations are outside scope
+- Initial development of visualization tools will use open-source technologies due to potential delays in Tableau access
 
-### VSCode extension
+## Roles
+- **Project Lead:** Daina Bouquin, Lead Data Scientist III
+- **Project Team:** 
+  - Data Surge Team members
+  - Additional support from OEP&R and Office of Childcare as needed
 
-Use the dockerextension to make it easy to change the programming language. Currently set as default for `python:3.12-slim`.
-
-To change language version you can call the command pallete `CTRL + SHIFT + P` and select: `Docker: Add Docker Files to Workspace...`
-
-### .dockerignore
-
-This will ignore files and folders when building the container image.
-
-### docker-compose
-
-Use the following command to build and execute the docker container:
-
-```bash
-docker compose -f "docker-compose.yml" up -d --build
-```
-
-### Dockerfile
-
-Contains all the necesary information to build a docker image with the application inside.
+## Future Considerations
+If this initial data collection effort proves valuable, potential follow-on work could include:
+- Development of a public-facing dashboard
+- Integration with disaster planning tools
+- Expansion to include additional provider information beyond location data
+- Establishment of automated data refresh processes
+- Creation of APIs for programmatic data access
