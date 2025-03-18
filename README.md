@@ -75,25 +75,25 @@ Asynchronous clarifications: An MS Teams channel will be established with the me
 ## Timeline
 These timelines represent initial plans. Tasks may adjust based on findings from earlier weeks.
 
-- **Week 1: March 24-28, 2025**
+- **Week 1: March 17-21, 2025**
   - Complete initial assessment of data availability across all state CCDF plans
   - Categorize states by data accessibility
   - Begin developing collection strategies for states with readily accessible data
   - Initial project sync with stakeholders
 
-- **Week 2: March 31-April 4, 2025**
+- **Week 2: March 24-28, 2025**
   - Complete data collection from states with accessible online data
   - Begin data normalization and cleaning
   - Develop initial data structure for aggregated dataset
   - Begin outreach to states with limited online data
 
-- **Week 3: April 7-11, 2025**
+- **Week 3: March 31-April 4, 2025**
   - Continue data collection from remaining states
   - Implement data validation and quality checks
   - Begin development of visualization tools
   - Document collection methods and challenges
 
-- **Week 4: April 14-18, 2025**
+- **Week 4: April 7-11, 2025**
   - Finalize data collection and aggregation
   - Complete interactive map and visualization tools
   - Document data limitations and gaps
