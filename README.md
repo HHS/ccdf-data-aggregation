@@ -1,6 +1,6 @@
 # ACF Tech Data Surge Team Project Scope Document
 
-*Last updated: March 18, 2025*
+*Working Draft - Last Updated: March 18, 2025*
 
 ## Project Title
 CCDF Data Aggregation and Normalization
