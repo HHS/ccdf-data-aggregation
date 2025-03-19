@@ -16,28 +16,28 @@ This information will serve dual purposes:
 
 ## Objectives
 1. Assess data availability across state CCDF systems
-  - Review each state's CCDF plan website and related resources
-  - Identify states with accessible data and those requiring alternative approaches
-  - Document data formats, accessibility methods, and completeness for each state
+    - Review each state's CCDF plan website and related resources
+    - Identify states with accessible data and those requiring alternative approaches
+    - Document data formats, accessibility methods, and completeness for each state
 
 2. Develop and implement data collection strategies
-  - Create web scraping solutions for states with online data
-  - Establish alternative collection methods for states with limited online presence
-  - Standardize collection approaches where possible
+    - Create web scraping solutions for states with online data
+    - Establish alternative collection methods for states with limited online presence
+    - Standardize collection approaches where possible
 
 3. Aggregate and normalize collected data
-  - Create a unified data structure for provider information
-  - Normalize address formats and other key data points
-  - Implement data quality checks and validation
+    - Create a unified data structure for provider information
+    - Normalize address formats and other key data points
+    - Implement data quality checks and validation
 
 4. Develop visualization and distribution tools
-  - Create an interactive map visualization of provider locations
-  - Produce exportable datasets in standard formats
-  - Document data dictionary and limitations
+    - Create an interactive map visualization of provider locations
+    - Produce exportable datasets in standard formats
+    - Document data dictionary and limitations
 
 5. Establish a framework for periodic data updates
-  - Document collection processes for repeatability
-  - Recommend update frequency and maintenance approaches
+    - Document collection processes for repeatability
+    - Recommend update frequency and maintenance approaches
 
 ## Scope and Approach
 This project will focus on collecting business names and addresses of CCDF-funded childcare providers across all states and territories. The approach will vary by state based on data availability:
