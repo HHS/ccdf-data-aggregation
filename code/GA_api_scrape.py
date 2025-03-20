@@ -9,7 +9,7 @@ from datetime import datetime
 url = "https://families.decal.ga.gov/api/provider/searchByAddress"
 
 #%%
-# Define the parameters you saw in the network request (empty for no filters)
+# Define the parameters seen in the network request (empty for no filters)
 params = {
     'providerNumber': '',
     'name': '',
@@ -54,11 +54,11 @@ if response.status_code == 200:
     print("Response content type:", response.headers.get('content-type'))
     
     try:
-        # First parse gets us the string containing the JSON array
+        # First parse gets the string containing the JSON array
         json_string = response.json()
         print("\nFirst parse type:", type(json_string))
         
-        # Second parse gets us the actual array
+        # Second parse gets the actual array
         data = json.loads(json_string)
         print("Second parse type:", type(data))
         
