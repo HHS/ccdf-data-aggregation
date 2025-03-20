@@ -1,12 +1,10 @@
 # ACF Tech Data Surge Team Project Scope Document
 
-*Working Draft - Last Updated: March 18, 2025*
-
 ## Project Title
 CCDF Data Aggregation and Normalization
 
 ## Project Overview
-**Goal:** Gather, aggregate, and normalize data about entities that receive Child Care and Development Fund (CCDF) funding through state block grants, with a focus on collecting business names and addresses.
+Goal: Gather, aggregate, and normalize data about entities that receive Child Care and Development Fund (CCDF) funding through state block grants, with a focus on collecting business names and addresses.
 
 The Administration for Children and Families (ACF) provides substantial funding to states through CCDF block grants. Due to the nature of block grants, states have flexibility in how they distribute these funds to childcare providers, resulting in limited visibility for ACF regarding the end recipients of funding. This project aims to address this gap by collecting data on CCDF-funded childcare providers across all states and territories.
 
@@ -16,28 +14,28 @@ This information will serve dual purposes:
 
 ## Objectives
 1. Assess data availability across state CCDF systems
-    - Review each state's CCDF plan website and related resources
-    - Identify states with accessible data and those requiring alternative approaches
-    - Document data formats, accessibility methods, and completeness for each state
+    a. Review each state's CCDF plan website and related resources
+    b. Identify states with accessible data and those requiring alternative approaches
+    c. Document data formats, accessibility methods, and completeness for each state
 
 2. Develop and implement data collection strategies
-    - Create web scraping solutions for states with online data
-    - Establish alternative collection methods for states with limited online presence
-    - Standardize collection approaches where possible
+    a. Create web scraping solutions for states with online data
+    b. Establish alternative collection methods for states with limited online presence
+    c. Standardize collection approaches where possible
 
 3. Aggregate and normalize collected data
-    - Create a unified data structure for provider information
-    - Normalize address formats and other key data points
-    - Implement data quality checks and validation
+    a. Create a unified data structure for provider information
+    b. Normalize address formats and other key data points
+    c. Implement data quality checks and validation
 
 4. Develop visualization and distribution tools
-    - Create an interactive map visualization of provider locations
-    - Produce exportable datasets in standard formats
-    - Document data dictionary and limitations
+    a. Create an interactive map visualization of provider locations
+    b. Produce exportable datasets in standard formats
+    c. Document data dictionary and limitations
 
 5. Establish a framework for periodic data updates
-    - Document collection processes for repeatability
-    - Recommend update frequency and maintenance approaches
+    a. Document collection processes for repeatability
+    b. Recommend update frequency and maintenance approaches
 
 ## Scope and Approach
 This project will focus on collecting business names and addresses of CCDF-funded childcare providers across all states and territories. The approach will vary by state based on data availability:
@@ -58,11 +56,11 @@ This project will focus on collecting business names and addresses of CCDF-funde
   - Exportable datasets for further analysis
 
 ## Partnership Model
-Sprint syncs: Held weekly throughout the project duration.
+**Sprint syncs:** Held weekly throughout the project duration.
 
-Working sessions: Held weekly with the Data Surge Team and other stakeholders as needed.
+**Working sessions:** Held weekly with the Data Surge Team and other stakeholders as needed.
 
-Asynchronous clarifications: An MS Teams channel will be established with the members of the Data Surge Team and other relevant stakeholders. Teams will be used for informal communication. Email will be used for more formal communication and deliverables.
+**Asynchronous clarifications:** An MS Teams channel will be established with the members of the Data Surge Team and other relevant stakeholders. Teams will be used for informal communication. Email will be used for more formal communication and deliverables.
 
 ## Deliverables
 - **Data Availability Assessment:** Documentation of data availability and access methods for all states/territories
@@ -75,25 +73,26 @@ Asynchronous clarifications: An MS Teams channel will be established with the me
 ## Timeline
 These timelines represent initial plans. Tasks may adjust based on findings from earlier weeks.
 
-- **Week 1: March 17-21, 2025**
+### Financial Data
+- **Sprint 0: March 17-28, 2025**
   - Complete initial assessment of data availability across all state CCDF plans
   - Categorize states by data accessibility
   - Begin developing collection strategies for states with readily accessible data
   - Initial project sync with stakeholders
 
-- **Week 2: March 24-28, 2025**
+- **Sprint 1: March 31-April 11, 2025**
   - Complete data collection from states with accessible online data
   - Begin data normalization and cleaning
   - Develop initial data structure for aggregated dataset
   - Begin outreach to states with limited online data
 
-- **Week 3: March 31-April 4, 2025**
+- **Sprint 2: April 14-25 2025**
   - Continue data collection from remaining states
   - Implement data validation and quality checks
   - Begin development of visualization tools
   - Document collection methods and challenges
 
-- **Week 4: April 7-11, 2025**
+- **Sprint 3: April 28-May 1, 2025**
   - Finalize data collection and aggregation
   - Complete interactive map and visualization tools
   - Document data limitations and gaps
@@ -104,14 +103,15 @@ These timelines represent initial plans. Tasks may adjust based on findings from
 - State CCDF plans and related websites will remain accessible during the project period
 - Most states have some form of provider data available, though the format and accessibility may vary
 - Python and related data processing tools will be sufficient for the technical requirements
-- The project scope is limited to data collection and organization; policy recommendations are outside scope
+- The project scope is limited to data collection and organization
 - Initial development of visualization tools will use open-source technologies due to potential delays in Tableau access
 
 ## Roles
-- **Project Lead:** Daina Bouquin, Lead Data Scientist III
-- **Project Team:** 
-  - Data Surge Team members
-  - Additional support from OEP&R and Office of Childcare as needed
+- Governement Lead: Jane Yang
+- Project Owner:
+- Project Lead: Daina Bouquin
+- Project Team:
+  - When appropriate we will contact the Office of Planning, Research, and Evaluation and the Office of Childcare 
 
 ## Future Considerations
 If this initial data collection effort proves valuable, potential follow-on work could include:
