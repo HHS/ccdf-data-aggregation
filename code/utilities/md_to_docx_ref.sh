@@ -1,6 +1,6 @@
 #!/bin/bash
 # Script to convert markdown to docx using pandoc
-# Usage: ./md_to_docx_ref.sh /Users/dainabouquin/Library/CloudStorage/OneDrive-ArchSystems/CCDF/README.md /Users/dainabouquin/Library/CloudStorage/OneDrive-ArchSystems/Reference/pandoc_reference_scope.docx
+# Usage: ./md_to_docx_ref.sh /Users/dainabouquin/Library/CloudStorage/OneDrive-ArchSystems/CCDF/README.md /Users/dainabouquin/Library/CloudStorage/OneDrive-ArchSystems/CCDF/references/pandoc_reference_scope.docx
 
 # Check if input file is provided
 if [ $# -lt 1 ]; then
@@ -13,7 +13,7 @@ fi
 input_file=$1
 
 # Set default reference document or use the one provided
-reference_doc="${2:-/Users/dainabouquin/Library/CloudStorage/OneDrive-ArchSystems/pandoc_reference_scope.docx}"
+reference_doc="${2:-/Users/dainabouquin/Library/CloudStorage/OneDrive-ArchSystems/CCDF/references/pandoc_reference_scope.docx}"
 
 # Create output filename by replacing .md with .docx
 output_file="${input_file%.md}.docx"
