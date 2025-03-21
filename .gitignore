@@ -12,6 +12,7 @@ __pycache__/
 # Documents
 docs/images/
 docs/CCDF_dashboard_slides/
+how-to.md
 
 # Distribution / packaging
 .Python
