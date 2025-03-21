@@ -1,0 +1,50 @@
+Provider: City of Salina Fieldhouse Summer Camp, Address: Type: School Age Programs License ID: 0076850 Capacity : 100 Ages Served : 5 Years - 12 Years Monday - Friday 7:30am - 5:30pm
+Provider: Sarah Hageman, Address: 140 N 5th Street, Salina KS 67401
+Provider: Play First Preschool, Address: Type: Preschools Offers: Preschool Session License ID: 0082073 Capacity : 34 Ages Served : 3 Years - 5 Years Monday - Friday 9:00am - 11:30am
+Provider: Erica Arb, Address: 122 N 8th St., Salina KS 67401
+Provider: Kids Creative Corners, Address: Type: School Age Programs Offers: Potential DCF (Department for Children and Families) License ID: 0082298 Capacity : 30 Ages Served : 5 Years - 11 Years Monday - Friday 8:00am - 5:15pm
+Provider: Tia  Westling, Address: 122 S Santa Fe Ave., Salina KS 67401
+Provider: Christ Cathedral Montessori School, Address: Type: Child Care Centers License ID: 0065389 Capacity : 24 Ages Served : 3 Years - 6 Years Monday : 8:00am - 3:00pm Tuesday : 8:00am - 3:00pm Wednesday : 8:00am - 3:00pm Thursday : 8:00am - 3:00pm
+Provider: Molly Kierscht, Address: 138 S 8th St, Salina KS 67401
+Provider: Salina Child Care Center, Address: Type: Child Care Centers Offers: Enrolled DCF (Department For Children and Families), Preschool Session License ID: 0000521 Capacity : 159 Ages Served : 1 Month - 6 Years Monday - Friday 6:30am - 5:30pm
+Provider: Michelle Olsson, Address: 155 N Oakdale Avenue Suite 100, Salina KS 67401
+Provider: Child Advocacy and Parenting Services, Address: Type: Child Care Centers Offers: Preschool Session License ID: 0077896 Capacity : 16 Ages Served : 1 Month - 6 Years Monday - Friday 9:00am - 5:00pm
+Provider: Necol Agugba, Address: 155 N Oakdale Ste 200, Salina KS 67401
+Provider: Little Darlings Academy, Address: Type: Preschools Offers: Enrolled DCF (Department For Children and Families), Preschool Session License ID: 0063426 Capacity : 10 Ages Served : 3 Years - 5 Years 11 Months Monday - Friday 8:00am - 3:30pm
+Provider: Michelle Grandy, Address: 212 S Front Street, Salina KS 67401
+Provider: Bright Stars Child Care, Address: Type: Family Child Care Home Offers: Enrolled DCF (Department For Children and Families) License ID: 0073775 Capacity : 12 Ages Served : 1 Month - 12 Years Monday - Friday 6:30am - 5:00pm
+Provider: Starla Hickman, Address: 715 W Iron Avenue, Salina KS 67401
+Provider: Mi Mi and Lous Creative Kids Child Care, Address: Type: Family Child Care Home Offers: Enrolled DCF (Department For Children and Families) License ID: 0083863 Capacity : 12 Ages Served : 2 Months - 10 Years Monday - Friday 6:30am - 5:30pm
+Provider: Crystal Boyer, Address: 320 N Columbia Ave, Salina KS 67401
+Provider: A Sweet Litl Academy 2, Address: Type: Child Care Centers Offers: Enrolled DCF (Department For Children and Families), Preschool Session License ID: 0057319 Capacity : 23 Ages Served : 2 Years 6 Months - 11 Years Monday - Friday 7:00am - 5:30pm
+Provider: Gina Sweet, Address: 611 N 9th Street, Salina KS 67401
+Provider: Meghans Munchkins, Address: Type: Family Child Care Home Offers: Enrolled DCF (Department For Children and Families) License ID: 0080287 Capacity : 12 Ages Served : 12 Months - 9 Years Monday - Friday 7:00am - 4:00pm
+Provider: Meghan Carter, Address: 119 S. College St, Salina KS 67401
+Provider: Tee Tee Pitter Patter, Address: Type: Family Child Care Home Offers: Enrolled DCF (Department For Children and Families), Preschool Session License ID: 0045209 Capacity : 12 Ages Served : 1 Month - 3 Years Monday : 5:30am - 6:00pm Tuesday : 5:30am - 6:00pm Wednesday : 5:30am - 6:00pm Thursday : 5:30am - 6:00pm Friday : 5:30am - 3:30pm
+Provider: Troy Austin, Address: 1016 W Ash St, Salina KS 67401
+Provider: Teresa L Taylor Day Care Home, Address: Type: Family Child Care Home License ID: 0027237 Capacity : 12 Ages Served : 3 Months - 6 Years Monday - Friday 7:00am - 5:00pm
+Provider: Teresa Taylor, Address: 429 S 9th Street, Salina KS 67401
+Provider: Cradle To Crayons, Address: Type: Family Child Care Home Offers: Enrolled DCF (Department For Children and Families), Preschool Session License ID: 0065926 Capacity : 12 Ages Served : 2 Months - 11 Years Monday - Friday 5:30am - 5:15pm
+Provider: Sonna Middle, Address: 148 N Ohio Street, Salina KS 67401
+Provider: Lots of Love Group Child Care Home, Address: Type: Family Child Care Home Offers: Enrolled DCF (Department For Children and Families) License ID: 0047336 Capacity : 12 Ages Served : 1 Month - 9 Years Monday - Friday 6:00am - 5:30pm
+Provider: Sheila Grob, Address: 924 W Walnut, Salina KS 67401
+Provider: Sweet Academy, Address: Type: Family Child Care Home Offers: Enrolled DCF (Department For Children and Families), Preschool Session License ID: 0032728 Capacity : 12 Ages Served : 5 Years - 11 Years Monday - Friday 3:30pm - 5:30pm
+Provider: Gina Sweet, Address: 1107 W State St, Salina KS 67401
+Provider: Lunar Magic Limo Littles, Address: Type: Family Child Care Home License ID: 0058354 Capacity : 12 Ages Served : 1 Month - 12 Years Monday - Friday 7:00am - 5:30pm
+Provider: Brianna Kaumans, Address: 518 S 9th St, Salina KS 67401
+Provider: YMCA Early Education Center, Address: Type: Child Care Centers Offers: Enrolled DCF (Department For Children and Families), Preschool Session License ID: 0000711 Capacity : 59 Ages Served : 2 Years 6 Months - 5 Years 6 Months Monday - Friday 5:30am - 5:30pm
+Provider: Marti Higdon, Address: 570 YMCA  Drive, Salina KS 67401
+Provider: Salina Family YMCA Camp SWAT, Address: Type: School Age Programs Offers: Enrolled DCF (Department For Children and Families) License ID: 0000524 Capacity : 120 Ages Served : 6 Months - 12 Years Monday - Friday 7:30am - 6:00pm
+Provider: Marti Higdon, Address: 570 YMCA Drive, Salina KS 67401
+Provider: St. Johns Kid Kare, Address: Type: Child Care Centers Offers: Enrolled DCF (Department For Children and Families), Preschool Session License ID: 0052495 Capacity : 11 Ages Served : 3 Years - 5 Years Monday - Friday 7:00am - 5:30pm
+Provider: Kayla Starkweather, Address: 215 S Chicago St. , Salina KS 67401
+Provider: Peace of Mind, Address: Type: Family Child Care Home License ID: 0047502 Capacity : 12 Ages Served : 1 Year 6 Months - 11 Years Monday - Friday 7:30am - 5:15pm
+Provider: Janece Otter, Address: 546 S 10th St, Salina KS 67401
+Provider: Little Friends, Address: Type: Family Child Care Home License ID: 0079065 Capacity : 12 Ages Served : 2 Months - 9 Years 11 Months Monday - Friday 7:30am - 5:30pm
+Provider: Valerie Hill, Address: 636 Highland Ave, Salina KS 67401
+Provider: Brendas Daycare, Address: Type: Family Child Care Home Offers: Enrolled DCF (Department For Children and Families) License ID: 0035590 Capacity : 12 Ages Served : 1 Month - 5 Years Monday - Friday 7:00am - 5:00pm
+Provider: Brenda Mettlen, Address: 525 Montrose Street, Salina KS 67401
+Provider: Sharing And Caring Inc, Address: Type: Child Care Centers Offers: Enrolled DCF (Department For Children and Families), Preschool Session License ID: 0040821 Capacity : 17 Ages Served : 2 Years 6 Months - 5 Years 6 Months Monday - Friday 7:00am - 5:30pm
+Provider: Catalina Rincon, Address: 663 S 9th Street, Salina KS 67401
+Provider: Kids Tyme Day Care Home, Address: Type: Family Child Care Home Offers: Preschool Session License ID: 0015392 Capacity : 12 Ages Served : 1 Month - 5 Years Monday - Friday 5:00am - 4:30pm
+Provider: Sharol McMillan, Address: 1301 Indian Rock Lane, Salina KS 67401

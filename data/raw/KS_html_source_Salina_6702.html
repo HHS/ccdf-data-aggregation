@@ -1,0 +1,3891 @@
+
+<style>
+    .popover-title {
+        font-weight: bold;
+    }
+
+    .popover-content {
+        font-size: 12px !important;
+    }
+</style>
+
+<div></div>
+
+<div id="ProgramResultsHeader" class="alert alert-info">
+    <div class="row">
+        <div class="col-md-8">
+            <div class="btn-group">
+                <input type="hidden" id="sort" />
+                <button type="button" class="btn btn-success dropdown-toggle" style="padding-left:4px;padding-right:4px;" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Sort by <span class="caret" style="margin-top:0 !important;"></span>
+                </button>
+                <ul class="dropdown-menu">
+                            <li class="sort-by " data-value="2_opentime_asc"><a href="javascript:void(0);" onclick="sortList('2_opentime_asc')">Earliest Time Open</a></li>
+                            <li class="sort-by " data-value="3_opentime_desc"><a href="javascript:void(0);" onclick="sortList('3_opentime_desc')">Latest Time Open</a></li>
+                            <li class="sort-by " data-value="4_name_asc"><a href="javascript:void(0);" onclick="sortList('4_name_asc')">Name A-Z</a></li>
+                            <li class="sort-by " data-value="5_name_desc"><a href="javascript:void(0);" onclick="sortList('5_name_desc')">Name Z-A</a></li>
+                            <li class="sort-by " data-value="6_distance"><a href="javascript:void(0);" onclick="sortList('6_distance')">Distance</a></li>
+                            <li class="sort-by " data-value="7_lastupdated_desc"><a href="javascript:void(0);" onclick="sortList('7_lastupdated_desc')">Newest Updated</a></li>
+                            <li class="sort-by " data-value="8_lastupdated_asc"><a href="javascript:void(0);" onclick="sortList('8_lastupdated_asc')">Oldest Updated</a></li>
+
+                </ul>
+            </div>
+
+            <input type="hidden" id="ViewMode" value="summaryview" />
+            <div class="btn-group">
+                <button type="button" class="btn btn-success dropdown-toggle" style="padding-left:4px;padding-right:4px;" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    View <span class="caret" style="margin-top:0 !important;"></span>
+                </button>
+                <ul class="dropdown-menu">
+                    <li class="active">
+                            <a id="SummaryView" href="javascript:void(0);">Summary View</a>
+                    </li>
+                    <li class="">
+                            <a id="QuickView" href="javascript:void(0);" onclick="searchPrograms('quickview',0)">Compare View</a>
+
+                    </li>
+                    <li class="">
+                            <a id="MapView" href="javascript:void(0);" onclick="searchPrograms('mapview',0)">Map View</a>
+
+                    </li>
+                    
+                    
+                        <li><a id="btnCostOfCare" href="javascript:void(0);" onclick="showCostOfCare()">Cost of Care</a></li>
+
+                </ul>
+            </div>
+
+            <div class="btn-group">
+                <button type="button" class="btn btn-success dropdown-toggle" style="padding-left:4px;padding-right:4px;" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Show Results <span class="caret" style="margin-top:0 !important;"></span>
+                </button>
+                <input type="hidden" id="filterSentStatus" value="all" />
+                <ul class="dropdown-menu">
+                    <li class="filterSentStatus active" data-filter-sentstatus="all"><a href="javascript:void(0);" onclick="FilterResultsBySentStatus('all')">All</a></li>
+                    <li class="filterSentStatus" data-filter-sentstatus="notonly"><a href="javascript:void(0);" onclick="FilterResultsBySentStatus('notonly')">Not Emailed/Printed</a></li>
+                    <li class="filterSentStatus" data-filter-sentstatus="yesonly"><a href="javascript:void(0);" onclick="FilterResultsBySentStatus('yesonly')">Emailed/Printed</a></li>
+                </ul>
+
+            </div>
+            <div class="btn-group">
+                <button type="button" class="btn btn-success dropdown-toggle" style="padding-left:4px;padding-right:4px;" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Share <span class="caret" style="margin-top:0 !important;"></span>
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a id="emailPSResults" href="javascript:void(0);" data-toggle="modal" data-target="#emailModal" data-id="0">Email</a></li>
+                                        <li><a id="printPSResults" href="javascript:void(0);"><img src="/Images/ajax-loader.gif" id="printloader" style="display:none;width:30px;" />Print</a></li>
+
+                </ul>
+
+            </div>
+        </div>
+        <div class="col-md-2 text-center">
+            <span id="matchFilterButtons">
+                    <button id="btnMatchAny" class="btn btn-default btn-xs" type="button" onclick="searchPrograms('summaryview',1)" style="display:none;margin-top:2px;">Match Any Filters</button>
+            </span>
+        </div>
+        <div class="col-md-2">
+
+                <img id="agency16Logo" src="/Images/AgencyLogos/QRIS/agency_logo_16.png" class="pull-right" style="width: 300px;margin-top:-4px;" title="Click to see Quality Rating descriptions.">
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12" id="divFiltersInfo" style="display:none;padding-top:10px;">
+
+        </div>
+
+    </div>
+</div>
+<input id="MyLatitude" name="MyLatitude" type="hidden" value="38.842906" /><input id="MyLongitude" name="MyLongitude" type="hidden" value="-97.6077855" /><input id="SearchedCity" name="SearchedCity" type="hidden" value="Salina" /><input id="SearchedZip" name="SearchedZip" type="hidden" value="67402" />        <div class="pyramidsInfo16" style="clear:left;display:none;">
+            <div class="row">
+    <div class="col-md-12">
+        <b>What Is L2Q? </b>
+        <p>
+            Links to Quality (L2Q) is a new voluntary program in Kansas that focuses on improving early child care and educational environments. L2Q helps child care educators build on strengths in business practices, family partnerships, health and safety, and learning and child development through earning Link badges. The badges earned represent the hard work that goes into each area and helps families choose the child care and education program that is the best fit for their children. Not all providers will have earned badges yet because it takes time to achieve one.
+        </p>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-2">
+        <center><img src="/Images/KSQR/L2Q_program_admin_yellow-100.png" width="75" /></center>
+    </div>
+    <div class="col-md-10">
+        <b>Program Administration</b><br />The Program Administration Link celebrates programs with high-quality business practices. An early childhood program has clear policies, wise budget skills, and aims for a supportive work setting..
+    </div>
+</div>
+<br />
+<div class="row">
+    <div class="col-md-2">
+        <center><img src="/Images/KSQR/L2Q_family_partnerships_blue-100.png" width="75" /></center>
+    </div>
+    <div class="col-md-10">
+        <b>Family Partnership</b><br />Family Partnership Link shows that early childhood programs work hard to build strong connections with families and the community. Programs work with families for the goals and needs of the child.
+    </div>
+</div>
+<br />
+<div class="row">
+    <div class="col-md-2">
+        <center> <img src="/Images/KSQR/L2Q_health_safety_red-100.png" width="75" /></center>
+    </div>
+    <div class="col-md-10">
+        <b>Health and Safety</b><br />Health and Safety Link fosters safe conditions and a healthy approach to care. Early childhood programs have a risk management plan, share information about healthy practices, and make space for active play.
+    </div>
+</div>
+<br />
+<div class="row">
+    <div class="col-md-2">
+        <center>
+            <img src="/Images/KSQR/L2Q_learning_dev_green-100.png" width="75" />
+        </center>
+    </div>
+    <div class="col-md-10">
+        <b>Learning and Development</b><br />Learning and Development Link shows that programs create fun and positive places to learn and build relationships. Early childhood programs create learning experiences and engage children with each other and educators.
+    </div>
+</div>
+
+
+        </div>
+        <div id="PSResults" style="padding-left: 20px;padding-right:20px;">
+            <style type="text/css">
+                @media print {
+                    .btn {
+                        display: none;
+                    }
+
+                    .moreINFO {
+                        display: none;
+                    }
+                }
+            </style>
+
+                <div>
+    <div class="row pdfhide pager">
+        <div class="col-md-6 text-left pager-summary">
+            <div class="row">
+                <div class="col-md-4">
+                    Showing 25 Records
+                </div>
+                <div class="col-md-8 text-right">
+                    Page  1/17, 1 - 25 of 411 results.
+                </div>
+            </div>
+            
+        </div>
+            <div class="col-md-6 text-right">
+                <nav aria-label="Page navigation">
+                    <ul class="pagination">
+
+                            <li class=active><a href="javascript:void(0)" onclick="Paging('1')">1</a></li>
+                            <li ><a href="javascript:void(0)" onclick="Paging('2')">2</a></li>
+                            <li ><a href="javascript:void(0)" onclick="Paging('3')">3</a></li>
+                            <li ><a href="javascript:void(0)" onclick="Paging('4')">4</a></li>
+                            <li ><a href="javascript:void(0)" onclick="Paging('5')">5</a></li>
+                            <li ><a href="javascript:void(0)" onclick="Paging('6')">6</a></li>
+                            <li ><a href="javascript:void(0)" onclick="Paging('7')">7</a></li>
+                            <li ><a href="javascript:void(0)" onclick="Paging('8')">8</a></li>
+                            <li ><a href="javascript:void(0)" onclick="Paging('9')">9</a></li>
+                            <li ><a href="javascript:void(0)" onclick="Paging('10')">10</a></li>
+                                                    <li>
+                                <a href="javascript:void(0);" aria-label="Next" onclick="Paging('2')">
+                                    <span aria-hidden="true">&raquo;</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);" aria-label="Next" onclick="Paging('17')">
+                                    <span aria-hidden="true">&raquo;&raquo;</span>
+                                </a>
+                            </li>
+
+                    </ul>
+                </nav>
+            </div>
+        
+    </div>
+
+
+    </div>
+        <div class="provider-panel countTotal" style="margin-left:-12px;margin-right:-12px;" data-id="1336288" data-referred="1">
+            <div class="panel panel-success">
+                <div class="panel-heading " style="background-color: #ebf4d5; ">
+                        <div class="row">
+                            <div class="col-md-6 col-sm-4">
+                                <div class="panel-title">
+                                    <img src="https://stage.worklifesystems.com/Images/addfavorite.png" title="Click to add to My Favorites tab." class="addtofavorite pdfhide" providerid="1336288" style="width: 26px; margin-left:-6px;margin-top:6px;padding:0;" />
+                                    &nbsp;&nbsp;
+                                    
+        <span>
+            <a href="javascript:void(0);" class="moreINFO" data-toggle="modal" data-target="#moreInfoModal" recordid="1336288" style="font-size:1.2em;">City of Salina Fieldhouse Summer Camp</a>
+        </span>
+
+
+        <div style="padding-left:40px;">
+            <a href="javascript:void(0);" class="moreINFO" data-toggle="modal" data-target="#moreInfoModal" recordid="1336288">Sarah Hageman</a>
+        </div>
+
+                                            <span style="font-weight:bold;padding-left:40px;color:#333;" class="pdfhide">[Last Referred:3/21/2025]</span>
+
+
+                                        <span class="MilesAway" style="padding-left:40px;" recordid="1336288">0 Miles Away</span>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                                            </div>
+                            <div class="col-md-4 col-sm-6 text-right">
+
+                                
+    <div data-toggle="tooltip" data-placement="top" id="stars" data-original-title="" data-pdf-align="right" style="float: right; margin-left: 10px; margin-top: 5px;">
+                            </div>
+
+
+                            </div>
+
+                        </div>
+
+
+                </div>
+
+                <div class="panel-body">
+                    <div class="row" style="background-color:#fefefe;padding:4px;">
+                        <div class="col-md-6 text-left">
+                            
+
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <!--wls<table width="100%">wls-->
+                        <!--wls<tr>wls-->
+                        <!--wls<td>wls-->
+                        <div class="col-lg-3 col-md-4">
+                            
+<div style="display: table-cell; vertical-align: middle;">
+</div>
+
+                        </div>
+                        <!--wls</td>wls-->
+
+                        <!--wls<td>wls-->
+                        <div class="col-lg-9 col-md-8">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    
+        <span>
+            <a href="javascript:void(0);" class="moreINFO" data-toggle="modal" data-target="#moreInfoModal" recordid="1336288" style="font-size:1.2em;">City of Salina Fieldhouse Summer Camp</a>
+        </span>
+
+
+        <div style="padding-left:40px;">
+            <a href="javascript:void(0);" class="moreINFO" data-toggle="modal" data-target="#moreInfoModal" recordid="1336288">Sarah Hageman</a>
+        </div>
+
+
+                                    
+<div>
+            <span>140 N 5th Street, </span>
+
+    Salina KS 67401
+</div>
+
+
+                                            <p>
+                                                
+<a class="viewInMap pdfhide" lat="38.8421805" long="-97.607546" prg="City of Salina Fieldhouse Summer Camp" address="140 N 5th Street" city="Salina" state="KS" zip="67401" dist="0.0517608426328264" rating="" data-toggle="modal" data-target="#mapViewModal" phone="(785) 309-5765" program-type-id="16" program-type-name="School Age Programs" providerid="1336288" dh="Monday - Friday 7:30am - 5:30pm" ages="5 Years - 12 Years " data-referred="1" style="">View Map</a>
+                                            </p>
+                                    
+    <div>
+        <a href="mailto:sarah.hageman@salina.org" target="blank">sarah.hageman@salina.org</a>
+    </div>
+    <div>
+        <i class="fa fa-phone"></i> <a href="tel:(785) 309-5765">(785) 309-5765</a>
+    </div>
+    <a href='http://www.salinaparks.com/' target="_blank">www.salinaparks.com/</a>
+
+                                </div>
+                                <div class="col-md-4">
+                                        <div><b>Type:</b> School Age Programs</div>
+                                                                                                                                                                                                                            <div><b>License ID:</b> 0076850</div>
+
+                                    <br>
+                                    <div><b>Capacity</b>: 100</div>
+                                                                            <div>
+                                            <b>Ages Served</b>: 5 Years - 12 Years 
+                                        </div>
+                                    
+    <div><b>Monday - Friday</b> 7:30am - 5:30pm</div>
+ 
+                                </div>
+                                <div class="col-md-4">
+                                        <div><b>Last Updated</b>: 3/13/2025</div>
+                                                                                                                    <div><b>In Operation:</b> 6 Years and 10 Months</div>
+
+
+                                                                                                                    <div><a href='https://khap2.kdhe.state.ks.us/OIDS/' id="stateReport" data-placement="top" target="_blank" class="pdfhide emailshow">Child Care Licensing Report</a></div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <!--wls</td>wls-->
+                        <!--wls<td>wls-->
+                        <!--wls</tr>wls-->
+                        <!--wls</table>wls-->
+                    </div>
+                </div>
+                            <div style="height: 50px; padding-right: 30px;text-align:right;width:100%;" class="SummaryView">
+
+
+                <a class="btn btn-primary moreINFO pdfhide" data-toggle="modal" data-target="#moreInfoModal" recordid="1336288" style="border-radius: 1.2em !important;">Program Details</a>
+            </div>
+            </div>
+
+        </div>
+        <div class="provider-panel countTotal" style="margin-left:-12px;margin-right:-12px;" data-id="1662502" data-referred="1">
+            <div class="panel panel-success">
+                <div class="panel-heading " style="background-color: #ebf4d5; ">
+                        <div class="row">
+                            <div class="col-md-6 col-sm-4">
+                                <div class="panel-title">
+                                    <img src="https://stage.worklifesystems.com/Images/addfavorite.png" title="Click to add to My Favorites tab." class="addtofavorite pdfhide" providerid="1662502" style="width: 26px; margin-left:-6px;margin-top:6px;padding:0;" />
+                                    &nbsp;&nbsp;
+                                    
+        <span>
+            <a href="javascript:void(0);" class="moreINFO" data-toggle="modal" data-target="#moreInfoModal" recordid="1662502" style="font-size:1.2em;">Play First Preschool</a>
+        </span>
+
+
+        <div style="padding-left:40px;">
+            <a href="javascript:void(0);" class="moreINFO" data-toggle="modal" data-target="#moreInfoModal" recordid="1662502">Erica Arb</a>
+        </div>
+
+                                            <span style="font-weight:bold;padding-left:40px;color:#333;" class="pdfhide">[Last Referred:3/21/2025]</span>
+
+
+                                        <span class="MilesAway" style="padding-left:40px;" recordid="1662502">.21 Miles Away</span>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                                            </div>
+                            <div class="col-md-4 col-sm-6 text-right">
+
+                                
+    <div data-toggle="tooltip" data-placement="top" id="stars" data-original-title="" data-pdf-align="right" style="float: right; margin-left: 10px; margin-top: 5px;">
+                            </div>
+
+
+                            </div>
+
+                        </div>
+
+
+                </div>
+
+                <div class="panel-body">
+                    <div class="row" style="background-color:#fefefe;padding:4px;">
+                        <div class="col-md-6 text-left">
+                            
+
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <!--wls<table width="100%">wls-->
+                        <!--wls<tr>wls-->
+                        <!--wls<td>wls-->
+                        <div class="col-lg-3 col-md-4">
+                            
+    <img src="https://stage.worklifesystems.com//Images/ProgramImages/1662502/c6c3fc82-d1c1-4b21-a671-0a5927f14c61.jpg" class="img-rounded" style="max-width:300px;max-height:300px;">
+
+                        </div>
+                        <!--wls</td>wls-->
+
+                        <!--wls<td>wls-->
+                        <div class="col-lg-9 col-md-8">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    
+        <span>
+            <a href="javascript:void(0);" class="moreINFO" data-toggle="modal" data-target="#moreInfoModal" recordid="1662502" style="font-size:1.2em;">Play First Preschool</a>
+        </span>
+
+
+        <div style="padding-left:40px;">
+            <a href="javascript:void(0);" class="moreINFO" data-toggle="modal" data-target="#moreInfoModal" recordid="1662502">Erica Arb</a>
+        </div>
+
+
+                                    
+<div>
+            <span>122 N 8th St., </span>
+
+    Salina KS 67401
+</div>
+
+
+                                            <p>
+                                                
+<a class="viewInMap pdfhide" lat="38.8412494" long="-97.6110592" prg="Play First Preschool" address="122 N 8th St." city="Salina" state="KS" zip="67401" dist="0.210105097963914" rating="" data-toggle="modal" data-target="#mapViewModal" phone="(785) 825-0228" program-type-id="5" program-type-name="Preschools" providerid="1662502" dh="Monday - Friday 9:00am - 11:30am" ages="3 Years - 5 Years " data-referred="1" style="">View Map</a>
+                                            </p>
+                                    
+    <div>
+        <a href="mailto:" target="blank"></a>
+    </div>
+    <div>
+        <i class="fa fa-phone"></i> <a href="tel:(785) 825-0228">(785) 825-0228</a>
+    </div>
+
+                                </div>
+                                <div class="col-md-4">
+                                        <div><b>Type:</b> Preschools</div>
+                                                                            <div><b>Offers:</b> Preschool Session</div>
+                                                                                                                                                                                        <div><b>License ID:</b> 0082073</div>
+
+                                    <br>
+                                    <div><b>Capacity</b>: 34</div>
+                                                                            <div>
+                                            <b>Ages Served</b>: 3 Years - 5 Years 
+                                        </div>
+                                    
+    <div><b>Monday - Friday</b> 9:00am - 11:30am</div>
+ 
+                                </div>
+                                <div class="col-md-4">
+                                        <div><b>Last Updated</b>: 2/20/2025</div>
+                                                                                                                    <div><b>In Operation:</b> 2 Years and 6 Months</div>
+
+
+                                                                                                                    <div><a href='https://khap2.kdhe.state.ks.us/OIDS/' id="stateReport" data-placement="top" target="_blank" class="pdfhide emailshow">Child Care Licensing Report</a></div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <!--wls</td>wls-->
+                        <!--wls<td>wls-->
+                        <!--wls</tr>wls-->
+                        <!--wls</table>wls-->
+                    </div>
+                </div>
+                                    <div class="row">
+                        <div class="col-md-12" style="margin-left:20px;width:95%;">
+                            <b>Message to Families: </b>Play First Preschool welcomes all families to visit and engage in our classrooms. We are a small preschool with a Big heart for play! 
+                        </div>
+                    </div>
+            <div style="height: 50px; padding-right: 30px;text-align:right;width:100%;" class="SummaryView">
+
+
+                <a class="btn btn-primary moreINFO pdfhide" data-toggle="modal" data-target="#moreInfoModal" recordid="1662502" style="border-radius: 1.2em !important;">Program Details</a>
+            </div>
+            </div>
+
+        </div>
+        <div class="provider-panel countTotal" style="margin-left:-12px;margin-right:-12px;" data-id="1633280" data-referred="1">
+            <div class="panel panel-success">
+                <div class="panel-heading " style="background-color: #ebf4d5; ">
+                        <div class="row">
+                            <div class="col-md-6 col-sm-4">
+                                <div class="panel-title">
+                                    <img src="https://stage.worklifesystems.com/Images/addfavorite.png" title="Click to add to My Favorites tab." class="addtofavorite pdfhide" providerid="1633280" style="width: 26px; margin-left:-6px;margin-top:6px;padding:0;" />
+                                    &nbsp;&nbsp;
+                                    
+        <span>
+            <a href="javascript:void(0);" class="moreINFO" data-toggle="modal" data-target="#moreInfoModal" recordid="1633280" style="font-size:1.2em;">Kids Creative Corners</a>
+        </span>
+
+
+        <div style="padding-left:40px;">
+            <a href="javascript:void(0);" class="moreINFO" data-toggle="modal" data-target="#moreInfoModal" recordid="1633280">Tia  Westling</a>
+        </div>
+
+                                            <span style="font-weight:bold;padding-left:40px;color:#333;" class="pdfhide">[Last Referred:3/21/2025]</span>
+
+
+                                        <span class="MilesAway" style="padding-left:40px;" recordid="1633280">.25 Miles Away</span>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                                            </div>
+                            <div class="col-md-4 col-sm-6 text-right">
+
+                                
+    <div data-toggle="tooltip" data-placement="top" id="stars" data-original-title="" data-pdf-align="right" style="float: right; margin-left: 10px; margin-top: 5px;">
+                            </div>
+
+
+                            </div>
+
+                        </div>
+
+
+                </div>
+
+                <div class="panel-body">
+                    <div class="row" style="background-color:#fefefe;padding:4px;">
+                        <div class="col-md-6 text-left">
+                            
+
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <!--wls<table width="100%">wls-->
+                        <!--wls<tr>wls-->
+                        <!--wls<td>wls-->
+                        <div class="col-lg-3 col-md-4">
+                            
+<div style="display: table-cell; vertical-align: middle;">
+</div>
+
+                        </div>
+                        <!--wls</td>wls-->
+
+                        <!--wls<td>wls-->
+                        <div class="col-lg-9 col-md-8">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    
+        <span>
+            <a href="javascript:void(0);" class="moreINFO" data-toggle="modal" data-target="#moreInfoModal" recordid="1633280" style="font-size:1.2em;">Kids Creative Corners</a>
+        </span>
+
+
+        <div style="padding-left:40px;">
+            <a href="javascript:void(0);" class="moreINFO" data-toggle="modal" data-target="#moreInfoModal" recordid="1633280">Tia  Westling</a>
+        </div>
+
+
+                                    
+<div>
+            <span>122 S Santa Fe Ave., </span>
+
+    Salina KS 67401
+</div>
+
+
+                                            <p>
+                                                
+<a class="viewInMap pdfhide" lat="38.8395138" long="-97.6095156" prg="Kids Creative Corners" address="122 S Santa Fe Ave." city="Salina" state="KS" zip="67401" dist="0.252210150572038" rating="" data-toggle="modal" data-target="#mapViewModal" phone="(785) 833-2332" program-type-id="16" program-type-name="School Age Programs" providerid="1633280" dh="Monday - Friday 8:00am - 5:15pm" ages="5 Years - 11 Years " data-referred="1" style="">View Map</a>
+                                            </p>
+                                    
+    <div>
+        <a href="mailto:westlingtia@gmail.com" target="blank">westlingtia@gmail.com</a>
+    </div>
+    <div>
+        <i class="fa fa-phone"></i> <a href="tel:(785) 833-2332">(785) 833-2332</a>
+    </div>
+
+                                </div>
+                                <div class="col-md-4">
+                                        <div><b>Type:</b> School Age Programs</div>
+                                                                            <div><b>Offers:</b> Potential DCF (Department for Children and Families)</div>
+                                                                                                                                                                                        <div><b>License ID:</b> 0082298</div>
+
+                                    <br>
+                                    <div><b>Capacity</b>: 30</div>
+                                                                            <div>
+                                            <b>Ages Served</b>: 5 Years - 11 Years 
+                                        </div>
+                                    
+    <div><b>Monday - Friday</b> 8:00am - 5:15pm</div>
+ 
+                                </div>
+                                <div class="col-md-4">
+                                        <div><b>Last Updated</b>: 10/17/2024</div>
+                                                                                                                    <div><b>In Operation:</b> 2 Years and 5 Months</div>
+
+
+                                                                                                                    <div><a href='https://khap2.kdhe.state.ks.us/OIDS/' id="stateReport" data-placement="top" target="_blank" class="pdfhide emailshow">Child Care Licensing Report</a></div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <!--wls</td>wls-->
+                        <!--wls<td>wls-->
+                        <!--wls</tr>wls-->
+                        <!--wls</table>wls-->
+                    </div>
+                </div>
+                            <div style="height: 50px; padding-right: 30px;text-align:right;width:100%;" class="SummaryView">
+
+
+                <a class="btn btn-primary moreINFO pdfhide" data-toggle="modal" data-target="#moreInfoModal" recordid="1633280" style="border-radius: 1.2em !important;">Program Details</a>
+            </div>
+            </div>
+
+        </div>
+        <div class="provider-panel countTotal" style="margin-left:-12px;margin-right:-12px;" data-id="1524869" data-referred="1">
+            <div class="panel panel-success">
+                <div class="panel-heading " style="background-color: #ebf4d5; ">
+                        <div class="row">
+                            <div class="col-md-6 col-sm-4">
+                                <div class="panel-title">
+                                    <img src="https://stage.worklifesystems.com/Images/addfavorite.png" title="Click to add to My Favorites tab." class="addtofavorite pdfhide" providerid="1524869" style="width: 26px; margin-left:-6px;margin-top:6px;padding:0;" />
+                                    &nbsp;&nbsp;
+                                    
+        <span>
+            <a href="javascript:void(0);" class="moreINFO" data-toggle="modal" data-target="#moreInfoModal" recordid="1524869" style="font-size:1.2em;">Christ Cathedral Montessori School</a>
+        </span>
+
+
+        <div style="padding-left:40px;">
+            <a href="javascript:void(0);" class="moreINFO" data-toggle="modal" data-target="#moreInfoModal" recordid="1524869">Molly Kierscht</a>
+        </div>
+
+                                            <span style="font-weight:bold;padding-left:40px;color:#333;" class="pdfhide">[Last Referred:3/21/2025]</span>
+
+
+                                        <span class="MilesAway" style="padding-left:40px;" recordid="1524869">.34 Miles Away</span>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                                            </div>
+                            <div class="col-md-4 col-sm-6 text-right">
+
+                                
+    <div data-toggle="tooltip" data-placement="top" id="stars" data-original-title="" data-pdf-align="right" style="float: right; margin-left: 10px; margin-top: 5px;">
+                            </div>
+
+
+                            </div>
+
+                        </div>
+
+
+                </div>
+
+                <div class="panel-body">
+                    <div class="row" style="background-color:#fefefe;padding:4px;">
+                        <div class="col-md-6 text-left">
+                            
+
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <!--wls<table width="100%">wls-->
+                        <!--wls<tr>wls-->
+                        <!--wls<td>wls-->
+                        <div class="col-lg-3 col-md-4">
+                            
+<div style="display: table-cell; vertical-align: middle;">
+</div>
+
+                        </div>
+                        <!--wls</td>wls-->
+
+                        <!--wls<td>wls-->
+                        <div class="col-lg-9 col-md-8">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    
+        <span>
+            <a href="javascript:void(0);" class="moreINFO" data-toggle="modal" data-target="#moreInfoModal" recordid="1524869" style="font-size:1.2em;">Christ Cathedral Montessori School</a>
+        </span>
+
+
+        <div style="padding-left:40px;">
+            <a href="javascript:void(0);" class="moreINFO" data-toggle="modal" data-target="#moreInfoModal" recordid="1524869">Molly Kierscht</a>
+        </div>
+
+
+                                    
+<div>
+            <span>138 S 8th St, </span>
+
+    Salina KS 67401
+</div>
+
+
+                                            <p>
+                                                
+<a class="viewInMap pdfhide" lat="38.8394615" long="-97.6121842" prg="Christ Cathedral Montessori School" address="138 S 8th St" city="Salina" state="KS" zip="67401" dist="0.335694001402825" rating="" data-toggle="modal" data-target="#mapViewModal" phone="(785) 342-1245" program-type-id="1" program-type-name="Child Care Centers" providerid="1524869" dh="Monday - Thursday 8:00am - 3:00pm" ages="3 Years - 6 Years " data-referred="1" style="">View Map</a>
+                                            </p>
+                                    
+    <div>
+        <a href="mailto:molly.kierscht@gmail.com" target="blank">molly.kierscht@gmail.com</a>
+    </div>
+    <div>
+        <i class="fa fa-phone"></i> <a href="tel:(785) 342-1245">(785) 342-1245</a>
+    </div>
+
+                                </div>
+                                <div class="col-md-4">
+                                        <div><b>Type:</b> Child Care Centers</div>
+                                                                                                                                                                                                                            <div><b>License ID:</b> 0065389</div>
+
+                                    <br>
+                                    <div><b>Capacity</b>: 24</div>
+                                                                            <div>
+                                            <b>Ages Served</b>: 3 Years - 6 Years 
+                                        </div>
+                                    
+        <div><b>Monday</b>: 8:00am - 3:00pm</div>
+        <div><b>Tuesday</b>: 8:00am - 3:00pm</div>
+        <div><b>Wednesday</b>: 8:00am - 3:00pm</div>
+        <div><b>Thursday</b>: 8:00am - 3:00pm</div>
+ 
+                                </div>
+                                <div class="col-md-4">
+                                        <div><b>Last Updated</b>: 1/13/2025</div>
+                                                                                                                    <div><b>In Operation:</b> 15 Years and 6 Months</div>
+
+
+                                                                                                                    <div><a href='https://khap2.kdhe.state.ks.us/OIDS/' id="stateReport" data-placement="top" target="_blank" class="pdfhide emailshow">Child Care Licensing Report</a></div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <!--wls</td>wls-->
+                        <!--wls<td>wls-->
+                        <!--wls</tr>wls-->
+                        <!--wls</table>wls-->
+                    </div>
+                </div>
+                            <div style="height: 50px; padding-right: 30px;text-align:right;width:100%;" class="SummaryView">
+
+
+                <a class="btn btn-primary moreINFO pdfhide" data-toggle="modal" data-target="#moreInfoModal" recordid="1524869" style="border-radius: 1.2em !important;">Program Details</a>
+            </div>
+            </div>
+
+        </div>
+        <div class="provider-panel countTotal" style="margin-left:-12px;margin-right:-12px;" data-id="1299235" data-referred="1">
+            <div class="panel panel-success">
+                <div class="panel-heading " style="background-color: #ebf4d5; ">
+                        <div class="row">
+                            <div class="col-md-6 col-sm-4">
+                                <div class="panel-title">
+                                    <img src="https://stage.worklifesystems.com/Images/addfavorite.png" title="Click to add to My Favorites tab." class="addtofavorite pdfhide" providerid="1299235" style="width: 26px; margin-left:-6px;margin-top:6px;padding:0;" />
+                                    &nbsp;&nbsp;
+                                    
+        <span>
+            <a href="javascript:void(0);" class="moreINFO" data-toggle="modal" data-target="#moreInfoModal" recordid="1299235" style="font-size:1.2em;">Salina Child Care Center</a>
+        </span>
+
+
+        <div style="padding-left:40px;">
+            <a href="javascript:void(0);" class="moreINFO" data-toggle="modal" data-target="#moreInfoModal" recordid="1299235">Michelle Olsson</a>
+        </div>
+
+                                            <span style="font-weight:bold;padding-left:40px;color:#333;" class="pdfhide">[Last Referred:3/21/2025]</span>
+
+
+                                        <span class="MilesAway" style="padding-left:40px;" recordid="1299235">.35 Miles Away</span>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                                            </div>
+                            <div class="col-md-4 col-sm-6 text-right">
+
+                                
+    <div data-toggle="tooltip" data-placement="top" id="stars" data-original-title="" data-pdf-align="right" style="float: right; margin-left: 10px; margin-top: 5px;">
+                            </div>
+
+
+                            </div>
+
+                        </div>
+
+
+                </div>
+
+                <div class="panel-body">
+                    <div class="row" style="background-color:#fefefe;padding:4px;">
+                        <div class="col-md-6 text-left">
+                            
+
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <!--wls<table width="100%">wls-->
+                        <!--wls<tr>wls-->
+                        <!--wls<td>wls-->
+                        <div class="col-lg-3 col-md-4">
+                            
+<div style="display: table-cell; vertical-align: middle;">
+</div>
+
+                        </div>
+                        <!--wls</td>wls-->
+
+                        <!--wls<td>wls-->
+                        <div class="col-lg-9 col-md-8">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    
+        <span>
+            <a href="javascript:void(0);" class="moreINFO" data-toggle="modal" data-target="#moreInfoModal" recordid="1299235" style="font-size:1.2em;">Salina Child Care Center</a>
+        </span>
+
+
+        <div style="padding-left:40px;">
+            <a href="javascript:void(0);" class="moreINFO" data-toggle="modal" data-target="#moreInfoModal" recordid="1299235">Michelle Olsson</a>
+        </div>
+
+
+                                    
+<div>
+            <span>155 N Oakdale Avenue Suite 100, </span>
+
+    Salina KS 67401
+</div>
+
+
+                                            <p>
+                                                
+<a class="viewInMap pdfhide" lat="38.8424501" long="-97.6013521" prg="Salina Child Care Center" address="155 N Oakdale Avenue Suite 100" city="Salina" state="KS" zip="67401" dist="0.34766351699403" rating="" data-toggle="modal" data-target="#mapViewModal" phone="(785) 827-6431" program-type-id="1" program-type-name="Child Care Centers" providerid="1299235" dh="Monday - Friday 6:30am - 5:30pm" ages="1 Month - 6 Years " data-referred="1" style="">View Map</a>
+                                            </p>
+                                    
+    <div>
+        <a href="mailto:" target="blank"></a>
+    </div>
+    <div>
+        <i class="fa fa-phone"></i> <a href="tel:(785) 827-6431">(785) 827-6431</a>
+    </div>
+
+                                </div>
+                                <div class="col-md-4">
+                                        <div><b>Type:</b> Child Care Centers</div>
+                                                                            <div><b>Offers:</b> Enrolled DCF (Department For Children and Families), Preschool Session</div>
+                                                                                                                                                                                        <div><b>License ID:</b> 0000521</div>
+
+                                    <br>
+                                    <div><b>Capacity</b>: 159</div>
+                                                                            <div>
+                                            <b>Ages Served</b>: 1 Month - 6 Years 
+                                        </div>
+                                    
+    <div><b>Monday - Friday</b> 6:30am - 5:30pm</div>
+ 
+                                </div>
+                                <div class="col-md-4">
+                                        <div><b>Last Updated</b>: 1/23/2025</div>
+                                                                                                                    <div><b>In Operation:</b> 34 Years and 1 Months</div>
+
+
+                                                                                                                    <div><a href='https://khap2.kdhe.state.ks.us/OIDS/' id="stateReport" data-placement="top" target="_blank" class="pdfhide emailshow">Child Care Licensing Report</a></div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <!--wls</td>wls-->
+                        <!--wls<td>wls-->
+                        <!--wls</tr>wls-->
+                        <!--wls</table>wls-->
+                    </div>
+                </div>
+                                    <div class="row">
+                        <div class="col-md-12" style="margin-left:20px;width:95%;">
+                            <b>Message to Families: </b>Salina Child Care Center provides full day, year round early care &amp; education for children 2 weeks to 6 years of age M-F.  Building provided by Salina Regional Health Foundation with SRHC employees receiving priority on wait list.
+                        </div>
+                    </div>
+            <div style="height: 50px; padding-right: 30px;text-align:right;width:100%;" class="SummaryView">
+
+
+                <a class="btn btn-primary moreINFO pdfhide" data-toggle="modal" data-target="#moreInfoModal" recordid="1299235" style="border-radius: 1.2em !important;">Program Details</a>
+            </div>
+            </div>
+
+        </div>
+        <div class="provider-panel countTotal" style="margin-left:-12px;margin-right:-12px;" data-id="1491211" data-referred="1">
+            <div class="panel panel-success">
+                <div class="panel-heading " style="background-color: #ebf4d5; ">
+                        <div class="row">
+                            <div class="col-md-6 col-sm-4">
+                                <div class="panel-title">
+                                    <img src="https://stage.worklifesystems.com/Images/addfavorite.png" title="Click to add to My Favorites tab." class="addtofavorite pdfhide" providerid="1491211" style="width: 26px; margin-left:-6px;margin-top:6px;padding:0;" />
+                                    &nbsp;&nbsp;
+                                    
+        <span>
+            <a href="javascript:void(0);" class="moreINFO" data-toggle="modal" data-target="#moreInfoModal" recordid="1491211" style="font-size:1.2em;">Child Advocacy and Parenting Services</a>
+        </span>
+
+
+        <div style="padding-left:40px;">
+            <a href="javascript:void(0);" class="moreINFO" data-toggle="modal" data-target="#moreInfoModal" recordid="1491211">Necol Agugba</a>
+        </div>
+
+                                            <span style="font-weight:bold;padding-left:40px;color:#333;" class="pdfhide">[Last Referred:3/21/2025]</span>
+
+
+                                        <span class="MilesAway" style="padding-left:40px;" recordid="1491211">.35 Miles Away</span>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                                            </div>
+                            <div class="col-md-4 col-sm-6 text-right">
+
+                                
+    <div data-toggle="tooltip" data-placement="top" id="stars" data-original-title="" data-pdf-align="right" style="float: right; margin-left: 10px; margin-top: 5px;">
+                            </div>
+
+
+                            </div>
+
+                        </div>
+
+
+                </div>
+
+                <div class="panel-body">
+                    <div class="row" style="background-color:#fefefe;padding:4px;">
+                        <div class="col-md-6 text-left">
+                            
+
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <!--wls<table width="100%">wls-->
+                        <!--wls<tr>wls-->
+                        <!--wls<td>wls-->
+                        <div class="col-lg-3 col-md-4">
+                            
+<div style="display: table-cell; vertical-align: middle;">
+</div>
+
+                        </div>
+                        <!--wls</td>wls-->
+
+                        <!--wls<td>wls-->
+                        <div class="col-lg-9 col-md-8">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    
+        <span>
+            <a href="javascript:void(0);" class="moreINFO" data-toggle="modal" data-target="#moreInfoModal" recordid="1491211" style="font-size:1.2em;">Child Advocacy and Parenting Services</a>
+        </span>
+
+
+        <div style="padding-left:40px;">
+            <a href="javascript:void(0);" class="moreINFO" data-toggle="modal" data-target="#moreInfoModal" recordid="1491211">Necol Agugba</a>
+        </div>
+
+
+                                    
+<div>
+            <span>155 N Oakdale Ste 200, </span>
+
+    Salina KS 67401
+</div>
+
+
+                                            <p>
+                                                
+<a class="viewInMap pdfhide" lat="38.8423614" long="-97.6012496" prg="Child Advocacy and Parenting Services" address="155 N Oakdale Ste 200" city="Salina" state="KS" zip="67401" dist="0.353757130456787" rating="" data-toggle="modal" data-target="#mapViewModal" phone="(785) 825-4493" program-type-id="1" program-type-name="Child Care Centers" providerid="1491211" dh="Monday - Friday 9:00am - 5:00pm" ages="1 Month - 6 Years " data-referred="1" style="">View Map</a>
+                                            </p>
+                                    
+    <div>
+        <a href="mailto:caps@capsofsalina.org" target="blank">caps@capsofsalina.org</a>
+    </div>
+    <div>
+        <i class="fa fa-phone"></i> <a href="tel:(785) 825-4493">(785) 825-4493</a>
+    </div>
+
+                                </div>
+                                <div class="col-md-4">
+                                        <div><b>Type:</b> Child Care Centers</div>
+                                                                            <div><b>Offers:</b> Preschool Session</div>
+                                                                                                                                                                                        <div><b>License ID:</b> 0077896</div>
+
+                                    <br>
+                                    <div><b>Capacity</b>: 16</div>
+                                                                            <div>
+                                            <b>Ages Served</b>: 1 Month - 6 Years 
+                                        </div>
+                                    
+    <div><b>Monday - Friday</b> 9:00am - 5:00pm</div>
+ 
+                                </div>
+                                <div class="col-md-4">
+                                        <div><b>Last Updated</b>: 10/11/2024</div>
+                                                                                                                    <div><b>In Operation:</b> 4 Years and 8 Months</div>
+
+
+                                                                                                                    <div><a href='https://khap2.kdhe.state.ks.us/OIDS/' id="stateReport" data-placement="top" target="_blank" class="pdfhide emailshow">Child Care Licensing Report</a></div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <!--wls</td>wls-->
+                        <!--wls<td>wls-->
+                        <!--wls</tr>wls-->
+                        <!--wls</table>wls-->
+                    </div>
+                </div>
+                                    <div class="row">
+                        <div class="col-md-12" style="margin-left:20px;width:95%;">
+                            <b>Message to Families: </b>Program provides respite care for families and offers morning and afternoon sessions during the week.
+
+                        </div>
+                    </div>
+            <div style="height: 50px; padding-right: 30px;text-align:right;width:100%;" class="SummaryView">
+
+
+                <a class="btn btn-primary moreINFO pdfhide" data-toggle="modal" data-target="#moreInfoModal" recordid="1491211" style="border-radius: 1.2em !important;">Program Details</a>
+            </div>
+            </div>
+
+        </div>
+        <div class="provider-panel countTotal" style="margin-left:-12px;margin-right:-12px;" data-id="1300446" data-referred="1">
+            <div class="panel panel-success">
+                <div class="panel-heading " style="background-color: #ebf4d5; ">
+                        <div class="row">
+                            <div class="col-md-6 col-sm-4">
+                                <div class="panel-title">
+                                    <img src="https://stage.worklifesystems.com/Images/addfavorite.png" title="Click to add to My Favorites tab." class="addtofavorite pdfhide" providerid="1300446" style="width: 26px; margin-left:-6px;margin-top:6px;padding:0;" />
+                                    &nbsp;&nbsp;
+                                    
+        <span>
+            <a href="javascript:void(0);" class="moreINFO" data-toggle="modal" data-target="#moreInfoModal" recordid="1300446" style="font-size:1.2em;">Little Darlings Academy</a>
+        </span>
+
+
+        <div style="padding-left:40px;">
+            <a href="javascript:void(0);" class="moreINFO" data-toggle="modal" data-target="#moreInfoModal" recordid="1300446">Michelle Grandy</a>
+        </div>
+
+                                            <span style="font-weight:bold;padding-left:40px;color:#333;" class="pdfhide">[Last Referred:3/21/2025]</span>
+
+
+                                        <span class="MilesAway" style="padding-left:40px;" recordid="1300446">.43 Miles Away</span>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                                            </div>
+                            <div class="col-md-4 col-sm-6 text-right">
+
+                                
+    <div data-toggle="tooltip" data-placement="top" id="stars" data-original-title="" data-pdf-align="right" style="float: right; margin-left: 10px; margin-top: 5px;">
+                            </div>
+
+
+                            </div>
+
+                        </div>
+
+
+                </div>
+
+                <div class="panel-body">
+                    <div class="row" style="background-color:#fefefe;padding:4px;">
+                        <div class="col-md-6 text-left">
+                            
+
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <!--wls<table width="100%">wls-->
+                        <!--wls<tr>wls-->
+                        <!--wls<td>wls-->
+                        <div class="col-lg-3 col-md-4">
+                            
+<div style="display: table-cell; vertical-align: middle;">
+</div>
+
+                        </div>
+                        <!--wls</td>wls-->
+
+                        <!--wls<td>wls-->
+                        <div class="col-lg-9 col-md-8">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    
+        <span>
+            <a href="javascript:void(0);" class="moreINFO" data-toggle="modal" data-target="#moreInfoModal" recordid="1300446" style="font-size:1.2em;">Little Darlings Academy</a>
+        </span>
+
+
+        <div style="padding-left:40px;">
+            <a href="javascript:void(0);" class="moreINFO" data-toggle="modal" data-target="#moreInfoModal" recordid="1300446">Michelle Grandy</a>
+        </div>
+
+
+                                    
+<div>
+            <span>212 S Front Street, </span>
+
+    Salina KS 67401
+</div>
+
+
+                                            <p>
+                                                
+<a class="viewInMap pdfhide" lat="38.8376357" long="-97.6036313" prg="Little Darlings Academy" address="212 S Front Street" city="Salina" state="KS" zip="67401" dist="0.427321422863939" rating="" data-toggle="modal" data-target="#mapViewModal" phone="(785) 493-1989" program-type-id="5" program-type-name="Preschools" providerid="1300446" dh="Monday - Friday 8:00am - 3:30pm" ages="3 Years - 5 Years 11 Months " data-referred="1" style="">View Map</a>
+                                            </p>
+                                    
+    <div>
+        <a href="mailto:" target="blank"></a>
+    </div>
+    <div>
+        <i class="fa fa-phone"></i> <a href="tel:(785) 493-1989">(785) 493-1989</a>
+    </div>
+    <a href='http://www.littledarlingsacademy.com' target="_blank">www.littledarlingsacademy.com</a>
+
+                                </div>
+                                <div class="col-md-4">
+                                        <div><b>Type:</b> Preschools</div>
+                                                                            <div><b>Offers:</b> Enrolled DCF (Department For Children and Families), Preschool Session</div>
+                                                                                                                                                                                        <div><b>License ID:</b> 0063426</div>
+
+                                    <br>
+                                    <div><b>Capacity</b>: 10</div>
+                                                                            <div>
+                                            <b>Ages Served</b>: 3 Years - 5 Years 11 Months 
+                                        </div>
+                                    
+    <div><b>Monday - Friday</b> 8:00am - 3:30pm</div>
+ 
+                                </div>
+                                <div class="col-md-4">
+                                        <div><b>Last Updated</b>: 3/21/2025</div>
+                                                                                                                    <div><b>In Operation:</b> 16 Years and 7 Months</div>
+
+
+                                                                                                                    <div><a href='https://khap2.kdhe.state.ks.us/OIDS/' id="stateReport" data-placement="top" target="_blank" class="pdfhide emailshow">Child Care Licensing Report</a></div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <!--wls</td>wls-->
+                        <!--wls<td>wls-->
+                        <!--wls</tr>wls-->
+                        <!--wls</table>wls-->
+                    </div>
+                </div>
+                                    <div class="row">
+                        <div class="col-md-12" style="margin-left:20px;width:95%;">
+                            <b>Message to Families: </b>Little Darlings Academy is a preschool that teaches social and academic skills to prepare your child for Kindergarten and beyond.  We learn by providing many hands on activities in a safe, fun learning environment.  I have morning and afternoon class...
+                        </div>
+                    </div>
+            <div style="height: 50px; padding-right: 30px;text-align:right;width:100%;" class="SummaryView">
+
+
+                <a class="btn btn-primary moreINFO pdfhide" data-toggle="modal" data-target="#moreInfoModal" recordid="1300446" style="border-radius: 1.2em !important;">Program Details</a>
+            </div>
+            </div>
+
+        </div>
+        <div class="provider-panel countTotal" style="margin-left:-12px;margin-right:-12px;" data-id="1302743" data-referred="1">
+            <div class="panel panel-success">
+                <div class="panel-heading " style="background-color: #ebf4d5; ">
+                        <div class="row">
+                            <div class="col-md-6 col-sm-4">
+                                <div class="panel-title">
+                                    <img src="https://stage.worklifesystems.com/Images/addfavorite.png" title="Click to add to My Favorites tab." class="addtofavorite pdfhide" providerid="1302743" style="width: 26px; margin-left:-6px;margin-top:6px;padding:0;" />
+                                    &nbsp;&nbsp;
+                                    
+        <span>
+            <a href="javascript:void(0);" class="moreINFO" data-toggle="modal" data-target="#moreInfoModal" recordid="1302743" style="font-size:1.2em;">Bright Stars Child Care</a>
+        </span>
+
+
+        <div style="padding-left:40px;">
+            <a href="javascript:void(0);" class="moreINFO" data-toggle="modal" data-target="#moreInfoModal" recordid="1302743">Starla Hickman</a>
+        </div>
+
+                                            <span style="font-weight:bold;padding-left:40px;color:#333;" class="pdfhide">[Last Referred:3/21/2025]</span>
+
+
+                                        <span class="MilesAway" style="padding-left:40px;" recordid="1302743">.58 Miles Away</span>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                                            </div>
+                            <div class="col-md-4 col-sm-6 text-right">
+
+                                
+    <div data-toggle="tooltip" data-placement="top" id="stars" data-original-title="" data-pdf-align="right" style="float: right; margin-left: 10px; margin-top: 5px;">
+                            </div>
+
+
+                            </div>
+
+                        </div>
+
+
+                </div>
+
+                <div class="panel-body">
+                    <div class="row" style="background-color:#fefefe;padding:4px;">
+                        <div class="col-md-6 text-left">
+                            
+
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <!--wls<table width="100%">wls-->
+                        <!--wls<tr>wls-->
+                        <!--wls<td>wls-->
+                        <div class="col-lg-3 col-md-4">
+                            
+<div style="display: table-cell; vertical-align: middle;">
+</div>
+
+                        </div>
+                        <!--wls</td>wls-->
+
+                        <!--wls<td>wls-->
+                        <div class="col-lg-9 col-md-8">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    
+        <span>
+            <a href="javascript:void(0);" class="moreINFO" data-toggle="modal" data-target="#moreInfoModal" recordid="1302743" style="font-size:1.2em;">Bright Stars Child Care</a>
+        </span>
+
+
+        <div style="padding-left:40px;">
+            <a href="javascript:void(0);" class="moreINFO" data-toggle="modal" data-target="#moreInfoModal" recordid="1302743">Starla Hickman</a>
+        </div>
+
+
+                                    
+<div>
+            <span>715 W Iron Avenue, </span>
+
+    Salina KS 67401
+</div>
+
+
+                                            <p>
+                                                
+<a class="viewInMap pdfhide" lat="38.8403169" long="-97.6180512" prg="Bright Stars Child Care" address="715 W Iron Avenue" city="Salina" state="KS" zip="67401" dist="0.580731690122254" rating="" data-toggle="modal" data-target="#mapViewModal" phone="(785)431-6800" program-type-id="2" program-type-name="Family Child Care Home" providerid="1302743" dh="Monday - Friday 6:30am - 5:00pm" ages="1 Month - 12 Years " data-referred="1" style="">View Map</a>
+                                            </p>
+                                    
+    <div>
+        <a href="mailto:" target="blank"></a>
+    </div>
+    <div>
+        <i class="fa fa-phone"></i> <a href="tel:(785)431-6800">(785)431-6800</a>
+    </div>
+
+                                </div>
+                                <div class="col-md-4">
+                                        <div><b>Type:</b> Family Child Care Home</div>
+                                                                            <div><b>Offers:</b> Enrolled DCF (Department For Children and Families)</div>
+                                                                                                                                                                                        <div><b>License ID:</b> 0073775</div>
+
+                                    <br>
+                                    <div><b>Capacity</b>: 12</div>
+                                                                            <div>
+                                            <b>Ages Served</b>: 1 Month - 12 Years 
+                                        </div>
+                                    
+    <div><b>Monday - Friday</b> 6:30am - 5:00pm</div>
+ 
+                                </div>
+                                <div class="col-md-4">
+                                        <div><b>Last Updated</b>: 12/26/2024</div>
+                                                                                                                    <div><b>In Operation:</b> 9 Years and 10 Months</div>
+
+
+                                                                                                                    <div><a href='https://khap2.kdhe.state.ks.us/OIDS/' id="stateReport" data-placement="top" target="_blank" class="pdfhide emailshow">Child Care Licensing Report</a></div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <!--wls</td>wls-->
+                        <!--wls<td>wls-->
+                        <!--wls</tr>wls-->
+                        <!--wls</table>wls-->
+                    </div>
+                </div>
+                            <div style="height: 50px; padding-right: 30px;text-align:right;width:100%;" class="SummaryView">
+
+
+                <a class="btn btn-primary moreINFO pdfhide" data-toggle="modal" data-target="#moreInfoModal" recordid="1302743" style="border-radius: 1.2em !important;">Program Details</a>
+            </div>
+            </div>
+
+        </div>
+        <div class="provider-panel countTotal" style="margin-left:-12px;margin-right:-12px;" data-id="1790394" data-referred="1">
+            <div class="panel panel-success">
+                <div class="panel-heading " style="background-color: #ebf4d5; ">
+                        <div class="row">
+                            <div class="col-md-6 col-sm-4">
+                                <div class="panel-title">
+                                    <img src="https://stage.worklifesystems.com/Images/addfavorite.png" title="Click to add to My Favorites tab." class="addtofavorite pdfhide" providerid="1790394" style="width: 26px; margin-left:-6px;margin-top:6px;padding:0;" />
+                                    &nbsp;&nbsp;
+                                    
+        <span>
+            <a href="javascript:void(0);" class="moreINFO" data-toggle="modal" data-target="#moreInfoModal" recordid="1790394" style="font-size:1.2em;">Mi Mi and Lous Creative Kids Child Care</a>
+        </span>
+
+
+        <div style="padding-left:40px;">
+            <a href="javascript:void(0);" class="moreINFO" data-toggle="modal" data-target="#moreInfoModal" recordid="1790394">Crystal Boyer</a>
+        </div>
+
+                                            <span style="font-weight:bold;padding-left:40px;color:#333;" class="pdfhide">[Last Referred:3/21/2025]</span>
+
+
+                                        <span class="MilesAway" style="padding-left:40px;" recordid="1790394">.59 Miles Away</span>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                                            </div>
+                            <div class="col-md-4 col-sm-6 text-right">
+
+                                
+    <div data-toggle="tooltip" data-placement="top" id="stars" data-original-title="" data-pdf-align="right" style="float: right; margin-left: 10px; margin-top: 5px;">
+                            </div>
+
+
+                            </div>
+
+                        </div>
+
+
+                </div>
+
+                <div class="panel-body">
+                    <div class="row" style="background-color:#fefefe;padding:4px;">
+                        <div class="col-md-6 text-left">
+                            
+
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <!--wls<table width="100%">wls-->
+                        <!--wls<tr>wls-->
+                        <!--wls<td>wls-->
+                        <div class="col-lg-3 col-md-4">
+                            
+<div style="display: table-cell; vertical-align: middle;">
+</div>
+
+                        </div>
+                        <!--wls</td>wls-->
+
+                        <!--wls<td>wls-->
+                        <div class="col-lg-9 col-md-8">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    
+        <span>
+            <a href="javascript:void(0);" class="moreINFO" data-toggle="modal" data-target="#moreInfoModal" recordid="1790394" style="font-size:1.2em;">Mi Mi and Lous Creative Kids Child Care</a>
+        </span>
+
+
+        <div style="padding-left:40px;">
+            <a href="javascript:void(0);" class="moreINFO" data-toggle="modal" data-target="#moreInfoModal" recordid="1790394">Crystal Boyer</a>
+        </div>
+
+
+                                    
+<div>
+            <span>320 N Columbia Ave, </span>
+
+    Salina KS 67401
+</div>
+
+
+                                            <p>
+                                                
+<a class="viewInMap pdfhide" lat="38.845978" long="-97.597498" prg="Mi Mi and Lous Creative Kids Child Care" address="320 N Columbia Ave" city="Salina" state="KS" zip="67401" dist="0.592937518615307" rating="" data-toggle="modal" data-target="#mapViewModal" phone="(785)577-3800" program-type-id="2" program-type-name="Family Child Care Home" providerid="1790394" dh="Monday - Friday 6:30am - 5:30pm" ages="2 Months - 10 Years " data-referred="1" style="">View Map</a>
+                                            </p>
+                                    
+    <div>
+        <a href="mailto:" target="blank"></a>
+    </div>
+    <div>
+        <i class="fa fa-phone"></i> <a href="tel:(785)577-3800">(785)577-3800</a>
+    </div>
+
+                                </div>
+                                <div class="col-md-4">
+                                        <div><b>Type:</b> Family Child Care Home</div>
+                                                                            <div><b>Offers:</b> Enrolled DCF (Department For Children and Families)</div>
+                                                                                                                                                                                        <div><b>License ID:</b> 0083863</div>
+
+                                    <br>
+                                    <div><b>Capacity</b>: 12</div>
+                                                                            <div>
+                                            <b>Ages Served</b>: 2 Months - 10 Years 
+                                        </div>
+                                    
+    <div><b>Monday - Friday</b> 6:30am - 5:30pm</div>
+ 
+                                </div>
+                                <div class="col-md-4">
+                                        <div><b>Last Updated</b>: 3/7/2025</div>
+                                                                                                                    <div><b>In Operation:</b> 1 Years and 0 Months</div>
+
+
+                                                                                                                    <div><a href='https://khap2.kdhe.state.ks.us/OIDS/' id="stateReport" data-placement="top" target="_blank" class="pdfhide emailshow">Child Care Licensing Report</a></div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <!--wls</td>wls-->
+                        <!--wls<td>wls-->
+                        <!--wls</tr>wls-->
+                        <!--wls</table>wls-->
+                    </div>
+                </div>
+                            <div style="height: 50px; padding-right: 30px;text-align:right;width:100%;" class="SummaryView">
+
+
+                <a class="btn btn-primary moreINFO pdfhide" data-toggle="modal" data-target="#moreInfoModal" recordid="1790394" style="border-radius: 1.2em !important;">Program Details</a>
+            </div>
+            </div>
+
+        </div>
+        <div class="provider-panel countTotal" style="margin-left:-12px;margin-right:-12px;" data-id="1299234" data-referred="1">
+            <div class="panel panel-success">
+                <div class="panel-heading " style="background-color: #ebf4d5; ">
+                        <div class="row">
+                            <div class="col-md-6 col-sm-4">
+                                <div class="panel-title">
+                                    <img src="https://stage.worklifesystems.com/Images/addfavorite.png" title="Click to add to My Favorites tab." class="addtofavorite pdfhide" providerid="1299234" style="width: 26px; margin-left:-6px;margin-top:6px;padding:0;" />
+                                    &nbsp;&nbsp;
+                                    
+        <span>
+            <a href="javascript:void(0);" class="moreINFO" data-toggle="modal" data-target="#moreInfoModal" recordid="1299234" style="font-size:1.2em;">A Sweet Litl Academy 2</a>
+        </span>
+
+
+        <div style="padding-left:40px;">
+            <a href="javascript:void(0);" class="moreINFO" data-toggle="modal" data-target="#moreInfoModal" recordid="1299234">Gina Sweet</a>
+        </div>
+
+                                            <span style="font-weight:bold;padding-left:40px;color:#333;" class="pdfhide">[Last Referred:3/21/2025]</span>
+
+
+                                        <span class="MilesAway" style="padding-left:40px;" recordid="1299234">.63 Miles Away</span>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                                            </div>
+                            <div class="col-md-4 col-sm-6 text-right">
+
+                                
+    <div data-toggle="tooltip" data-placement="top" id="stars" data-original-title="" data-pdf-align="right" style="float: right; margin-left: 10px; margin-top: 5px;">
+                            </div>
+
+
+                            </div>
+
+                        </div>
+
+
+                </div>
+
+                <div class="panel-body">
+                    <div class="row" style="background-color:#fefefe;padding:4px;">
+                        <div class="col-md-6 text-left">
+                            
+
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <!--wls<table width="100%">wls-->
+                        <!--wls<tr>wls-->
+                        <!--wls<td>wls-->
+                        <div class="col-lg-3 col-md-4">
+                            
+<div style="display: table-cell; vertical-align: middle;">
+</div>
+
+                        </div>
+                        <!--wls</td>wls-->
+
+                        <!--wls<td>wls-->
+                        <div class="col-lg-9 col-md-8">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    
+        <span>
+            <a href="javascript:void(0);" class="moreINFO" data-toggle="modal" data-target="#moreInfoModal" recordid="1299234" style="font-size:1.2em;">A Sweet Litl Academy 2</a>
+        </span>
+
+
+        <div style="padding-left:40px;">
+            <a href="javascript:void(0);" class="moreINFO" data-toggle="modal" data-target="#moreInfoModal" recordid="1299234">Gina Sweet</a>
+        </div>
+
+
+                                    
+<div>
+            <span>611 N 9th Street, </span>
+
+    Salina KS 67401
+</div>
+
+
+                                            <p>
+                                                
+<a class="viewInMap pdfhide" lat="38.8511692" long="-97.6127202" prg="A Sweet Litl Academy 2" address="611 N 9th Street" city="Salina" state="KS" zip="67401" dist="0.629702775393296" rating="" data-toggle="modal" data-target="#mapViewModal" phone="(785)827-3090" program-type-id="1" program-type-name="Child Care Centers" providerid="1299234" dh="Monday - Friday 7:00am - 5:30pm" ages="2 Years 6 Months - 11 Years " data-referred="1" style="">View Map</a>
+                                            </p>
+                                    
+    <div>
+        <a href="mailto:Sweetgina78@yahoo.com" target="blank">Sweetgina78@yahoo.com</a>
+    </div>
+    <div>
+        <i class="fa fa-phone"></i> <a href="tel:(785)827-3090">(785)827-3090</a>
+    </div>
+
+                                </div>
+                                <div class="col-md-4">
+                                        <div><b>Type:</b> Child Care Centers</div>
+                                                                            <div><b>Offers:</b> Enrolled DCF (Department For Children and Families), Preschool Session</div>
+                                                                                                                                                                                        <div><b>License ID:</b> 0057319</div>
+
+                                    <br>
+                                    <div><b>Capacity</b>: 23</div>
+                                                                            <div>
+                                            <b>Ages Served</b>: 2 Years 6 Months - 11 Years 
+                                        </div>
+                                    
+    <div><b>Monday - Friday</b> 7:00am - 5:30pm</div>
+ 
+                                </div>
+                                <div class="col-md-4">
+                                        <div><b>Last Updated</b>: 2/27/2025</div>
+                                                                                                                    <div><b>In Operation:</b> 19 Years and 7 Months</div>
+
+
+                                                                                                                    <div><a href='https://khap2.kdhe.state.ks.us/OIDS/' id="stateReport" data-placement="top" target="_blank" class="pdfhide emailshow">Child Care Licensing Report</a></div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <!--wls</td>wls-->
+                        <!--wls<td>wls-->
+                        <!--wls</tr>wls-->
+                        <!--wls</table>wls-->
+                    </div>
+                </div>
+                            <div style="height: 50px; padding-right: 30px;text-align:right;width:100%;" class="SummaryView">
+
+
+                <a class="btn btn-primary moreINFO pdfhide" data-toggle="modal" data-target="#moreInfoModal" recordid="1299234" style="border-radius: 1.2em !important;">Program Details</a>
+            </div>
+            </div>
+
+        </div>
+        <div class="provider-panel countTotal" style="margin-left:-12px;margin-right:-12px;" data-id="1532264" data-referred="1">
+            <div class="panel panel-success">
+                <div class="panel-heading " style="background-color: #ebf4d5; ">
+                        <div class="row">
+                            <div class="col-md-6 col-sm-4">
+                                <div class="panel-title">
+                                    <img src="https://stage.worklifesystems.com/Images/addfavorite.png" title="Click to add to My Favorites tab." class="addtofavorite pdfhide" providerid="1532264" style="width: 26px; margin-left:-6px;margin-top:6px;padding:0;" />
+                                    &nbsp;&nbsp;
+                                    
+        <span>
+            <a href="javascript:void(0);" class="moreINFO" data-toggle="modal" data-target="#moreInfoModal" recordid="1532264" style="font-size:1.2em;">Meghans Munchkins</a>
+        </span>
+
+
+        <div style="padding-left:40px;">
+            <a href="javascript:void(0);" class="moreINFO" data-toggle="modal" data-target="#moreInfoModal" recordid="1532264">Meghan Carter</a>
+        </div>
+
+                                            <span style="font-weight:bold;padding-left:40px;color:#333;" class="pdfhide">[Last Referred:3/21/2025]</span>
+
+
+                                        <span class="MilesAway" style="padding-left:40px;" recordid="1532264">.68 Miles Away</span>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                                            </div>
+                            <div class="col-md-4 col-sm-6 text-right">
+
+                                
+    <div data-toggle="tooltip" data-placement="top" id="stars" data-original-title="" data-pdf-align="right" style="float: right; margin-left: 10px; margin-top: 5px;">
+                            </div>
+
+
+                            </div>
+
+                        </div>
+
+
+                </div>
+
+                <div class="panel-body">
+                    <div class="row" style="background-color:#fefefe;padding:4px;">
+                        <div class="col-md-6 text-left">
+                            
+
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <!--wls<table width="100%">wls-->
+                        <!--wls<tr>wls-->
+                        <!--wls<td>wls-->
+                        <div class="col-lg-3 col-md-4">
+                            
+<div style="display: table-cell; vertical-align: middle;">
+</div>
+
+                        </div>
+                        <!--wls</td>wls-->
+
+                        <!--wls<td>wls-->
+                        <div class="col-lg-9 col-md-8">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    
+        <span>
+            <a href="javascript:void(0);" class="moreINFO" data-toggle="modal" data-target="#moreInfoModal" recordid="1532264" style="font-size:1.2em;">Meghans Munchkins</a>
+        </span>
+
+
+        <div style="padding-left:40px;">
+            <a href="javascript:void(0);" class="moreINFO" data-toggle="modal" data-target="#moreInfoModal" recordid="1532264">Meghan Carter</a>
+        </div>
+
+
+                                    
+<div>
+            <span>119 S. College St, </span>
+
+    Salina KS 67401
+</div>
+
+
+                                            <p>
+                                                
+<a class="viewInMap pdfhide" lat="38.839778" long="-97.6196698" prg="Meghans Munchkins" address="119 S. College St" city="Salina" state="KS" zip="67401" dist="0.675134580596099" rating="" data-toggle="modal" data-target="#mapViewModal" phone="(785) 342-2840" program-type-id="2" program-type-name="Family Child Care Home" providerid="1532264" dh="Monday - Friday 7:00am - 4:00pm" ages="12 Months - 9 Years " data-referred="1" style="">View Map</a>
+                                            </p>
+                                    
+    <div>
+        <a href="mailto:" target="blank"></a>
+    </div>
+    <div>
+        <i class="fa fa-phone"></i> <a href="tel:(785) 342-2840">(785) 342-2840</a>
+    </div>
+
+                                </div>
+                                <div class="col-md-4">
+                                        <div><b>Type:</b> Family Child Care Home</div>
+                                                                            <div><b>Offers:</b> Enrolled DCF (Department For Children and Families)</div>
+                                                                                                                                                                                        <div><b>License ID:</b> 0080287</div>
+
+                                    <br>
+                                    <div><b>Capacity</b>: 12</div>
+                                                                            <div>
+                                            <b>Ages Served</b>: 12 Months - 9 Years 
+                                        </div>
+                                    
+    <div><b>Monday - Friday</b> 7:00am - 4:00pm</div>
+ 
+                                </div>
+                                <div class="col-md-4">
+                                        <div><b>Last Updated</b>: 3/5/2025</div>
+                                                                                                                    <div><b>In Operation:</b> 4 Years and 3 Months</div>
+
+
+                                                                                                                    <div><a href='https://khap2.kdhe.state.ks.us/OIDS/' id="stateReport" data-placement="top" target="_blank" class="pdfhide emailshow">Child Care Licensing Report</a></div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <!--wls</td>wls-->
+                        <!--wls<td>wls-->
+                        <!--wls</tr>wls-->
+                        <!--wls</table>wls-->
+                    </div>
+                </div>
+                            <div style="height: 50px; padding-right: 30px;text-align:right;width:100%;" class="SummaryView">
+
+
+                <a class="btn btn-primary moreINFO pdfhide" data-toggle="modal" data-target="#moreInfoModal" recordid="1532264" style="border-radius: 1.2em !important;">Program Details</a>
+            </div>
+            </div>
+
+        </div>
+        <div class="provider-panel countTotal" style="margin-left:-12px;margin-right:-12px;" data-id="1610403" data-referred="1">
+            <div class="panel panel-success">
+                <div class="panel-heading " style="background-color: #ebf4d5; ">
+                        <div class="row">
+                            <div class="col-md-6 col-sm-4">
+                                <div class="panel-title">
+                                    <img src="https://stage.worklifesystems.com/Images/addfavorite.png" title="Click to add to My Favorites tab." class="addtofavorite pdfhide" providerid="1610403" style="width: 26px; margin-left:-6px;margin-top:6px;padding:0;" />
+                                    &nbsp;&nbsp;
+                                    
+        <span>
+            <a href="javascript:void(0);" class="moreINFO" data-toggle="modal" data-target="#moreInfoModal" recordid="1610403" style="font-size:1.2em;">Tee Tee Pitter Patter</a>
+        </span>
+
+
+        <div style="padding-left:40px;">
+            <a href="javascript:void(0);" class="moreINFO" data-toggle="modal" data-target="#moreInfoModal" recordid="1610403">Troy Austin</a>
+        </div>
+
+                                            <span style="font-weight:bold;padding-left:40px;color:#333;" class="pdfhide">[Last Referred:3/21/2025]</span>
+
+
+                                        <span class="MilesAway" style="padding-left:40px;" recordid="1610403">.69 Miles Away</span>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                                            </div>
+                            <div class="col-md-4 col-sm-6 text-right">
+
+                                
+    <div data-toggle="tooltip" data-placement="top" id="stars" data-original-title="" data-pdf-align="right" style="float: right; margin-left: 10px; margin-top: 5px;">
+                            </div>
+
+
+                            </div>
+
+                        </div>
+
+
+                </div>
+
+                <div class="panel-body">
+                    <div class="row" style="background-color:#fefefe;padding:4px;">
+                        <div class="col-md-6 text-left">
+                            
+
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <!--wls<table width="100%">wls-->
+                        <!--wls<tr>wls-->
+                        <!--wls<td>wls-->
+                        <div class="col-lg-3 col-md-4">
+                            
+<div style="display: table-cell; vertical-align: middle;">
+</div>
+
+                        </div>
+                        <!--wls</td>wls-->
+
+                        <!--wls<td>wls-->
+                        <div class="col-lg-9 col-md-8">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    
+        <span>
+            <a href="javascript:void(0);" class="moreINFO" data-toggle="modal" data-target="#moreInfoModal" recordid="1610403" style="font-size:1.2em;">Tee Tee Pitter Patter</a>
+        </span>
+
+
+        <div style="padding-left:40px;">
+            <a href="javascript:void(0);" class="moreINFO" data-toggle="modal" data-target="#moreInfoModal" recordid="1610403">Troy Austin</a>
+        </div>
+
+
+                                    
+<div>
+            <span>1016 W Ash St, </span>
+
+    Salina KS 67401
+</div>
+
+
+                                            <p>
+                                                
+<a class="viewInMap pdfhide" lat="38.8431153" long="-97.6205931" prg="Tee Tee Pitter Patter" address="1016 W Ash St" city="Salina" state="KS" zip="67401" dist="0.689429251557062" rating="" data-toggle="modal" data-target="#mapViewModal" phone="(785) 914-6658" program-type-id="2" program-type-name="Family Child Care Home" providerid="1610403" dh="Monday - Thursday 5:30am - 6:00pm" ages="1 Month - 3 Years " data-referred="1" style="">View Map</a>
+                                            </p>
+                                    
+    <div>
+        <a href="mailto:" target="blank"></a>
+    </div>
+    <div>
+        <i class="fa fa-phone"></i> <a href="tel:(785) 914-6658">(785) 914-6658</a>
+    </div>
+
+                                </div>
+                                <div class="col-md-4">
+                                        <div><b>Type:</b> Family Child Care Home</div>
+                                                                            <div><b>Offers:</b> Enrolled DCF (Department For Children and Families), Preschool Session</div>
+                                                                                                                                                                                        <div><b>License ID:</b> 0045209</div>
+
+                                    <br>
+                                    <div><b>Capacity</b>: 12</div>
+                                                                            <div>
+                                            <b>Ages Served</b>: 1 Month - 3 Years 
+                                        </div>
+                                    
+        <div><b>Monday</b>: 5:30am - 6:00pm</div>
+        <div><b>Tuesday</b>: 5:30am - 6:00pm</div>
+        <div><b>Wednesday</b>: 5:30am - 6:00pm</div>
+        <div><b>Thursday</b>: 5:30am - 6:00pm</div>
+        <div><b>Friday</b>: 5:30am - 3:30pm</div>
+ 
+                                </div>
+                                <div class="col-md-4">
+                                        <div><b>Last Updated</b>: 2/24/2025</div>
+                                                                                                                    <div><b>In Operation:</b> 23 Years and 9 Months</div>
+
+
+                                                                                                                    <div><a href='https://khap2.kdhe.state.ks.us/OIDS/' id="stateReport" data-placement="top" target="_blank" class="pdfhide emailshow">Child Care Licensing Report</a></div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <!--wls</td>wls-->
+                        <!--wls<td>wls-->
+                        <!--wls</tr>wls-->
+                        <!--wls</table>wls-->
+                    </div>
+                </div>
+                            <div style="height: 50px; padding-right: 30px;text-align:right;width:100%;" class="SummaryView">
+
+
+                <a class="btn btn-primary moreINFO pdfhide" data-toggle="modal" data-target="#moreInfoModal" recordid="1610403" style="border-radius: 1.2em !important;">Program Details</a>
+            </div>
+            </div>
+
+        </div>
+        <div class="provider-panel countTotal" style="margin-left:-12px;margin-right:-12px;" data-id="1299266" data-referred="1">
+            <div class="panel panel-success">
+                <div class="panel-heading " style="background-color: #ebf4d5; ">
+                        <div class="row">
+                            <div class="col-md-6 col-sm-4">
+                                <div class="panel-title">
+                                    <img src="https://stage.worklifesystems.com/Images/addfavorite.png" title="Click to add to My Favorites tab." class="addtofavorite pdfhide" providerid="1299266" style="width: 26px; margin-left:-6px;margin-top:6px;padding:0;" />
+                                    &nbsp;&nbsp;
+                                    
+        <span>
+            <a href="javascript:void(0);" class="moreINFO" data-toggle="modal" data-target="#moreInfoModal" recordid="1299266" style="font-size:1.2em;">Teresa L Taylor Day Care Home</a>
+        </span>
+
+
+        <div style="padding-left:40px;">
+            <a href="javascript:void(0);" class="moreINFO" data-toggle="modal" data-target="#moreInfoModal" recordid="1299266">Teresa Taylor</a>
+        </div>
+
+                                            <span style="font-weight:bold;padding-left:40px;color:#333;" class="pdfhide">[Last Referred:3/21/2025]</span>
+
+
+                                        <span class="MilesAway" style="padding-left:40px;" recordid="1299266">.71 Miles Away</span>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                                            </div>
+                            <div class="col-md-4 col-sm-6 text-right">
+
+                                
+    <div data-toggle="tooltip" data-placement="top" id="stars" data-original-title="" data-pdf-align="right" style="float: right; margin-left: 10px; margin-top: 5px;">
+                            </div>
+
+
+                            </div>
+
+                        </div>
+
+
+                </div>
+
+                <div class="panel-body">
+                    <div class="row" style="background-color:#fefefe;padding:4px;">
+                        <div class="col-md-6 text-left">
+                            
+
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <!--wls<table width="100%">wls-->
+                        <!--wls<tr>wls-->
+                        <!--wls<td>wls-->
+                        <div class="col-lg-3 col-md-4">
+                            
+<div style="display: table-cell; vertical-align: middle;">
+</div>
+
+                        </div>
+                        <!--wls</td>wls-->
+
+                        <!--wls<td>wls-->
+                        <div class="col-lg-9 col-md-8">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    
+        <span>
+            <a href="javascript:void(0);" class="moreINFO" data-toggle="modal" data-target="#moreInfoModal" recordid="1299266" style="font-size:1.2em;">Teresa L Taylor Day Care Home</a>
+        </span>
+
+
+        <div style="padding-left:40px;">
+            <a href="javascript:void(0);" class="moreINFO" data-toggle="modal" data-target="#moreInfoModal" recordid="1299266">Teresa Taylor</a>
+        </div>
+
+
+                                    
+<div>
+            <span>429 S 9th Street, </span>
+
+    Salina KS 67401
+</div>
+
+
+                                            <p>
+                                                
+<a class="viewInMap pdfhide" lat="38.8332638" long="-97.6122477" prg="Teresa L Taylor Day Care Home" address="429 S 9th Street" city="Salina" state="KS" zip="67401" dist="0.708216640041831" rating="" data-toggle="modal" data-target="#mapViewModal" phone="(785)825-2946" program-type-id="2" program-type-name="Family Child Care Home" providerid="1299266" dh="Monday - Friday 7:00am - 5:00pm" ages="3 Months - 6 Years " data-referred="1" style="">View Map</a>
+                                            </p>
+                                    
+    <div>
+        <a href="mailto:" target="blank"></a>
+    </div>
+    <div>
+        <i class="fa fa-phone"></i> <a href="tel:(785)825-2946">(785)825-2946</a>
+    </div>
+
+                                </div>
+                                <div class="col-md-4">
+                                        <div><b>Type:</b> Family Child Care Home</div>
+                                                                                                                                                                                                                            <div><b>License ID:</b> 0027237</div>
+
+                                    <br>
+                                    <div><b>Capacity</b>: 12</div>
+                                                                            <div>
+                                            <b>Ages Served</b>: 3 Months - 6 Years 
+                                        </div>
+                                    
+    <div><b>Monday - Friday</b> 7:00am - 5:00pm</div>
+ 
+                                </div>
+                                <div class="col-md-4">
+                                        <div><b>Last Updated</b>: 1/15/2025</div>
+                                                                                                                    <div><b>In Operation:</b> 14 Years and 5 Months</div>
+
+
+                                                                                                                    <div><a href='https://khap2.kdhe.state.ks.us/OIDS/' id="stateReport" data-placement="top" target="_blank" class="pdfhide emailshow">Child Care Licensing Report</a></div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <!--wls</td>wls-->
+                        <!--wls<td>wls-->
+                        <!--wls</tr>wls-->
+                        <!--wls</table>wls-->
+                    </div>
+                </div>
+                                    <div class="row">
+                        <div class="col-md-12" style="margin-left:20px;width:95%;">
+                            <b>Message to Families: </b>42 years daycare provider
+                        </div>
+                    </div>
+            <div style="height: 50px; padding-right: 30px;text-align:right;width:100%;" class="SummaryView">
+
+
+                <a class="btn btn-primary moreINFO pdfhide" data-toggle="modal" data-target="#moreInfoModal" recordid="1299266" style="border-radius: 1.2em !important;">Program Details</a>
+            </div>
+            </div>
+
+        </div>
+        <div class="provider-panel countTotal" style="margin-left:-12px;margin-right:-12px;" data-id="1298067" data-referred="1">
+            <div class="panel panel-success">
+                <div class="panel-heading " style="background-color: #ebf4d5; ">
+                        <div class="row">
+                            <div class="col-md-6 col-sm-4">
+                                <div class="panel-title">
+                                    <img src="https://stage.worklifesystems.com/Images/addfavorite.png" title="Click to add to My Favorites tab." class="addtofavorite pdfhide" providerid="1298067" style="width: 26px; margin-left:-6px;margin-top:6px;padding:0;" />
+                                    &nbsp;&nbsp;
+                                    
+        <span>
+            <a href="javascript:void(0);" class="moreINFO" data-toggle="modal" data-target="#moreInfoModal" recordid="1298067" style="font-size:1.2em;">Cradle To Crayons</a>
+        </span>
+
+
+        <div style="padding-left:40px;">
+            <a href="javascript:void(0);" class="moreINFO" data-toggle="modal" data-target="#moreInfoModal" recordid="1298067">Sonna Middle</a>
+        </div>
+
+                                            <span style="font-weight:bold;padding-left:40px;color:#333;" class="pdfhide">[Last Referred:3/21/2025]</span>
+
+
+                                        <span class="MilesAway" style="padding-left:40px;" recordid="1298067">.76 Miles Away</span>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                                            </div>
+                            <div class="col-md-4 col-sm-6 text-right">
+
+                                
+    <div data-toggle="tooltip" data-placement="top" id="stars" data-original-title="" data-pdf-align="right" style="float: right; margin-left: 10px; margin-top: 5px;">
+                            </div>
+
+
+                            </div>
+
+                        </div>
+
+
+                </div>
+
+                <div class="panel-body">
+                    <div class="row" style="background-color:#fefefe;padding:4px;">
+                        <div class="col-md-6 text-left">
+                            
+
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <!--wls<table width="100%">wls-->
+                        <!--wls<tr>wls-->
+                        <!--wls<td>wls-->
+                        <div class="col-lg-3 col-md-4">
+                            
+<div style="display: table-cell; vertical-align: middle;">
+</div>
+
+                        </div>
+                        <!--wls</td>wls-->
+
+                        <!--wls<td>wls-->
+                        <div class="col-lg-9 col-md-8">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    
+        <span>
+            <a href="javascript:void(0);" class="moreINFO" data-toggle="modal" data-target="#moreInfoModal" recordid="1298067" style="font-size:1.2em;">Cradle To Crayons</a>
+        </span>
+
+
+        <div style="padding-left:40px;">
+            <a href="javascript:void(0);" class="moreINFO" data-toggle="modal" data-target="#moreInfoModal" recordid="1298067">Sonna Middle</a>
+        </div>
+
+
+                                    
+<div>
+            <span>148 N Ohio Street, </span>
+
+    Salina KS 67401
+</div>
+
+
+                                            <p>
+                                                
+<a class="viewInMap pdfhide" lat="38.8424196" long="-97.5936873" prg="Cradle To Crayons" address="148 N Ohio Street" city="Salina" state="KS" zip="67401" dist="0.759482590198614" rating="" data-toggle="modal" data-target="#mapViewModal" phone="(785)577-6412" program-type-id="2" program-type-name="Family Child Care Home" providerid="1298067" dh="Monday - Friday 5:30am - 5:15pm" ages="2 Months - 11 Years " data-referred="1" style="">View Map</a>
+                                            </p>
+                                    
+    <div>
+        <a href="mailto:bratt7189@protonmail.com" target="blank">bratt7189@protonmail.com</a>
+    </div>
+    <div>
+        <i class="fa fa-phone"></i> <a href="tel:(785)577-6412">(785)577-6412</a>
+    </div>
+
+                                </div>
+                                <div class="col-md-4">
+                                        <div><b>Type:</b> Family Child Care Home</div>
+                                                                            <div><b>Offers:</b> Enrolled DCF (Department For Children and Families), Preschool Session</div>
+                                                                                                                                                                                        <div><b>License ID:</b> 0065926</div>
+
+                                    <br>
+                                    <div><b>Capacity</b>: 12</div>
+                                                                            <div>
+                                            <b>Ages Served</b>: 2 Months - 11 Years 
+                                        </div>
+                                    
+    <div><b>Monday - Friday</b> 5:30am - 5:15pm</div>
+ 
+                                </div>
+                                <div class="col-md-4">
+                                        <div><b>Last Updated</b>: 2/11/2025</div>
+                                                                        
+
+                                                                                                                    <div><a href='https://khap2.kdhe.state.ks.us/OIDS/' id="stateReport" data-placement="top" target="_blank" class="pdfhide emailshow">Child Care Licensing Report</a></div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <!--wls</td>wls-->
+                        <!--wls<td>wls-->
+                        <!--wls</tr>wls-->
+                        <!--wls</table>wls-->
+                    </div>
+                </div>
+                                    <div class="row">
+                        <div class="col-md-12" style="margin-left:20px;width:95%;">
+                            <b>Message to Families: </b>I do accept DCF and I can also provide care for Foster Children.
+                        </div>
+                    </div>
+            <div style="height: 50px; padding-right: 30px;text-align:right;width:100%;" class="SummaryView">
+
+
+                <a class="btn btn-primary moreINFO pdfhide" data-toggle="modal" data-target="#moreInfoModal" recordid="1298067" style="border-radius: 1.2em !important;">Program Details</a>
+            </div>
+            </div>
+
+        </div>
+        <div class="provider-panel countTotal" style="margin-left:-12px;margin-right:-12px;" data-id="1299322" data-referred="1">
+            <div class="panel panel-success">
+                <div class="panel-heading " style="background-color: #ebf4d5; ">
+                        <div class="row">
+                            <div class="col-md-6 col-sm-4">
+                                <div class="panel-title">
+                                    <img src="https://stage.worklifesystems.com/Images/addfavorite.png" title="Click to add to My Favorites tab." class="addtofavorite pdfhide" providerid="1299322" style="width: 26px; margin-left:-6px;margin-top:6px;padding:0;" />
+                                    &nbsp;&nbsp;
+                                    
+        <span>
+            <a href="javascript:void(0);" class="moreINFO" data-toggle="modal" data-target="#moreInfoModal" recordid="1299322" style="font-size:1.2em;">Lots of Love Group Child Care Home</a>
+        </span>
+
+
+        <div style="padding-left:40px;">
+            <a href="javascript:void(0);" class="moreINFO" data-toggle="modal" data-target="#moreInfoModal" recordid="1299322">Sheila Grob</a>
+        </div>
+
+                                            <span style="font-weight:bold;padding-left:40px;color:#333;" class="pdfhide">[Last Referred:3/21/2025]</span>
+
+
+                                        <span class="MilesAway" style="padding-left:40px;" recordid="1299322">.79 Miles Away</span>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                                            </div>
+                            <div class="col-md-4 col-sm-6 text-right">
+
+                                
+    <div data-toggle="tooltip" data-placement="top" id="stars" data-original-title="" data-pdf-align="right" style="float: right; margin-left: 10px; margin-top: 5px;">
+                            </div>
+
+
+                            </div>
+
+                        </div>
+
+
+                </div>
+
+                <div class="panel-body">
+                    <div class="row" style="background-color:#fefefe;padding:4px;">
+                        <div class="col-md-6 text-left">
+                            
+
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <!--wls<table width="100%">wls-->
+                        <!--wls<tr>wls-->
+                        <!--wls<td>wls-->
+                        <div class="col-lg-3 col-md-4">
+                            
+<div style="display: table-cell; vertical-align: middle;">
+</div>
+
+                        </div>
+                        <!--wls</td>wls-->
+
+                        <!--wls<td>wls-->
+                        <div class="col-lg-9 col-md-8">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    
+        <span>
+            <a href="javascript:void(0);" class="moreINFO" data-toggle="modal" data-target="#moreInfoModal" recordid="1299322" style="font-size:1.2em;">Lots of Love Group Child Care Home</a>
+        </span>
+
+
+        <div style="padding-left:40px;">
+            <a href="javascript:void(0);" class="moreINFO" data-toggle="modal" data-target="#moreInfoModal" recordid="1299322">Sheila Grob</a>
+        </div>
+
+
+                                    
+<div>
+            <span>924 W Walnut, </span>
+
+    Salina KS 67401
+</div>
+
+
+                                            <p>
+                                                
+<a class="viewInMap pdfhide" lat="38.8383898" long="-97.6211932" prg="Lots of Love Group Child Care Home" address="924 W Walnut" city="Salina" state="KS" zip="67401" dist="0.786182943426629" rating="" data-toggle="modal" data-target="#mapViewModal" phone="(785) 502-0993" program-type-id="2" program-type-name="Family Child Care Home" providerid="1299322" dh="Monday - Friday 6:00am - 5:30pm" ages="1 Month - 9 Years " data-referred="1" style="">View Map</a>
+                                            </p>
+                                    
+    <div>
+        <a href="mailto:Sheilagrob45@gmail.com" target="blank">Sheilagrob45@gmail.com</a>
+    </div>
+    <div>
+        <i class="fa fa-phone"></i> <a href="tel:(785) 502-0993">(785) 502-0993</a>
+    </div>
+
+                                </div>
+                                <div class="col-md-4">
+                                        <div><b>Type:</b> Family Child Care Home</div>
+                                                                            <div><b>Offers:</b> Enrolled DCF (Department For Children and Families)</div>
+                                                                                                                                                                                        <div><b>License ID:</b> 0047336</div>
+
+                                    <br>
+                                    <div><b>Capacity</b>: 12</div>
+                                                                            <div>
+                                            <b>Ages Served</b>: 1 Month - 9 Years 
+                                        </div>
+                                    
+    <div><b>Monday - Friday</b> 6:00am - 5:30pm</div>
+ 
+                                </div>
+                                <div class="col-md-4">
+                                        <div><b>Last Updated</b>: 1/15/2025</div>
+                                                                                                                    <div><b>In Operation:</b> 22 Years and 3 Months</div>
+
+
+                                                                                                                    <div><a href='https://khap2.kdhe.state.ks.us/OIDS/' id="stateReport" data-placement="top" target="_blank" class="pdfhide emailshow">Child Care Licensing Report</a></div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <!--wls</td>wls-->
+                        <!--wls<td>wls-->
+                        <!--wls</tr>wls-->
+                        <!--wls</table>wls-->
+                    </div>
+                </div>
+                            <div style="height: 50px; padding-right: 30px;text-align:right;width:100%;" class="SummaryView">
+
+
+                <a class="btn btn-primary moreINFO pdfhide" data-toggle="modal" data-target="#moreInfoModal" recordid="1299322" style="border-radius: 1.2em !important;">Program Details</a>
+            </div>
+            </div>
+
+        </div>
+        <div class="provider-panel countTotal" style="margin-left:-12px;margin-right:-12px;" data-id="1548491" data-referred="1">
+            <div class="panel panel-success">
+                <div class="panel-heading " style="background-color: #ebf4d5; ">
+                        <div class="row">
+                            <div class="col-md-6 col-sm-4">
+                                <div class="panel-title">
+                                    <img src="https://stage.worklifesystems.com/Images/addfavorite.png" title="Click to add to My Favorites tab." class="addtofavorite pdfhide" providerid="1548491" style="width: 26px; margin-left:-6px;margin-top:6px;padding:0;" />
+                                    &nbsp;&nbsp;
+                                    
+        <span>
+            <a href="javascript:void(0);" class="moreINFO" data-toggle="modal" data-target="#moreInfoModal" recordid="1548491" style="font-size:1.2em;">Sweet Academy</a>
+        </span>
+
+
+        <div style="padding-left:40px;">
+            <a href="javascript:void(0);" class="moreINFO" data-toggle="modal" data-target="#moreInfoModal" recordid="1548491">Gina Sweet</a>
+        </div>
+
+                                            <span style="font-weight:bold;padding-left:40px;color:#333;" class="pdfhide">[Last Referred:3/21/2025]</span>
+
+
+                                        <span class="MilesAway" style="padding-left:40px;" recordid="1548491">.8 Miles Away</span>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                                            </div>
+                            <div class="col-md-4 col-sm-6 text-right">
+
+                                
+    <div data-toggle="tooltip" data-placement="top" id="stars" data-original-title="" data-pdf-align="right" style="float: right; margin-left: 10px; margin-top: 5px;">
+                            </div>
+
+
+                            </div>
+
+                        </div>
+
+
+                </div>
+
+                <div class="panel-body">
+                    <div class="row" style="background-color:#fefefe;padding:4px;">
+                        <div class="col-md-6 text-left">
+                            
+
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <!--wls<table width="100%">wls-->
+                        <!--wls<tr>wls-->
+                        <!--wls<td>wls-->
+                        <div class="col-lg-3 col-md-4">
+                            
+<div style="display: table-cell; vertical-align: middle;">
+</div>
+
+                        </div>
+                        <!--wls</td>wls-->
+
+                        <!--wls<td>wls-->
+                        <div class="col-lg-9 col-md-8">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    
+        <span>
+            <a href="javascript:void(0);" class="moreINFO" data-toggle="modal" data-target="#moreInfoModal" recordid="1548491" style="font-size:1.2em;">Sweet Academy</a>
+        </span>
+
+
+        <div style="padding-left:40px;">
+            <a href="javascript:void(0);" class="moreINFO" data-toggle="modal" data-target="#moreInfoModal" recordid="1548491">Gina Sweet</a>
+        </div>
+
+
+                                    
+<div>
+            <span>1107 W State St, </span>
+
+    Salina KS 67401
+</div>
+
+
+                                            <p>
+                                                
+<a class="viewInMap pdfhide" lat="38.8415018" long="-97.6225446" prg="Sweet Academy" address="1107 W State St" city="Salina" state="KS" zip="67401" dist="0.800216167921329" rating="" data-toggle="modal" data-target="#mapViewModal" phone="(785) 342-1646" program-type-id="2" program-type-name="Family Child Care Home" providerid="1548491" dh="Monday - Friday 3:30pm - 5:30pm" ages="5 Years - 11 Years " data-referred="1" style="">View Map</a>
+                                            </p>
+                                    
+    <div>
+        <a href="mailto:Sweetgina78@yahoo.com" target="blank">Sweetgina78@yahoo.com</a>
+    </div>
+    <div>
+        <i class="fa fa-phone"></i> <a href="tel:(785) 342-1646">(785) 342-1646</a>
+    </div>
+
+                                </div>
+                                <div class="col-md-4">
+                                        <div><b>Type:</b> Family Child Care Home</div>
+                                                                            <div><b>Offers:</b> Enrolled DCF (Department For Children and Families), Preschool Session</div>
+                                                                                                                                                                                        <div><b>License ID:</b> 0032728</div>
+
+                                    <br>
+                                    <div><b>Capacity</b>: 12</div>
+                                                                            <div>
+                                            <b>Ages Served</b>: 5 Years - 11 Years 
+                                        </div>
+                                    
+    <div><b>Monday - Friday</b> 3:30pm - 5:30pm</div>
+ 
+                                </div>
+                                <div class="col-md-4">
+                                        <div><b>Last Updated</b>: 2/27/2025</div>
+                                                                                                                    <div><b>In Operation:</b> 3 Years and 5 Months</div>
+
+
+                                                                                                                    <div><a href='https://khap2.kdhe.state.ks.us/OIDS/' id="stateReport" data-placement="top" target="_blank" class="pdfhide emailshow">Child Care Licensing Report</a></div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <!--wls</td>wls-->
+                        <!--wls<td>wls-->
+                        <!--wls</tr>wls-->
+                        <!--wls</table>wls-->
+                    </div>
+                </div>
+                                    <div class="row">
+                        <div class="col-md-12" style="margin-left:20px;width:95%;">
+                            <b>Message to Families: </b>Academy is also open for care 8:00 a.m.-5:30 pm during school breaks i.e. conferences, spring break, holiday breaks, teacher in-services, etc. Contact the Academy to inquire about care during those times.
+                        </div>
+                    </div>
+            <div style="height: 50px; padding-right: 30px;text-align:right;width:100%;" class="SummaryView">
+
+
+                <a class="btn btn-primary moreINFO pdfhide" data-toggle="modal" data-target="#moreInfoModal" recordid="1548491" style="border-radius: 1.2em !important;">Program Details</a>
+            </div>
+            </div>
+
+        </div>
+        <div class="provider-panel countTotal" style="margin-left:-12px;margin-right:-12px;" data-id="1780884" data-referred="1">
+            <div class="panel panel-success">
+                <div class="panel-heading " style="background-color: #ebf4d5; ">
+                        <div class="row">
+                            <div class="col-md-6 col-sm-4">
+                                <div class="panel-title">
+                                    <img src="https://stage.worklifesystems.com/Images/addfavorite.png" title="Click to add to My Favorites tab." class="addtofavorite pdfhide" providerid="1780884" style="width: 26px; margin-left:-6px;margin-top:6px;padding:0;" />
+                                    &nbsp;&nbsp;
+                                    
+        <span>
+            <a href="javascript:void(0);" class="moreINFO" data-toggle="modal" data-target="#moreInfoModal" recordid="1780884" style="font-size:1.2em;">Lunar Magic Limo Littles</a>
+        </span>
+
+
+        <div style="padding-left:40px;">
+            <a href="javascript:void(0);" class="moreINFO" data-toggle="modal" data-target="#moreInfoModal" recordid="1780884">Brianna Kaumans</a>
+        </div>
+
+                                            <span style="font-weight:bold;padding-left:40px;color:#333;" class="pdfhide">[Last Referred:3/21/2025]</span>
+
+
+                                        <span class="MilesAway" style="padding-left:40px;" recordid="1780884">.84 Miles Away</span>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                                            </div>
+                            <div class="col-md-4 col-sm-6 text-right">
+
+                                
+    <div data-toggle="tooltip" data-placement="top" id="stars" data-original-title="" data-pdf-align="right" style="float: right; margin-left: 10px; margin-top: 5px;">
+                            </div>
+
+
+                            </div>
+
+                        </div>
+
+
+                </div>
+
+                <div class="panel-body">
+                    <div class="row" style="background-color:#fefefe;padding:4px;">
+                        <div class="col-md-6 text-left">
+                            
+
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <!--wls<table width="100%">wls-->
+                        <!--wls<tr>wls-->
+                        <!--wls<td>wls-->
+                        <div class="col-lg-3 col-md-4">
+                            
+<div style="display: table-cell; vertical-align: middle;">
+</div>
+
+                        </div>
+                        <!--wls</td>wls-->
+
+                        <!--wls<td>wls-->
+                        <div class="col-lg-9 col-md-8">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    
+        <span>
+            <a href="javascript:void(0);" class="moreINFO" data-toggle="modal" data-target="#moreInfoModal" recordid="1780884" style="font-size:1.2em;">Lunar Magic Limo Littles</a>
+        </span>
+
+
+        <div style="padding-left:40px;">
+            <a href="javascript:void(0);" class="moreINFO" data-toggle="modal" data-target="#moreInfoModal" recordid="1780884">Brianna Kaumans</a>
+        </div>
+
+
+                                    
+<div>
+            <span>518 S 9th St, </span>
+
+    Salina KS 67401
+</div>
+
+
+                                            <p>
+                                                
+<a class="viewInMap pdfhide" lat="38.8314948" long="-97.6129043" prg="Lunar Magic Limo Littles" address="518 S 9th St" city="Salina" state="KS" zip="67401" dist="0.835232861868086" rating="" data-toggle="modal" data-target="#mapViewModal" phone="(785) 826-6244" program-type-id="2" program-type-name="Family Child Care Home" providerid="1780884" dh="Monday - Friday 7:00am - 5:30pm" ages="1 Month - 12 Years " data-referred="1" style="">View Map</a>
+                                            </p>
+                                    
+    <div>
+        <a href="mailto:" target="blank"></a>
+    </div>
+    <div>
+        <i class="fa fa-phone"></i> <a href="tel:(785) 826-6244">(785) 826-6244</a>
+    </div>
+
+                                </div>
+                                <div class="col-md-4">
+                                        <div><b>Type:</b> Family Child Care Home</div>
+                                                                                                                                                                                                                            <div><b>License ID:</b> 0058354</div>
+
+                                    <br>
+                                    <div><b>Capacity</b>: 12</div>
+                                                                            <div>
+                                            <b>Ages Served</b>: 1 Month - 12 Years 
+                                        </div>
+                                    
+    <div><b>Monday - Friday</b> 7:00am - 5:30pm</div>
+ 
+                                </div>
+                                <div class="col-md-4">
+                                        <div><b>Last Updated</b>: 3/5/2025</div>
+                                                                                                                    <div><b>In Operation:</b> 19 Years and 1 Months</div>
+
+
+                                                                                                                    <div><a href='https://khap2.kdhe.state.ks.us/OIDS/' id="stateReport" data-placement="top" target="_blank" class="pdfhide emailshow">Child Care Licensing Report</a></div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <!--wls</td>wls-->
+                        <!--wls<td>wls-->
+                        <!--wls</tr>wls-->
+                        <!--wls</table>wls-->
+                    </div>
+                </div>
+                            <div style="height: 50px; padding-right: 30px;text-align:right;width:100%;" class="SummaryView">
+
+
+                <a class="btn btn-primary moreINFO pdfhide" data-toggle="modal" data-target="#moreInfoModal" recordid="1780884" style="border-radius: 1.2em !important;">Program Details</a>
+            </div>
+            </div>
+
+        </div>
+        <div class="provider-panel countTotal" style="margin-left:-12px;margin-right:-12px;" data-id="1299271" data-referred="1">
+            <div class="panel panel-success">
+                <div class="panel-heading " style="background-color: #ebf4d5; ">
+                        <div class="row">
+                            <div class="col-md-6 col-sm-4">
+                                <div class="panel-title">
+                                    <img src="https://stage.worklifesystems.com/Images/addfavorite.png" title="Click to add to My Favorites tab." class="addtofavorite pdfhide" providerid="1299271" style="width: 26px; margin-left:-6px;margin-top:6px;padding:0;" />
+                                    &nbsp;&nbsp;
+                                    
+        <span>
+            <a href="javascript:void(0);" class="moreINFO" data-toggle="modal" data-target="#moreInfoModal" recordid="1299271" style="font-size:1.2em;">YMCA Early Education Center</a>
+        </span>
+
+
+        <div style="padding-left:40px;">
+            <a href="javascript:void(0);" class="moreINFO" data-toggle="modal" data-target="#moreInfoModal" recordid="1299271">Marti Higdon</a>
+        </div>
+
+                                            <span style="font-weight:bold;padding-left:40px;color:#333;" class="pdfhide">[Last Referred:3/21/2025]</span>
+
+
+                                        <span class="MilesAway" style="padding-left:40px;" recordid="1299271">.87 Miles Away</span>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                                            </div>
+                            <div class="col-md-4 col-sm-6 text-right">
+
+                                
+    <div data-toggle="tooltip" data-placement="top" id="stars" data-original-title="" data-pdf-align="right" style="float: right; margin-left: 10px; margin-top: 5px;">
+                            </div>
+
+
+                            </div>
+
+                        </div>
+
+
+                </div>
+
+                <div class="panel-body">
+                    <div class="row" style="background-color:#fefefe;padding:4px;">
+                        <div class="col-md-6 text-left">
+                            
+
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <!--wls<table width="100%">wls-->
+                        <!--wls<tr>wls-->
+                        <!--wls<td>wls-->
+                        <div class="col-lg-3 col-md-4">
+                            
+<div style="display: table-cell; vertical-align: middle;">
+</div>
+
+                        </div>
+                        <!--wls</td>wls-->
+
+                        <!--wls<td>wls-->
+                        <div class="col-lg-9 col-md-8">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    
+        <span>
+            <a href="javascript:void(0);" class="moreINFO" data-toggle="modal" data-target="#moreInfoModal" recordid="1299271" style="font-size:1.2em;">YMCA Early Education Center</a>
+        </span>
+
+
+        <div style="padding-left:40px;">
+            <a href="javascript:void(0);" class="moreINFO" data-toggle="modal" data-target="#moreInfoModal" recordid="1299271">Marti Higdon</a>
+        </div>
+
+
+                                    
+<div>
+            <span>570 YMCA &#160;Drive, </span>
+
+    Salina KS 67401
+</div>
+
+
+                                            <p>
+                                                
+<a class="viewInMap pdfhide" lat="38.8311003" long="-97.6023661" prg="YMCA Early Education Center" address="570 YMCA &#160;Drive" city="Salina" state="KS" zip="67401" dist="0.866325973787407" rating="" data-toggle="modal" data-target="#mapViewModal" phone="(785)825-2151" program-type-id="1" program-type-name="Child Care Centers" providerid="1299271" dh="Monday - Friday 5:30am - 5:30pm" ages="2 Years 6 Months - 5 Years 6 Months " data-referred="1" style="">View Map</a>
+                                            </p>
+                                    
+    <div>
+        <a href="mailto:mhamilton@salinaymca.org" target="blank">mhamilton@salinaymca.org</a>
+    </div>
+    <div>
+        <i class="fa fa-phone"></i> <a href="tel:(785)825-2151">(785)825-2151</a>
+    </div>
+    <a href='http://www.salinaymca.org' target="_blank">www.salinaymca.org</a>
+
+                                </div>
+                                <div class="col-md-4">
+                                        <div><b>Type:</b> Child Care Centers</div>
+                                                                            <div><b>Offers:</b> Enrolled DCF (Department For Children and Families), Preschool Session</div>
+                                                                                                                                                                                        <div><b>License ID:</b> 0000711</div>
+
+                                    <br>
+                                    <div><b>Capacity</b>: 59</div>
+                                                                            <div>
+                                            <b>Ages Served</b>: 2 Years 6 Months - 5 Years 6 Months 
+                                        </div>
+                                    
+    <div><b>Monday - Friday</b> 5:30am - 5:30pm</div>
+ 
+                                </div>
+                                <div class="col-md-4">
+                                        <div><b>Last Updated</b>: 2/24/2025</div>
+                                                                                                                    <div><b>In Operation:</b> 34 Years and 4 Months</div>
+
+
+                                                                                                                    <div><a href='https://khap2.kdhe.state.ks.us/OIDS/' id="stateReport" data-placement="top" target="_blank" class="pdfhide emailshow">Child Care Licensing Report</a></div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <!--wls</td>wls-->
+                        <!--wls<td>wls-->
+                        <!--wls</tr>wls-->
+                        <!--wls</table>wls-->
+                    </div>
+                </div>
+                            <div style="height: 50px; padding-right: 30px;text-align:right;width:100%;" class="SummaryView">
+
+
+                <a class="btn btn-primary moreINFO pdfhide" data-toggle="modal" data-target="#moreInfoModal" recordid="1299271" style="border-radius: 1.2em !important;">Program Details</a>
+            </div>
+            </div>
+
+        </div>
+        <div class="provider-panel countTotal" style="margin-left:-12px;margin-right:-12px;" data-id="1299299" data-referred="1">
+            <div class="panel panel-success">
+                <div class="panel-heading " style="background-color: #ebf4d5; ">
+                        <div class="row">
+                            <div class="col-md-6 col-sm-4">
+                                <div class="panel-title">
+                                    <img src="https://stage.worklifesystems.com/Images/addfavorite.png" title="Click to add to My Favorites tab." class="addtofavorite pdfhide" providerid="1299299" style="width: 26px; margin-left:-6px;margin-top:6px;padding:0;" />
+                                    &nbsp;&nbsp;
+                                    
+        <span>
+            <a href="javascript:void(0);" class="moreINFO" data-toggle="modal" data-target="#moreInfoModal" recordid="1299299" style="font-size:1.2em;">Salina Family YMCA Camp SWAT</a>
+        </span>
+
+
+        <div style="padding-left:40px;">
+            <a href="javascript:void(0);" class="moreINFO" data-toggle="modal" data-target="#moreInfoModal" recordid="1299299">Marti Higdon</a>
+        </div>
+
+                                            <span style="font-weight:bold;padding-left:40px;color:#333;" class="pdfhide">[Last Referred:3/21/2025]</span>
+
+
+                                        <span class="MilesAway" style="padding-left:40px;" recordid="1299299">.87 Miles Away</span>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                                            </div>
+                            <div class="col-md-4 col-sm-6 text-right">
+
+                                
+    <div data-toggle="tooltip" data-placement="top" id="stars" data-original-title="" data-pdf-align="right" style="float: right; margin-left: 10px; margin-top: 5px;">
+                            </div>
+
+
+                            </div>
+
+                        </div>
+
+
+                </div>
+
+                <div class="panel-body">
+                    <div class="row" style="background-color:#fefefe;padding:4px;">
+                        <div class="col-md-6 text-left">
+                            
+
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <!--wls<table width="100%">wls-->
+                        <!--wls<tr>wls-->
+                        <!--wls<td>wls-->
+                        <div class="col-lg-3 col-md-4">
+                            
+<div style="display: table-cell; vertical-align: middle;">
+</div>
+
+                        </div>
+                        <!--wls</td>wls-->
+
+                        <!--wls<td>wls-->
+                        <div class="col-lg-9 col-md-8">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    
+        <span>
+            <a href="javascript:void(0);" class="moreINFO" data-toggle="modal" data-target="#moreInfoModal" recordid="1299299" style="font-size:1.2em;">Salina Family YMCA Camp SWAT</a>
+        </span>
+
+
+        <div style="padding-left:40px;">
+            <a href="javascript:void(0);" class="moreINFO" data-toggle="modal" data-target="#moreInfoModal" recordid="1299299">Marti Higdon</a>
+        </div>
+
+
+                                    
+<div>
+            <span>570 YMCA Drive, </span>
+
+    Salina KS 67401
+</div>
+
+
+                                            <p>
+                                                
+<a class="viewInMap pdfhide" lat="38.8311003" long="-97.6023661" prg="Salina Family YMCA Camp SWAT" address="570 YMCA Drive" city="Salina" state="KS" zip="67401" dist="0.866325973787407" rating="" data-toggle="modal" data-target="#mapViewModal" phone="(785)825-2151" program-type-id="16" program-type-name="School Age Programs" providerid="1299299" dh="Monday - Friday 7:30am - 6:00pm" ages="6 Months - 12 Years " data-referred="1" style="">View Map</a>
+                                            </p>
+                                    
+    <div>
+        <a href="mailto:" target="blank"></a>
+    </div>
+    <div>
+        <i class="fa fa-phone"></i> <a href="tel:(785)825-2151">(785)825-2151</a>
+    </div>
+    <a href='http://www.salinaymca.org' target="_blank">www.salinaymca.org</a>
+
+                                </div>
+                                <div class="col-md-4">
+                                        <div><b>Type:</b> School Age Programs</div>
+                                                                            <div><b>Offers:</b> Enrolled DCF (Department For Children and Families)</div>
+                                                                                                                                                                                        <div><b>License ID:</b> 0000524</div>
+
+                                    <br>
+                                    <div><b>Capacity</b>: 120</div>
+                                                                            <div>
+                                            <b>Ages Served</b>: 6 Months - 12 Years 
+                                        </div>
+                                    
+    <div><b>Monday - Friday</b> 7:30am - 6:00pm</div>
+ 
+                                </div>
+                                <div class="col-md-4">
+                                        <div><b>Last Updated</b>: 2/24/2025</div>
+                                                                                                                    <div><b>In Operation:</b> 33 Years and 8 Months</div>
+
+
+                                                                                                                    <div><a href='https://khap2.kdhe.state.ks.us/OIDS/' id="stateReport" data-placement="top" target="_blank" class="pdfhide emailshow">Child Care Licensing Report</a></div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <!--wls</td>wls-->
+                        <!--wls<td>wls-->
+                        <!--wls</tr>wls-->
+                        <!--wls</table>wls-->
+                    </div>
+                </div>
+                                    <div class="row">
+                        <div class="col-md-12" style="margin-left:20px;width:95%;">
+                            <b>Message to Families: </b>Summer program is offered on a weekly basis and openings vary from week to week.
+For 2020-2021 school year, provider will be offering an alternate full day program for virtual schooling for K-8.
+                        </div>
+                    </div>
+            <div style="height: 50px; padding-right: 30px;text-align:right;width:100%;" class="SummaryView">
+
+
+                <a class="btn btn-primary moreINFO pdfhide" data-toggle="modal" data-target="#moreInfoModal" recordid="1299299" style="border-radius: 1.2em !important;">Program Details</a>
+            </div>
+            </div>
+
+        </div>
+        <div class="provider-panel countTotal" style="margin-left:-12px;margin-right:-12px;" data-id="1637378" data-referred="1">
+            <div class="panel panel-success">
+                <div class="panel-heading " style="background-color: #ebf4d5; ">
+                        <div class="row">
+                            <div class="col-md-6 col-sm-4">
+                                <div class="panel-title">
+                                    <img src="https://stage.worklifesystems.com/Images/addfavorite.png" title="Click to add to My Favorites tab." class="addtofavorite pdfhide" providerid="1637378" style="width: 26px; margin-left:-6px;margin-top:6px;padding:0;" />
+                                    &nbsp;&nbsp;
+                                    
+        <span>
+            <a href="javascript:void(0);" class="moreINFO" data-toggle="modal" data-target="#moreInfoModal" recordid="1637378" style="font-size:1.2em;">St. Johns Kid Kare</a>
+        </span>
+
+
+        <div style="padding-left:40px;">
+            <a href="javascript:void(0);" class="moreINFO" data-toggle="modal" data-target="#moreInfoModal" recordid="1637378">Kayla Starkweather</a>
+        </div>
+
+                                            <span style="font-weight:bold;padding-left:40px;color:#333;" class="pdfhide">[Last Referred:3/21/2025]</span>
+
+
+                                        <span class="MilesAway" style="padding-left:40px;" recordid="1637378">.89 Miles Away</span>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                                            </div>
+                            <div class="col-md-4 col-sm-6 text-right">
+
+                                
+    <div data-toggle="tooltip" data-placement="top" id="stars" data-original-title="" data-pdf-align="right" style="float: right; margin-left: 10px; margin-top: 5px;">
+                            </div>
+
+
+                            </div>
+
+                        </div>
+
+
+                </div>
+
+                <div class="panel-body">
+                    <div class="row" style="background-color:#fefefe;padding:4px;">
+                        <div class="col-md-6 text-left">
+                            
+
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <!--wls<table width="100%">wls-->
+                        <!--wls<tr>wls-->
+                        <!--wls<td>wls-->
+                        <div class="col-lg-3 col-md-4">
+                            
+<div style="display: table-cell; vertical-align: middle;">
+</div>
+
+                        </div>
+                        <!--wls</td>wls-->
+
+                        <!--wls<td>wls-->
+                        <div class="col-lg-9 col-md-8">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    
+        <span>
+            <a href="javascript:void(0);" class="moreINFO" data-toggle="modal" data-target="#moreInfoModal" recordid="1637378" style="font-size:1.2em;">St. Johns Kid Kare</a>
+        </span>
+
+
+        <div style="padding-left:40px;">
+            <a href="javascript:void(0);" class="moreINFO" data-toggle="modal" data-target="#moreInfoModal" recordid="1637378">Kayla Starkweather</a>
+        </div>
+
+
+                                    
+<div>
+            <span>215 S Chicago St. , </span>
+
+    Salina KS 67401
+</div>
+
+
+                                            <p>
+                                                
+<a class="viewInMap pdfhide" lat="38.8376658" long="-97.6228235" prg="St. Johns Kid Kare" address="215 S Chicago St. " city="Salina" state="KS" zip="67401" dist="0.886647160480233" rating="" data-toggle="modal" data-target="#mapViewModal" phone="(785) 827-7082" program-type-id="1" program-type-name="Child Care Centers" providerid="1637378" dh="Monday - Friday 7:00am - 5:30pm" ages="3 Years - 5 Years " data-referred="1" style="">View Map</a>
+                                            </p>
+                                    
+    <div>
+        <a href="mailto:kayla.starkweather@gmail.com" target="blank">kayla.starkweather@gmail.com</a>
+    </div>
+    <div>
+        <i class="fa fa-phone"></i> <a href="tel:(785) 827-7082">(785) 827-7082</a>
+    </div>
+
+                                </div>
+                                <div class="col-md-4">
+                                        <div><b>Type:</b> Child Care Centers</div>
+                                                                            <div><b>Offers:</b> Enrolled DCF (Department For Children and Families), Preschool Session</div>
+                                                                                                                                                                                        <div><b>License ID:</b> 0052495</div>
+
+                                    <br>
+                                    <div><b>Capacity</b>: 11</div>
+                                                                            <div>
+                                            <b>Ages Served</b>: 3 Years - 5 Years 
+                                        </div>
+                                    
+    <div><b>Monday - Friday</b> 7:00am - 5:30pm</div>
+ 
+                                </div>
+                                <div class="col-md-4">
+                                        <div><b>Last Updated</b>: 9/12/2024</div>
+                                                                                                                    <div><b>In Operation:</b> 1 Years and 7 Months</div>
+
+
+                                                                                                                    <div><a href='https://khap2.kdhe.state.ks.us/OIDS/' id="stateReport" data-placement="top" target="_blank" class="pdfhide emailshow">Child Care Licensing Report</a></div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <!--wls</td>wls-->
+                        <!--wls<td>wls-->
+                        <!--wls</tr>wls-->
+                        <!--wls</table>wls-->
+                    </div>
+                </div>
+                            <div style="height: 50px; padding-right: 30px;text-align:right;width:100%;" class="SummaryView">
+
+
+                <a class="btn btn-primary moreINFO pdfhide" data-toggle="modal" data-target="#moreInfoModal" recordid="1637378" style="border-radius: 1.2em !important;">Program Details</a>
+            </div>
+            </div>
+
+        </div>
+        <div class="provider-panel countTotal" style="margin-left:-12px;margin-right:-12px;" data-id="1425053" data-referred="1">
+            <div class="panel panel-success">
+                <div class="panel-heading " style="background-color: #ebf4d5; ">
+                        <div class="row">
+                            <div class="col-md-6 col-sm-4">
+                                <div class="panel-title">
+                                    <img src="https://stage.worklifesystems.com/Images/addfavorite.png" title="Click to add to My Favorites tab." class="addtofavorite pdfhide" providerid="1425053" style="width: 26px; margin-left:-6px;margin-top:6px;padding:0;" />
+                                    &nbsp;&nbsp;
+                                    
+        <span>
+            <a href="javascript:void(0);" class="moreINFO" data-toggle="modal" data-target="#moreInfoModal" recordid="1425053" style="font-size:1.2em;">Peace of Mind</a>
+        </span>
+
+
+        <div style="padding-left:40px;">
+            <a href="javascript:void(0);" class="moreINFO" data-toggle="modal" data-target="#moreInfoModal" recordid="1425053">Janece Otter</a>
+        </div>
+
+                                            <span style="font-weight:bold;padding-left:40px;color:#333;" class="pdfhide">[Last Referred:3/21/2025]</span>
+
+
+                                        <span class="MilesAway" style="padding-left:40px;" recordid="1425053">.92 Miles Away</span>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                                            </div>
+                            <div class="col-md-4 col-sm-6 text-right">
+
+                                
+    <div data-toggle="tooltip" data-placement="top" id="stars" data-original-title="" data-pdf-align="right" style="float: right; margin-left: 10px; margin-top: 5px;">
+                            </div>
+
+
+                            </div>
+
+                        </div>
+
+
+                </div>
+
+                <div class="panel-body">
+                    <div class="row" style="background-color:#fefefe;padding:4px;">
+                        <div class="col-md-6 text-left">
+                            
+
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <!--wls<table width="100%">wls-->
+                        <!--wls<tr>wls-->
+                        <!--wls<td>wls-->
+                        <div class="col-lg-3 col-md-4">
+                            
+<div style="display: table-cell; vertical-align: middle;">
+</div>
+
+                        </div>
+                        <!--wls</td>wls-->
+
+                        <!--wls<td>wls-->
+                        <div class="col-lg-9 col-md-8">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    
+        <span>
+            <a href="javascript:void(0);" class="moreINFO" data-toggle="modal" data-target="#moreInfoModal" recordid="1425053" style="font-size:1.2em;">Peace of Mind</a>
+        </span>
+
+
+        <div style="padding-left:40px;">
+            <a href="javascript:void(0);" class="moreINFO" data-toggle="modal" data-target="#moreInfoModal" recordid="1425053">Janece Otter</a>
+        </div>
+
+
+                                    
+<div>
+            <span>546 S 10th St, </span>
+
+    Salina KS 67401
+</div>
+
+
+                                            <p>
+                                                
+<a class="viewInMap pdfhide" lat="38.8306995" long="-97.6146311" prg="Peace of Mind" address="546 S 10th St" city="Salina" state="KS" zip="67401" dist="0.920404340084469" rating="" data-toggle="modal" data-target="#mapViewModal" phone="(785) 819-3207" program-type-id="2" program-type-name="Family Child Care Home" providerid="1425053" dh="Monday - Friday 7:30am - 5:15pm" ages="1 Year 6 Months - 11 Years " data-referred="1" style="">View Map</a>
+                                            </p>
+                                    
+    <div>
+        <a href="mailto:" target="blank"></a>
+    </div>
+    <div>
+        <i class="fa fa-phone"></i> <a href="tel:(785) 819-3207">(785) 819-3207</a>
+    </div>
+
+                                </div>
+                                <div class="col-md-4">
+                                        <div><b>Type:</b> Family Child Care Home</div>
+                                                                                                                                                                                                                            <div><b>License ID:</b> 0047502</div>
+
+                                    <br>
+                                    <div><b>Capacity</b>: 12</div>
+                                                                            <div>
+                                            <b>Ages Served</b>: 1 Year 6 Months - 11 Years 
+                                        </div>
+                                    
+    <div><b>Monday - Friday</b> 7:30am - 5:15pm</div>
+ 
+                                </div>
+                                <div class="col-md-4">
+                                        <div><b>Last Updated</b>: 1/30/2025</div>
+                                                                                                                    <div><b>In Operation:</b> 5 Years and 7 Months</div>
+
+
+                                                                                                                    <div><a href='https://khap2.kdhe.state.ks.us/OIDS/' id="stateReport" data-placement="top" target="_blank" class="pdfhide emailshow">Child Care Licensing Report</a></div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <!--wls</td>wls-->
+                        <!--wls<td>wls-->
+                        <!--wls</tr>wls-->
+                        <!--wls</table>wls-->
+                    </div>
+                </div>
+                                    <div class="row">
+                        <div class="col-md-12" style="margin-left:20px;width:95%;">
+                            <b>Message to Families: </b>Openings listed will be available in March.
+                        </div>
+                    </div>
+            <div style="height: 50px; padding-right: 30px;text-align:right;width:100%;" class="SummaryView">
+
+
+                <a class="btn btn-primary moreINFO pdfhide" data-toggle="modal" data-target="#moreInfoModal" recordid="1425053" style="border-radius: 1.2em !important;">Program Details</a>
+            </div>
+            </div>
+
+        </div>
+        <div class="provider-panel countTotal" style="margin-left:-12px;margin-right:-12px;" data-id="1426422" data-referred="1">
+            <div class="panel panel-success">
+                <div class="panel-heading " style="background-color: #ebf4d5; ">
+                        <div class="row">
+                            <div class="col-md-6 col-sm-4">
+                                <div class="panel-title">
+                                    <img src="https://stage.worklifesystems.com/Images/addfavorite.png" title="Click to add to My Favorites tab." class="addtofavorite pdfhide" providerid="1426422" style="width: 26px; margin-left:-6px;margin-top:6px;padding:0;" />
+                                    &nbsp;&nbsp;
+                                    
+        <span>
+            <a href="javascript:void(0);" class="moreINFO" data-toggle="modal" data-target="#moreInfoModal" recordid="1426422" style="font-size:1.2em;">Little Friends</a>
+        </span>
+
+
+        <div style="padding-left:40px;">
+            <a href="javascript:void(0);" class="moreINFO" data-toggle="modal" data-target="#moreInfoModal" recordid="1426422">Valerie Hill</a>
+        </div>
+
+                                            <span style="font-weight:bold;padding-left:40px;color:#333;" class="pdfhide">[Last Referred:3/21/2025]</span>
+
+
+                                        <span class="MilesAway" style="padding-left:40px;" recordid="1426422">.97 Miles Away</span>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                                            </div>
+                            <div class="col-md-4 col-sm-6 text-right">
+
+                                
+    <div data-toggle="tooltip" data-placement="top" id="stars" data-original-title="" data-pdf-align="right" style="float: right; margin-left: 10px; margin-top: 5px;">
+                            </div>
+
+
+                            </div>
+
+                        </div>
+
+
+                </div>
+
+                <div class="panel-body">
+                    <div class="row" style="background-color:#fefefe;padding:4px;">
+                        <div class="col-md-6 text-left">
+                            
+
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <!--wls<table width="100%">wls-->
+                        <!--wls<tr>wls-->
+                        <!--wls<td>wls-->
+                        <div class="col-lg-3 col-md-4">
+                            
+<div style="display: table-cell; vertical-align: middle;">
+</div>
+
+                        </div>
+                        <!--wls</td>wls-->
+
+                        <!--wls<td>wls-->
+                        <div class="col-lg-9 col-md-8">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    
+        <span>
+            <a href="javascript:void(0);" class="moreINFO" data-toggle="modal" data-target="#moreInfoModal" recordid="1426422" style="font-size:1.2em;">Little Friends</a>
+        </span>
+
+
+        <div style="padding-left:40px;">
+            <a href="javascript:void(0);" class="moreINFO" data-toggle="modal" data-target="#moreInfoModal" recordid="1426422">Valerie Hill</a>
+        </div>
+
+
+                                    
+<div>
+            <span>636 Highland Ave, </span>
+
+    Salina KS 67401
+</div>
+
+
+                                            <p>
+                                                
+<a class="viewInMap pdfhide" lat="38.8290627" long="-97.6112735" prg="Little Friends" address="636 Highland Ave" city="Salina" state="KS" zip="67401" dist="0.97478746621827" rating="" data-toggle="modal" data-target="#mapViewModal" phone="(913) 558-7471" program-type-id="2" program-type-name="Family Child Care Home" providerid="1426422" dh="Monday - Friday 7:30am - 5:30pm" ages="2 Months - 9 Years 11 Months " data-referred="1" style="">View Map</a>
+                                            </p>
+                                    
+    <div>
+        <a href="mailto:" target="blank"></a>
+    </div>
+    <div>
+        <i class="fa fa-phone"></i> <a href="tel:(913) 558-7471">(913) 558-7471</a>
+    </div>
+
+                                </div>
+                                <div class="col-md-4">
+                                        <div><b>Type:</b> Family Child Care Home</div>
+                                                                                                                                                                                                                            <div><b>License ID:</b> 0079065</div>
+
+                                    <br>
+                                    <div><b>Capacity</b>: 12</div>
+                                                                            <div>
+                                            <b>Ages Served</b>: 2 Months - 9 Years 11 Months 
+                                        </div>
+                                    
+    <div><b>Monday - Friday</b> 7:30am - 5:30pm</div>
+ 
+                                </div>
+                                <div class="col-md-4">
+                                        <div><b>Last Updated</b>: 3/7/2025</div>
+                                                                                                                    <div><b>In Operation:</b> 5 Years and 0 Months</div>
+
+
+                                                                                                                    <div><a href='https://khap2.kdhe.state.ks.us/OIDS/' id="stateReport" data-placement="top" target="_blank" class="pdfhide emailshow">Child Care Licensing Report</a></div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <!--wls</td>wls-->
+                        <!--wls<td>wls-->
+                        <!--wls</tr>wls-->
+                        <!--wls</table>wls-->
+                    </div>
+                </div>
+                            <div style="height: 50px; padding-right: 30px;text-align:right;width:100%;" class="SummaryView">
+
+
+                <a class="btn btn-primary moreINFO pdfhide" data-toggle="modal" data-target="#moreInfoModal" recordid="1426422" style="border-radius: 1.2em !important;">Program Details</a>
+            </div>
+            </div>
+
+        </div>
+        <div class="provider-panel countTotal" style="margin-left:-12px;margin-right:-12px;" data-id="1300114" data-referred="1">
+            <div class="panel panel-success">
+                <div class="panel-heading " style="background-color: #ebf4d5; ">
+                        <div class="row">
+                            <div class="col-md-6 col-sm-4">
+                                <div class="panel-title">
+                                    <img src="https://stage.worklifesystems.com/Images/addfavorite.png" title="Click to add to My Favorites tab." class="addtofavorite pdfhide" providerid="1300114" style="width: 26px; margin-left:-6px;margin-top:6px;padding:0;" />
+                                    &nbsp;&nbsp;
+                                    
+        <span>
+            <a href="javascript:void(0);" class="moreINFO" data-toggle="modal" data-target="#moreInfoModal" recordid="1300114" style="font-size:1.2em;">Brendas Daycare</a>
+        </span>
+
+
+        <div style="padding-left:40px;">
+            <a href="javascript:void(0);" class="moreINFO" data-toggle="modal" data-target="#moreInfoModal" recordid="1300114">Brenda Mettlen</a>
+        </div>
+
+                                            <span style="font-weight:bold;padding-left:40px;color:#333;" class="pdfhide">[Last Referred:3/21/2025]</span>
+
+
+                                        <span class="MilesAway" style="padding-left:40px;" recordid="1300114">1.06 Miles Away</span>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                                            </div>
+                            <div class="col-md-4 col-sm-6 text-right">
+
+                                
+    <div data-toggle="tooltip" data-placement="top" id="stars" data-original-title="" data-pdf-align="right" style="float: right; margin-left: 10px; margin-top: 5px;">
+                            </div>
+
+
+                            </div>
+
+                        </div>
+
+
+                </div>
+
+                <div class="panel-body">
+                    <div class="row" style="background-color:#fefefe;padding:4px;">
+                        <div class="col-md-6 text-left">
+                            
+
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <!--wls<table width="100%">wls-->
+                        <!--wls<tr>wls-->
+                        <!--wls<td>wls-->
+                        <div class="col-lg-3 col-md-4">
+                            
+<div style="display: table-cell; vertical-align: middle;">
+</div>
+
+                        </div>
+                        <!--wls</td>wls-->
+
+                        <!--wls<td>wls-->
+                        <div class="col-lg-9 col-md-8">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    
+        <span>
+            <a href="javascript:void(0);" class="moreINFO" data-toggle="modal" data-target="#moreInfoModal" recordid="1300114" style="font-size:1.2em;">Brendas Daycare</a>
+        </span>
+
+
+        <div style="padding-left:40px;">
+            <a href="javascript:void(0);" class="moreINFO" data-toggle="modal" data-target="#moreInfoModal" recordid="1300114">Brenda Mettlen</a>
+        </div>
+
+
+                                    
+<div>
+            <span>525 Montrose Street, </span>
+
+    Salina KS 67401
+</div>
+
+
+                                            <p>
+                                                
+<a class="viewInMap pdfhide" lat="38.8314063" long="-97.6207433" prg="Brendas Daycare" address="525 Montrose Street" city="Salina" state="KS" zip="67401" dist="1.05725300523868" rating="" data-toggle="modal" data-target="#mapViewModal" phone="(316) 217-1600" program-type-id="2" program-type-name="Family Child Care Home" providerid="1300114" dh="Monday - Friday 7:00am - 5:00pm" ages="1 Month - 5 Years " data-referred="1" style="">View Map</a>
+                                            </p>
+                                    
+    <div>
+        <a href="mailto:" target="blank"></a>
+    </div>
+    <div>
+        <i class="fa fa-phone"></i> <a href="tel:(316) 217-1600">(316) 217-1600</a>
+    </div>
+
+                                </div>
+                                <div class="col-md-4">
+                                        <div><b>Type:</b> Family Child Care Home</div>
+                                                                            <div><b>Offers:</b> Enrolled DCF (Department For Children and Families)</div>
+                                                                                                                                                                                        <div><b>License ID:</b> 0035590</div>
+
+                                    <br>
+                                    <div><b>Capacity</b>: 12</div>
+                                                                            <div>
+                                            <b>Ages Served</b>: 1 Month - 5 Years 
+                                        </div>
+                                    
+    <div><b>Monday - Friday</b> 7:00am - 5:00pm</div>
+ 
+                                </div>
+                                <div class="col-md-4">
+                                        <div><b>Last Updated</b>: 3/6/2025</div>
+                                                                                                                    <div><b>In Operation:</b> 9 Years and 8 Months</div>
+
+
+                                                                                                                    <div><a href='https://khap2.kdhe.state.ks.us/OIDS/' id="stateReport" data-placement="top" target="_blank" class="pdfhide emailshow">Child Care Licensing Report</a></div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <!--wls</td>wls-->
+                        <!--wls<td>wls-->
+                        <!--wls</tr>wls-->
+                        <!--wls</table>wls-->
+                    </div>
+                </div>
+                            <div style="height: 50px; padding-right: 30px;text-align:right;width:100%;" class="SummaryView">
+
+
+                <a class="btn btn-primary moreINFO pdfhide" data-toggle="modal" data-target="#moreInfoModal" recordid="1300114" style="border-radius: 1.2em !important;">Program Details</a>
+            </div>
+            </div>
+
+        </div>
+        <div class="provider-panel countTotal" style="margin-left:-12px;margin-right:-12px;" data-id="1299236" data-referred="1">
+            <div class="panel panel-success">
+                <div class="panel-heading " style="background-color: #ebf4d5; ">
+                        <div class="row">
+                            <div class="col-md-6 col-sm-4">
+                                <div class="panel-title">
+                                    <img src="https://stage.worklifesystems.com/Images/addfavorite.png" title="Click to add to My Favorites tab." class="addtofavorite pdfhide" providerid="1299236" style="width: 26px; margin-left:-6px;margin-top:6px;padding:0;" />
+                                    &nbsp;&nbsp;
+                                    
+        <span>
+            <a href="javascript:void(0);" class="moreINFO" data-toggle="modal" data-target="#moreInfoModal" recordid="1299236" style="font-size:1.2em;">Sharing And Caring Inc</a>
+        </span>
+
+
+        <div style="padding-left:40px;">
+            <a href="javascript:void(0);" class="moreINFO" data-toggle="modal" data-target="#moreInfoModal" recordid="1299236">Catalina Rincon</a>
+        </div>
+
+                                            <span style="font-weight:bold;padding-left:40px;color:#333;" class="pdfhide">[Last Referred:3/21/2025]</span>
+
+
+                                        <span class="MilesAway" style="padding-left:40px;" recordid="1299236">1.07 Miles Away</span>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                                            </div>
+                            <div class="col-md-4 col-sm-6 text-right">
+
+                                
+    <div data-toggle="tooltip" data-placement="top" id="stars" data-original-title="" data-pdf-align="right" style="float: right; margin-left: 10px; margin-top: 5px;">
+                            </div>
+
+
+                            </div>
+
+                        </div>
+
+
+                </div>
+
+                <div class="panel-body">
+                    <div class="row" style="background-color:#fefefe;padding:4px;">
+                        <div class="col-md-6 text-left">
+                            
+
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <!--wls<table width="100%">wls-->
+                        <!--wls<tr>wls-->
+                        <!--wls<td>wls-->
+                        <div class="col-lg-3 col-md-4">
+                            
+<div style="display: table-cell; vertical-align: middle;">
+</div>
+
+                        </div>
+                        <!--wls</td>wls-->
+
+                        <!--wls<td>wls-->
+                        <div class="col-lg-9 col-md-8">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    
+        <span>
+            <a href="javascript:void(0);" class="moreINFO" data-toggle="modal" data-target="#moreInfoModal" recordid="1299236" style="font-size:1.2em;">Sharing And Caring Inc</a>
+        </span>
+
+
+        <div style="padding-left:40px;">
+            <a href="javascript:void(0);" class="moreINFO" data-toggle="modal" data-target="#moreInfoModal" recordid="1299236">Catalina Rincon</a>
+        </div>
+
+
+                                    
+<div>
+            <span>663 S 9th Street, </span>
+
+    Salina KS 67401
+</div>
+
+
+                                            <p>
+                                                
+<a class="viewInMap pdfhide" lat="38.8278406" long="-97.6126126" prg="Sharing And Caring Inc" address="663 S 9th Street" city="Salina" state="KS" zip="67401" dist="1.07291537481788" rating="" data-toggle="modal" data-target="#mapViewModal" phone="(785) 201-7449" program-type-id="1" program-type-name="Child Care Centers" providerid="1299236" dh="Monday - Friday 7:00am - 5:30pm" ages="2 Years 6 Months - 5 Years 6 Months " data-referred="1" style="">View Map</a>
+                                            </p>
+                                    
+    <div>
+        <a href="mailto:" target="blank"></a>
+    </div>
+    <div>
+        <i class="fa fa-phone"></i> <a href="tel:(785) 201-7449">(785) 201-7449</a>
+    </div>
+
+                                </div>
+                                <div class="col-md-4">
+                                        <div><b>Type:</b> Child Care Centers</div>
+                                                                            <div><b>Offers:</b> Enrolled DCF (Department For Children and Families), Preschool Session</div>
+                                                                                                                                                                                        <div><b>License ID:</b> 0040821</div>
+
+                                    <br>
+                                    <div><b>Capacity</b>: 17</div>
+                                                                            <div>
+                                            <b>Ages Served</b>: 2 Years 6 Months - 5 Years 6 Months 
+                                        </div>
+                                    
+    <div><b>Monday - Friday</b> 7:00am - 5:30pm</div>
+ 
+                                </div>
+                                <div class="col-md-4">
+                                        <div><b>Last Updated</b>: 2/14/2025</div>
+                                                                                                                    <div><b>In Operation:</b> 25 Years and 2 Months</div>
+
+
+                                                                                                                    <div><a href='https://khap2.kdhe.state.ks.us/OIDS/' id="stateReport" data-placement="top" target="_blank" class="pdfhide emailshow">Child Care Licensing Report</a></div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <!--wls</td>wls-->
+                        <!--wls<td>wls-->
+                        <!--wls</tr>wls-->
+                        <!--wls</table>wls-->
+                    </div>
+                </div>
+                            <div style="height: 50px; padding-right: 30px;text-align:right;width:100%;" class="SummaryView">
+
+
+                <a class="btn btn-primary moreINFO pdfhide" data-toggle="modal" data-target="#moreInfoModal" recordid="1299236" style="border-radius: 1.2em !important;">Program Details</a>
+            </div>
+            </div>
+
+        </div>
+        <div class="provider-panel countTotal" style="margin-left:-12px;margin-right:-12px;" data-id="1299247" data-referred="1">
+            <div class="panel panel-success">
+                <div class="panel-heading " style="background-color: #ebf4d5; ">
+                        <div class="row">
+                            <div class="col-md-6 col-sm-4">
+                                <div class="panel-title">
+                                    <img src="https://stage.worklifesystems.com/Images/addfavorite.png" title="Click to add to My Favorites tab." class="addtofavorite pdfhide" providerid="1299247" style="width: 26px; margin-left:-6px;margin-top:6px;padding:0;" />
+                                    &nbsp;&nbsp;
+                                    
+        <span>
+            <a href="javascript:void(0);" class="moreINFO" data-toggle="modal" data-target="#moreInfoModal" recordid="1299247" style="font-size:1.2em;">Kids Tyme Day Care Home</a>
+        </span>
+
+
+        <div style="padding-left:40px;">
+            <a href="javascript:void(0);" class="moreINFO" data-toggle="modal" data-target="#moreInfoModal" recordid="1299247">Sharol McMillan</a>
+        </div>
+
+                                            <span style="font-weight:bold;padding-left:40px;color:#333;" class="pdfhide">[Last Referred:3/21/2025]</span>
+
+
+                                        <span class="MilesAway" style="padding-left:40px;" recordid="1299247">1.09 Miles Away</span>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                                            </div>
+                            <div class="col-md-4 col-sm-6 text-right">
+
+                                
+    <div data-toggle="tooltip" data-placement="top" id="stars" data-original-title="" data-pdf-align="right" style="float: right; margin-left: 10px; margin-top: 5px;">
+                            </div>
+
+
+                            </div>
+
+                        </div>
+
+
+                </div>
+
+                <div class="panel-body">
+                    <div class="row" style="background-color:#fefefe;padding:4px;">
+                        <div class="col-md-6 text-left">
+                            
+
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <!--wls<table width="100%">wls-->
+                        <!--wls<tr>wls-->
+                        <!--wls<td>wls-->
+                        <div class="col-lg-3 col-md-4">
+                            
+<div style="display: table-cell; vertical-align: middle;">
+</div>
+
+                        </div>
+                        <!--wls</td>wls-->
+
+                        <!--wls<td>wls-->
+                        <div class="col-lg-9 col-md-8">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    
+        <span>
+            <a href="javascript:void(0);" class="moreINFO" data-toggle="modal" data-target="#moreInfoModal" recordid="1299247" style="font-size:1.2em;">Kids Tyme Day Care Home</a>
+        </span>
+
+
+        <div style="padding-left:40px;">
+            <a href="javascript:void(0);" class="moreINFO" data-toggle="modal" data-target="#moreInfoModal" recordid="1299247">Sharol McMillan</a>
+        </div>
+
+
+                                    
+<div>
+            <span>1301 Indian Rock Lane, </span>
+
+    Salina KS 67401
+</div>
+
+
+                                            <p>
+                                                
+<a class="viewInMap pdfhide" lat="38.8337021" long="-97.5912665" prg="Kids Tyme Day Care Home" address="1301 Indian Rock Lane" city="Salina" state="KS" zip="67401" dist="1.09311956307382" rating="" data-toggle="modal" data-target="#mapViewModal" phone="(913) 240-6097" program-type-id="2" program-type-name="Family Child Care Home" providerid="1299247" dh="Monday - Friday 5:00am - 4:30pm" ages="1 Month - 5 Years " data-referred="1" style="">View Map</a>
+                                            </p>
+                                    
+    <div>
+        <a href="mailto:" target="blank"></a>
+    </div>
+    <div>
+        <i class="fa fa-phone"></i> <a href="tel:(913) 240-6097">(913) 240-6097</a>
+    </div>
+
+                                </div>
+                                <div class="col-md-4">
+                                        <div><b>Type:</b> Family Child Care Home</div>
+                                                                            <div><b>Offers:</b> Preschool Session</div>
+                                                                                                                                                                                        <div><b>License ID:</b> 0015392</div>
+
+                                    <br>
+                                    <div><b>Capacity</b>: 12</div>
+                                                                            <div>
+                                            <b>Ages Served</b>: 1 Month - 5 Years 
+                                        </div>
+                                    
+    <div><b>Monday - Friday</b> 5:00am - 4:30pm</div>
+ 
+                                </div>
+                                <div class="col-md-4">
+                                        <div><b>Last Updated</b>: 2/27/2025</div>
+                                                                                                                    <div><b>In Operation:</b> 32 Years and 6 Months</div>
+
+
+                                                                                                                    <div><a href='https://khap2.kdhe.state.ks.us/OIDS/' id="stateReport" data-placement="top" target="_blank" class="pdfhide emailshow">Child Care Licensing Report</a></div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <!--wls</td>wls-->
+                        <!--wls<td>wls-->
+                        <!--wls</tr>wls-->
+                        <!--wls</table>wls-->
+                    </div>
+                </div>
+                            <div style="height: 50px; padding-right: 30px;text-align:right;width:100%;" class="SummaryView">
+
+
+                <a class="btn btn-primary moreINFO pdfhide" data-toggle="modal" data-target="#moreInfoModal" recordid="1299247" style="border-radius: 1.2em !important;">Program Details</a>
+            </div>
+            </div>
+
+        </div>
+
+
+    <div class="row">
+        <div class="col-md-12">
+    <div class="row pdfhide pager">
+        <div class="col-md-6 text-left pager-summary">
+            <div class="row">
+                <div class="col-md-4">
+                    Showing 25 Records
+                </div>
+                <div class="col-md-8 text-right">
+                    Page  1/17, 1 - 25 of 411 results.
+                </div>
+            </div>
+            
+        </div>
+            <div class="col-md-6 text-right">
+                <nav aria-label="Page navigation">
+                    <ul class="pagination">
+
+                            <li class=active><a href="javascript:void(0)" onclick="Paging('1')">1</a></li>
+                            <li ><a href="javascript:void(0)" onclick="Paging('2')">2</a></li>
+                            <li ><a href="javascript:void(0)" onclick="Paging('3')">3</a></li>
+                            <li ><a href="javascript:void(0)" onclick="Paging('4')">4</a></li>
+                            <li ><a href="javascript:void(0)" onclick="Paging('5')">5</a></li>
+                            <li ><a href="javascript:void(0)" onclick="Paging('6')">6</a></li>
+                            <li ><a href="javascript:void(0)" onclick="Paging('7')">7</a></li>
+                            <li ><a href="javascript:void(0)" onclick="Paging('8')">8</a></li>
+                            <li ><a href="javascript:void(0)" onclick="Paging('9')">9</a></li>
+                            <li ><a href="javascript:void(0)" onclick="Paging('10')">10</a></li>
+                                                    <li>
+                                <a href="javascript:void(0);" aria-label="Next" onclick="Paging('2')">
+                                    <span aria-hidden="true">&raquo;</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0);" aria-label="Next" onclick="Paging('17')">
+                                    <span aria-hidden="true">&raquo;&raquo;</span>
+                                </a>
+                            </li>
+
+                    </ul>
+                </nav>
+            </div>
+        
+    </div>
+
+
+
+        </div>
+    </div>
+
+
+        </div>
+    <div class="pdfhide">
+        <b>Important:</b> Child Care Aware&#174; of Kansas is regulated as a child care resource and referral agency through Kansas Department of Health and Environment (KDHE).  The list of child care facilities you receive are referrals, not recommendations.  
+
+We collect a wide range of information about child care facilities to help connect families with programs that meet their specific needs. Every effort is made to supply you with up-to-date information; however, we cannot warrant the accuracy of information nor the quality of any child care facility referred in this process. 
+ 
+We encourage families to check the credibility of any information reported by conducting interviews and by visiting the KDHE Online Facility Compliance search at https://kscapportalp.dcf.ks.gov/oids/. 
+If you need additional assistance, please call our office at 855-750-3343.
+
+
+    </div>
+
+
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<!-- Modal -->
+<div id="modalCostOfCare" class="modal modal-lg fade" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content" style="width:960px;">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Cost Of Care</h4>
+            </div>
+            <div class="modal-body" id="bodyCostOfCare">
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+
+<script type="text/javascript">
+    $(function () {
+        $('[data-toggle="popover"]').popover({ container: 'body' });
+        $("#QuickViewTable").tablesorter();
+        $("#agencyLogo").click(function (e) {
+            e.preventDefault();
+            $(".starsInfo").toggle();
+        });
+        $("#agency2Logo").click(function (e) {
+            e.preventDefault();
+            $(".pyramidsInfo").toggle();
+        });
+        $("#agency23Logo").click(function (e) {
+            e.preventDefault();
+            $(".pyramidsInfo23").toggle();
+        });
+        $("#agency32Logo").click(function (e) {
+            e.preventDefault();
+            $(".pyramidsInfo32").toggle();
+        });
+        $("#agency38Logo").click(function (e) {
+            e.preventDefault();
+            $(".pyramidsInfo38").toggle();
+        });
+        $("#agency40Logo").click(function (e) {
+            e.preventDefault();
+            $(".pyramidsInfo40").toggle();
+        });
+        $("#agency34Logo").click(function (e) {
+            e.preventDefault();
+            $(".pyramidsInfo34").toggle();
+        });
+        $("#agency48Logo").click(function (e) {
+            e.preventDefault();
+            $(".pyramidsInfo48").toggle();
+        });
+        $("#agency16Logo").click(function (e) {
+            e.preventDefault();
+            $(".pyramidsInfo16").toggle();
+        });
+
+        $("#printPSResults").click(function (e) {
+            e.preventDefault();
+            $(this).attr("disabled", "disabled");
+            printSearch();
+            $(this).removeAttr("disabled");
+            LoadFeedback();
+        });
+        
+            $("#emailPSResults").click(function (e) {
+                e.preventDefault();
+                $("#typeSts").val($(this).data('id'));
+                emailResultsFlg = true;
+            });
+
+            $("#mapAllResultsView").click(function (e) {
+                e.preventDefault();
+                ViewAllResultsMap();
+            });
+
+            $(".addtofavorite").click(function (e) {
+                e.preventDefault();
+            //alert("add fav");
+            AddToFavorites(this);
+        });
+
+        $(".viewInMap").click(function (e) {
+            //alert("clicked");
+            summaryflg = false;
+            e.preventDefault();
+            var markers;
+            if ($("#MyLongitude").val() == undefined) {
+                markers = [['NMA', null, null, $("#addressInput").val(), $("#cityInput").val(), $("#State").val(), $("#zipInput").val(), null, '0', '0', '0', '0', '0', '0', '0', null]];
+
+            }
+            else {
+                markers = [['MA', $("#MyLongitude").val(), $("#MyLatitude").val(), $("#addressInput").val(), $("#cityInput").val(), $("#State").val(), $("#zipInput").val(), null, '0', '0', '0', '0', '0', '0', '0', null]];
+            }
+            if ($(this).attr("long") && $(this).attr("lat")) {
+                markers.push(['PP', $(this).attr("long"), $(this).attr("lat"), $(this).attr("address"), $(this).attr("city"), $(this).attr("state"), $(this).attr("zip"), $(this).attr("phone"), $(this).attr("dist"), $(this).attr("ages"), $(this).attr("dh"), $(this).attr("providerid"), $(this).attr("prg"), $(this).attr("rating"), $(this).attr("program-type-id"), $(this).attr("program-type-name")]);
+            }
+
+            ViewMap(markers, "google_map","legend");
+            var logId = 28;
+            $.ajax({
+                url: '/ReferralUpdate/LogReferralsActionLog',
+                type: "GET",
+                data: { "referralID": $('#referralID').val(), "logID": logId },
+                success: function (data) {
+
+                },
+                error: function (response) { }
+            });
+        });
+
+        if ($("#divFiltersInfo").is(":visible")) {
+            $("#btnMatchAny").show();
+            $("#btnMatchAll").show();
+        }
+        $("#SummaryView").show();
+        $("#QuickView").show();
+    });
+
+
+
+
+    function sortList(v) {
+        $("#sort").val(v);
+
+        var alreadySortedBy = false;
+        $("li.sort-by").each(function () {
+            if ($(this).attr("data-value") == v && $(this).hasClass("active")) {
+                alreadySortedBy = true;
+                return;
+            }
+        });
+        if (alreadySortedBy == false) {
+            searchPrograms();
+        }
+
+    }
+    function showCostOfCare() {
+        $.ajax({
+            url: '/ReferralUpdate/ShowCostOfCareHtml',
+            type: "POST",
+            data: {
+                "referralId": $('#referralID').val(),
+                "city": $("#SearchedCity").val(),
+                "zip": $("#SearchedZip").val()
+            },
+            success: function (data) {
+                $("#modalCostOfCare").modal("show");
+                $("#bodyCostOfCare").html(data);
+            },
+            error: function (response) { }
+        });
+    }
+
+    function printSearch() {
+        //$('#PSResults').printArea();
+        //alert($('#PSResults').html());
+        var limit = 25;
+        var providerPanelsLength = $('#PSResults div.provider-panel:visible').length;
+        var content = $('#PSResults').html();
+        if (providerPanelsLength > limit) {
+            alert("The first " + limit + " of " + providerPanelsLength + " records will be printed");
+
+            content = "";
+            var i = 0;
+            $('#PSResults div.provider-panel:visible').each(function () {
+                if (i < limit) {
+                    content = content + $(this).html();
+                }
+                else {
+                    return;
+                }
+                i++;
+            });
+        }
+        $("#printloader").show();
+        $.ajax({
+            url: '/Reports/SetPrintPDFContent',
+            type: "POST",
+            data: {
+                "content": content,
+                "referralId": $('#referralID').val(),
+                "city": $("#SearchedCity").val(),
+                "zip": $("#SearchedZip").val()
+            },
+            success: function (data) {
+                $("#printloader").hide();
+                window.open("/Reports/PrintPdf" + "/" + $('#referralID').val() + "?mode=searchingresults&referred=" + $("#filterSentStatus").val(), "Print Window #" + uuid(), "width=960,height=700,resizable=1,scrollbars=yes");
+            },
+            error: function (response) { }
+        });
+        var logId = 30;
+        $.ajax({
+            url: '/ReferralUpdate/LogReferralsActionLog',
+            type: "GET",
+            data: { "referralID": $('#referralID').val(), "logID": logId },
+            success: function (data) {
+            },
+            error: function (response) { }
+        });
+    }
+
+
+
+</script>

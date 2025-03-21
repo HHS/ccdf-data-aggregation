@@ -1,0 +1,1185 @@
+Zipcode	City	County
+66002	Atchison	Atchison
+66006	Baldwin City	Douglas
+66007	Basehor	Leavenworth
+66008	Bendena	Doniphan
+66010	Blue Mound	Linn
+66012	Bonner Springs	Wyandotte
+66013	Bucyrus	Miami
+66013	Bucyrus	Miami
+66014	Centerville	Anderson
+66015	Colony	Anderson
+66016	Cummings	Atchison
+66017	Denton	Doniphan
+66018	De Soto	Johnson
+66020	Easton	Leavenworth
+66021	Edgerton	Johnson
+66023	Effingham	Atchison
+66025	Eudora	Douglas
+66026	Fontana	Miami
+66030	Gardner	Johnson
+66030	Gardner	Johnson
+66032	Garnett	Anderson
+66033	Greeley	Anderson
+66035	Highland	Doniphan
+66039	Kincaid	Anderson
+66040	La Cygne	Linn
+66041	Lancaster	Atchison
+66042	Lane	Franklin
+66043	Lansing	Leavenworth
+66044	Lawrence	Douglas
+66045	Lawrence	Douglas
+66046	Lawrence	Douglas
+66047	Lawrence	Douglas
+66048	Leavenworth	Leavenworth
+66049	Lawrence	Douglas
+66050	Lecompton	Douglas
+66052	Linwood	Leavenworth
+66053	Louisburg	Miami
+66054	Mc Louth	Jefferson
+66056	Mound City	Linn
+66058	Muscotah	Atchison
+66060	Nortonville	Jefferson
+66061	Olathe	Johnson
+66062	Olathe	Johnson
+66064	Osawatomie	Miami
+66066	Oskaloosa	Jefferson
+66067	Ottawa	Franklin
+66070	Ozawkie	Jefferson
+66071	Paola	Miami
+66072	Parker	Linn
+66073	Perry	Jefferson
+66075	Pleasanton	Linn
+66076	Pomona	Franklin
+66078	Princeton	Franklin
+66079	Rantoul	Franklin
+66080	Richmond	Franklin
+66083	Spring Hill	Johnson
+66085	Stilwell	Johnson
+66085	Stilwell	Johnson
+66086	Tonganoxie	Leavenworth
+66087	Troy	Doniphan
+66088	Valley Falls	Jefferson
+66090	Wathena	Doniphan
+66091	Welda	Anderson
+66092	Wellsville	Franklin
+66093	Westphalia	Anderson
+66094	White Cloud	Doniphan
+66095	Williamsburg	Franklin
+66097	Winchester	Jefferson
+66101	Kansas City	Wyandotte
+66102	Kansas City	Wyandotte
+66103	Kansas City	Wyandotte
+66104	Kansas City	Wyandotte
+66105	Kansas City	Wyandotte
+66106	Kansas City	Wyandotte
+66109	Kansas City	Wyandotte
+66111	Kansas City	Wyandotte
+66112	Kansas City	Wyandotte
+66115	Kansas City	Wyandotte
+66118	Kansas City	Wyandotte
+66160	Kansas City	Wyandotte
+66202	Mission	Johnson
+66203	Shawnee	Johnson
+66204	Overland Park	Johnson
+66205	Mission	Johnson
+66206	Leawood	Johnson
+66207	Overland Park	Johnson
+66208	Prairie Village	Johnson
+66209	Leawood	Johnson
+66210	Overland Park	Johnson
+66211	Leawood	Johnson
+66212	Overland Park	Johnson
+66213	Overland Park	Johnson
+66214	Overland Park	Johnson
+66215	Lenexa	Johnson
+66215	Lenexa	Johnson
+66216	Shawnee	Johnson
+66217	Shawnee	Johnson
+66218	Shawnee	Johnson
+66219	Lenexa	Johnson
+66220	Lenexa	Johnson
+66221	Overland Park	Johnson
+66223	Overland Park	Johnson
+66224	Overland Park	Johnson
+66226	Shawnee	Johnson
+66227	Lenexa	Johnson
+66250	Lenexa	Johnson
+66251	Overland Park	Johnson
+66276	Lenexa	Johnson
+66401	Alma	Wabaunsee
+66402	Auburn	Shawnee
+66403	Axtell	Marshall
+66404	Baileyville	Nemaha
+66406	Beattie	Marshall
+66407	Belvue	Pottawatomie
+66408	Bern	Nemaha
+66409	Berryton	Shawnee
+66411	Blue Rapids	Marshall
+66412	Bremen	Marshall
+66413	Burlingame	Osage
+66414	Carbondale	Osage
+66415	Centralia	Nemaha
+66416	Circleville	Jackson
+66419	Denison	Jackson
+66422	Emmett	Pottawatomie
+66423	Eskridge	Wabaunsee
+66424	Everest	Brown
+66425	Fairview	Brown
+66427	Frankfort	Marshall
+66428	Goff	Nemaha
+66429	Grantville	Jefferson
+66431	Harveyville	Wabaunsee
+66434	Hiawatha	Brown
+66436	Holton	Jackson
+66438	Home	Marshall
+66439	Horton	Brown
+66440	Hoyt	Jackson
+66441	Junction City	Geary
+66442	Fort Riley	Geary
+66449	Leonardville	Riley
+66451	Lyndon	Osage
+66502	Manhattan	Riley
+66503	Manhattan	Riley
+66506	Manhattan	Riley
+66507	Maple Hill	Wabaunsee
+66508	Marysville	Marshall
+66509	Mayetta	Jackson
+66510	Melvern	Osage
+66512	Meriden	Jefferson
+66514	Milford	Geary
+66515	Morrill	Brown
+66516	Netawaka	Jackson
+66517	Ogden	Riley
+66518	Oketo	Marshall
+66520	Olsburg	Pottawatomie
+66521	Onaga	Pottawatomie
+66523	Osage City	Osage
+66524	Overbrook	Osage
+66526	Paxico	Wabaunsee
+66527	Powhattan	Brown
+66528	Quenemo	Osage
+66531	Riley	Riley
+66532	Robinson	Brown
+66533	Rossville	Shawnee
+66534	Sabetha	Nemaha
+66535	Saint George	Pottawatomie
+66536	Saint Marys	Pottawatomie
+66537	Scranton	Osage
+66538	Seneca	Nemaha
+66539	Silver Lake	Shawnee
+66540	Soldier	Jackson
+66541	Summerfield	Marshall
+66542	Tecumseh	Shawnee
+66543	Vassar	Osage
+66546	Wakarusa	Shawnee
+66547	Wamego	Pottawatomie
+66548	Waterville	Marshall
+66549	Westmoreland	Pottawatomie
+66550	Wetmore	Nemaha
+66552	Whiting	Jackson
+66554	Randolph	Riley
+66603	Topeka	Shawnee
+66604	Topeka	Shawnee
+66605	Topeka	Shawnee
+66606	Topeka	Shawnee
+66607	Topeka	Shawnee
+66608	Topeka	Shawnee
+66609	Topeka	Shawnee
+66610	Topeka	Shawnee
+66611	Topeka	Shawnee
+66612	Topeka	Shawnee
+66614	Topeka	Shawnee
+66615	Topeka	Shawnee
+66616	Topeka	Shawnee
+66617	Topeka	Shawnee
+66618	Topeka	Shawnee
+66619	Topeka	Shawnee
+66620	Topeka	Shawnee
+66621	Topeka	Shawnee
+66622	Topeka	Shawnee
+66624	Topeka	Shawnee
+66625	Topeka	Shawnee
+66626	Topeka	Shawnee
+66629	Topeka	Shawnee
+66630	Topeka	Shawnee
+66636	Topeka	Shawnee
+66683	Topeka	Shawnee
+66699	Topeka	Shawnee
+66701	Fort Scott	Bourbon
+66710	Altoona	Wilson
+66711	Arcadia	Crawford
+66712	Arma	Crawford
+66713	Baxter Springs	Cherokee
+66714	Benedict	Wilson
+66716	Bronson	Bourbon
+66717	Buffalo	Wilson
+66720	Chanute	Neosho
+66724	Cherokee	Crawford
+66725	Columbus	Cherokee
+66733	Erie	Neosho
+66736	Fredonia	Wilson
+66739	Galena	Cherokee
+66740	Galesburg	Neosho
+66741	Garland	Bourbon
+66743	Girard	Crawford
+66746	Hepler	Crawford
+66748	Humboldt	Allen
+66749	Iola	Allen
+66751	La Harpe	Allen
+66753	Mc Cune	Crawford
+66754	Mapleton	Bourbon
+66755	Moran	Allen
+66756	Mulberry	Crawford
+66757	Neodesha	Wilson
+66758	Neosho Falls	Coffey
+66761	Piqua	Woodson
+66762	Pittsburg	Crawford
+66763	Frontenac	Crawford
+66767	Prescott	Linn
+66769	Redfield	Bourbon
+66770	Riverton	Cherokee
+66771	Saint Paul	Neosho
+66773	Scammon	Cherokee
+66775	Stark	Neosho
+66776	Thayer	Neosho
+66777	Toronto	Woodson
+66779	Uniontown	Bourbon
+66780	Walnut	Crawford
+66781	Weir	Cherokee
+66783	Yates Center	Woodson
+66801	Emporia	Lyon
+66830	Admire	Lyon
+66833	Allen	Lyon
+66834	Alta Vista	Wabaunsee
+66835	Americus	Lyon
+66838	Burdick	Morris
+66839	Burlington	Coffey
+66840	Burns	Marion
+66842	Cassoday	Butler
+66843	Cedar Point	Chase
+66845	Cottonwood Falls	Chase
+66846	Council Grove	Morris
+66849	Dwight	Morris
+66850	Elmdale	Chase
+66851	Florence	Marion
+66852	Gridley	Coffey
+66853	Hamilton	Greenwood
+66854	Hartford	Lyon
+66855	Lamont	Greenwood
+66856	Lebo	Coffey
+66857	Le Roy	Coffey
+66858	Lincolnville	Marion
+66859	Lost Springs	Marion
+66860	Madison	Greenwood
+66861	Marion	Marion
+66864	Neosho Rapids	Lyon
+66865	Olpe	Lyon
+66866	Peabody	Marion
+66868	Reading	Lyon
+66869	Strong City	Chase
+66870	Virgil	Greenwood
+66871	Waverly	Coffey
+66872	White City	Morris
+66873	Wilsey	Morris
+66901	Concordia	Cloud
+66933	Barnes	Washington
+66935	Belleville	Republic
+66936	Burr Oak	Jewell
+66937	Clifton	Washington
+66938	Clyde	Cloud
+66939	Courtland	Republic
+66940	Cuba	Republic
+66941	Esbon	Jewell
+66942	Formoso	Jewell
+66943	Greenleaf	Washington
+66944	Haddam	Washington
+66945	Hanover	Washington
+66946	Hollenberg	Washington
+66948	Jamestown	Cloud
+66949	Jewell	Jewell
+66951	Kensington	Smith
+66952	Lebanon	Smith
+66953	Linn	Washington
+66955	Mahaska	Washington
+66956	Mankato	Jewell
+66958	Morrowville	Washington
+66959	Munden	Republic
+66960	Narka	Republic
+66962	Palmer	Washington
+66963	Randall	Jewell
+66964	Republic	Republic
+66966	Scandia	Republic
+66967	Smith Center	Smith
+66968	Washington	Washington
+66970	Webber	Jewell
+67001	Andale	Sedgwick
+67002	Andover	Butler
+67003	Anthony	Harper
+67004	Argonia	Sumner
+67005	Arkansas City	Cowley
+67008	Atlanta	Cowley
+67009	Attica	Harper
+67010	Augusta	Butler
+67013	Belle Plaine	Sumner
+67017	Benton	Butler
+67018	Bluff City	Harper
+67019	Burden	Cowley
+67020	Burrton	Harvey
+67022	Caldwell	Sumner
+67023	Cambridge	Cowley
+67024	Cedar Vale	Chautauqua
+67025	Cheney	Sedgwick
+67026	Clearwater	Sedgwick
+67029	Coldwater	Comanche
+67030	Colwich	Sedgwick
+67031	Conway Springs	Sumner
+67035	Cunningham	Kingman
+67036	Danville	Harper
+67037	Derby	Sedgwick
+67038	Dexter	Cowley
+67039	Douglass	Butler
+67042	El Dorado	Butler
+67045	Eureka	Greenwood
+67047	Fall River	Greenwood
+67049	Freeport	Harper
+67050	Garden Plain	Sedgwick
+67051	Geuda Springs	Sumner
+67052	Goddard	Sedgwick
+67054	Greensburg	Kiowa
+67056	Halstead	Harvey
+67057	Hardtner	Barber
+67058	Harper	Harper
+67059	Haviland	Kiowa
+67060	Haysville	Sedgwick
+67062	Hesston	Harvey
+67063	Hillsboro	Marion
+67065	Isabel	Barber
+67066	Iuka	Pratt
+67067	Kechi	Sedgwick
+67068	Kingman	Kingman
+67070	Kiowa	Barber
+67072	Latham	Butler
+67073	Lehigh	Marion
+67074	Leon	Butler
+67101	Maize	Sedgwick
+67103	Mayfield	Sumner
+67104	Medicine Lodge	Barber
+67105	Milan	Sumner
+67106	Milton	Sumner
+67107	Moundridge	Mcpherson
+67108	Mount Hope	Sedgwick
+67109	Mullinville	Kiowa
+67110	Mulvane	Sedgwick
+67111	Murdock	Kingman
+67112	Nashville	Kingman
+67114	Newton	Harvey
+67117	North Newton	Harvey
+67117	North Newton	Harvey
+67119	Oxford	Sumner
+67120	Peck	Sumner
+67122	Piedmont	Greenwood
+67123	Potwin	Butler
+67124	Pratt	Pratt
+67127	Protection	Comanche
+67131	Rock	Cowley
+67132	Rosalia	Butler
+67133	Rose Hill	Butler
+67134	Sawyer	Pratt
+67135	Sedgwick	Harvey
+67137	Severy	Greenwood
+67138	Sharon	Barber
+67140	South Haven	Sumner
+67142	Spivey	Kingman
+67143	Sun City	Barber
+67144	Towanda	Butler
+67146	Udall	Cowley
+67147	Valley Center	Sedgwick
+67149	Viola	Sedgwick
+67151	Walton	Harvey
+67152	Wellington	Sumner
+67154	Whitewater	Butler
+67155	Wilmore	Comanche
+67156	Winfield	Cowley
+67159	Zenda	Kingman
+67202	Wichita	Sedgwick
+67203	Wichita	Sedgwick
+67204	Wichita	Sedgwick
+67205	Wichita	Sedgwick
+67206	Wichita	Sedgwick
+67207	Wichita	Sedgwick
+67208	Wichita	Sedgwick
+67209	Wichita	Sedgwick
+67210	Wichita	Sedgwick
+67211	Wichita	Sedgwick
+67212	Wichita	Sedgwick
+67213	Wichita	Sedgwick
+67214	Wichita	Sedgwick
+67215	Wichita	Sedgwick
+67216	Wichita	Sedgwick
+67217	Wichita	Sedgwick
+67218	Wichita	Sedgwick
+67219	Wichita	Sedgwick
+67220	Wichita	Sedgwick
+67221	Mcconnell Afb	Sedgwick
+67223	Wichita	Sedgwick
+67226	Wichita	Sedgwick
+67227	Wichita	Sedgwick
+67228	Wichita	Sedgwick
+67230	Wichita	Sedgwick
+67232	Wichita	Sedgwick
+67235	Wichita	Sedgwick
+67260	Wichita	Sedgwick
+67276	Wichita	Sedgwick
+67301	Independence	Montgomery
+67330	Altamont	Labette
+67333	Caney	Montgomery
+67335	Cherryvale	Montgomery
+67336	Chetopa	Labette
+67337	Coffeyville	Montgomery
+67341	Dennis	Labette
+67342	Edna	Labette
+67344	Elk City	Montgomery
+67345	Elk Falls	Elk
+67346	Grenola	Elk
+67347	Havana	Montgomery
+67349	Howard	Elk
+67351	Liberty	Montgomery
+67352	Longton	Elk
+67353	Moline	Elk
+67354	Mound Valley	Labette
+67355	Niotaze	Chautauqua
+67356	Oswego	Labette
+67357	Parsons	Labette
+67360	Peru	Chautauqua
+67361	Sedan	Chautauqua
+67401	Salina	Saline
+67410	Abilene	Dickinson
+67416	Assaria	Saline
+67417	Aurora	Cloud
+67418	Barnard	Lincoln
+67420	Beloit	Mitchell
+67422	Bennington	Ottawa
+67423	Beverly	Lincoln
+67425	Brookville	Saline
+67427	Bushton	Rice
+67428	Canton	Mcpherson
+67430	Cawker City	Mitchell
+67431	Chapman	Dickinson
+67432	Clay Center	Clay
+67436	Delphos	Ottawa
+67437	Downs	Osborne
+67438	Durham	Marion
+67439	Ellsworth	Ellsworth
+67441	Enterprise	Dickinson
+67442	Falun	Saline
+67443	Galva	Mcpherson
+67444	Geneseo	Rice
+67445	Glasco	Cloud
+67446	Glen Elder	Mitchell
+67447	Green	Clay
+67448	Gypsum	Saline
+67449	Herington	Dickinson
+67450	Holyrood	Ellsworth
+67451	Hope	Dickinson
+67452	Hunter	Mitchell
+67454	Kanopolis	Ellsworth
+67455	Lincoln	Lincoln
+67456	Lindsborg	Mcpherson
+67457	Little River	Rice
+67458	Longford	Clay
+67460	Mcpherson	Mcpherson
+67464	Marquette	Mcpherson
+67466	Miltonvale	Cloud
+67467	Minneapolis	Ottawa
+67468	Morganville	Clay
+67470	New Cambria	Saline
+67473	Osborne	Osborne
+67474	Portis	Osborne
+67475	Ramona	Marion
+67480	Solomon	Dickinson
+67481	Sylvan Grove	Lincoln
+67484	Tescott	Ottawa
+67485	Tipton	Mitchell
+67487	Wakefield	Clay
+67490	Wilson	Ellsworth
+67491	Windom	Mcpherson
+67492	Woodbine	Dickinson
+67501	Hutchinson	Reno
+67502	Hutchinson	Reno
+67505	South Hutchinson	Reno
+67510	Abbyville	Reno
+67511	Albert	Barton
+67512	Alden	Rice
+67513	Alexander	Rush
+67514	Arlington	Reno
+67516	Bazine	Ness
+67519	Belpre	Edwards
+67520	Bison	Rush
+67521	Brownell	Ness
+67522	Buhler	Reno
+67523	Burdett	Pawnee
+67524	Chase	Rice
+67525	Claflin	Barton
+67526	Ellinwood	Barton
+67529	Garfield	Pawnee
+67530	Great Bend	Barton
+67543	Haven	Reno
+67544	Hoisington	Barton
+67546	Inman	Mcpherson
+67547	Kinsley	Edwards
+67548	La Crosse	Rush
+67550	Larned	Pawnee
+67552	Lewis	Edwards
+67554	Lyons	Rice
+67556	Mc Cracken	Rush
+67557	Macksville	Stafford
+67560	Ness City	Ness
+67561	Nickerson	Reno
+67564	Olmitz	Barton
+67565	Otis	Rush
+67566	Partridge	Reno
+67567	Pawnee Rock	Barton
+67570	Pretty Prairie	Reno
+67572	Ransom	Ness
+67573	Raymond	Rice
+67574	Rozel	Pawnee
+67575	Rush Center	Rush
+67576	St John	Stafford
+67578	Stafford	Stafford
+67579	Sterling	Rice
+67581	Sylvia	Reno
+67583	Turon	Reno
+67584	Utica	Ness
+67601	Hays	Ellis
+67621	Agra	Phillips
+67622	Almena	Norton
+67623	Alton	Osborne
+67625	Bogue	Graham
+67626	Bunker Hill	Russell
+67628	Cedar	Smith
+67631	Collyer	Trego
+67632	Damar	Rooks
+67634	Dorrance	Russell
+67637	Ellis	Ellis
+67638	Gaylord	Smith
+67640	Gorham	Russell
+67642	Hill City	Graham
+67643	Jennings	Decatur
+67644	Kirwin	Phillips
+67645	Lenora	Norton
+67646	Logan	Phillips
+67647	Long Island	Phillips
+67648	Lucas	Russell
+67649	Luray	Russell
+67650	Morland	Graham
+67651	Natoma	Osborne
+67653	Norcatur	Decatur
+67654	Norton	Norton
+67657	Palco	Rooks
+67658	Paradise	Russell
+67661	Phillipsburg	Phillips
+67663	Plainville	Rooks
+67664	Prairie View	Phillips
+67665	Russell	Russell
+67669	Stockton	Rooks
+67671	Victoria	Ellis
+67672	Wakeeney	Trego
+67673	Waldo	Russell
+67675	Woodston	Rooks
+67701	Colby	Thomas
+67730	Atwood	Rawlins
+67731	Bird City	Cheyenne
+67732	Brewster	Thomas
+67733	Edson	Sherman
+67735	Goodland	Sherman
+67736	Gove	Gove
+67737	Grainfield	Gove
+67738	Grinnell	Gove
+67739	Herndon	Rawlins
+67740	Hoxie	Sheridan
+67741	Kanorado	Sherman
+67745	Mc Donald	Rawlins
+67747	Monument	Logan
+67748	Oakley	Logan
+67749	Oberlin	Decatur
+67752	Quinter	Gove
+67753	Rexford	Thomas
+67756	Saint Francis	Cheyenne
+67757	Selden	Sheridan
+67758	Sharon Springs	Wallace
+67762	Weskan	Wallace
+67764	Winona	Logan
+67801	Dodge City	Ford
+67831	Ashland	Clark
+67834	Bucklin	Ford
+67835	Cimarron	Gray
+67837	Copeland	Gray
+67838	Deerfield	Kearny
+67839	Dighton	Lane
+67841	Ensign	Gray
+67842	Ford	Ford
+67843	Fort Dodge	Ford
+67844	Fowler	Meade
+67846	Garden City	Finney
+67849	Hanston	Hodgeman
+67850	Healy	Lane
+67851	Holcomb	Finney
+67853	Ingalls	Gray
+67854	Jetmore	Hodgeman
+67855	Johnson	Stanton
+67857	Kendall	Hamilton
+67859	Kismet	Seward
+67860	Lakin	Kearny
+67861	Leoti	Wichita
+67862	Manter	Stanton
+67864	Meade	Meade
+67865	Minneola	Clark
+67867	Montezuma	Gray
+67868	Pierceville	Finney
+67869	Plains	Meade
+67870	Satanta	Haskell
+67871	Scott City	Scott
+67876	Spearville	Ford
+67877	Sublette	Haskell
+67878	Syracuse	Hamilton
+67879	Tribune	Greeley
+67880	Ulysses	Grant
+67882	Wright	Ford
+67901	Liberal	Seward
+67950	Elkhart	Morton
+67951	Hugoton	Stevens
+67952	Moscow	Stevens
+67953	Richfield	Morton
+67954	Rolla	Morton
+71601	Pine Bluff	Jefferson
+71602	White Hall	Jefferson
+71603	Pine Bluff	Jefferson
+71631	Banks	Bradley
+71635	Crossett	Ashley
+71638	Dermott	Chicot
+71639	Dumas	Desha
+71640	Eudora	Chicot
+71642	Fountain Hill	Ashley
+71643	Gould	Lincoln
+71644	Grady	Lincoln
+71646	Hamburg	Ashley
+71647	Hermitage	Bradley
+71651	Jersey	Bradley
+71652	Kingsland	Cleveland
+71653	Lake Village	Chicot
+71654	Mc Gehee	Desha
+71655	Monticello	Drew
+71658	Montrose	Ashley
+71660	New Edinburg	Cleveland
+71661	Parkdale	Ashley
+71662	Pickens	Desha
+71663	Portland	Ashley
+71665	Rison	Cleveland
+71667	Star City	Lincoln
+71670	Tillar	Desha
+71671	Warren	Bradley
+71674	Watson	Desha
+71675	Wilmar	Drew
+71676	Wilmot	Ashley
+71701	Camden	Ouachita
+71720	Bearden	Ouachita
+71722	Bluff City	Nevada
+71725	Carthage	Dallas
+71726	Chidester	Ouachita
+71730	El Dorado	Union
+71740	Emerson	Columbia
+71742	Fordyce	Dallas
+71743	Gurdon	Clark
+71744	Hampton	Calhoun
+71747	Huttig	Union
+71749	Junction City	Union
+71751	Louann	Ouachita
+71752	Mc Neil	Columbia
+71753	Magnolia	Columbia
+71758	Mount Holly	Union
+71762	Smackover	Union
+71763	Sparkman	Dallas
+71764	Stephens	Ouachita
+71765	Strong	Union
+71766	Thornton	Calhoun
+71770	Waldo	Columbia
+71801	Hope	Hempstead
+71822	Ashdown	Little River
+71825	Blevins	Hempstead
+71826	Bradley	Lafayette
+71827	Buckner	Lafayette
+71831	Columbus	Hempstead
+71832	De Queen	Sevier
+71833	Dierks	Howard
+71834	Doddridge	Miller
+71835	Emmet	Nevada
+71836	Foreman	Little River
+71837	Fouke	Miller
+71838	Fulton	Hempstead
+71839	Garland City	Miller
+71841	Gillham	Sevier
+71842	Horatio	Sevier
+71845	Lewisville	Lafayette
+71846	Lockesburg	Sevier
+71847	Mc Caskill	Hempstead
+71851	Mineral Springs	Howard
+71852	Nashville	Howard
+71853	Ogden	Little River
+71854	Texarkana	Miller
+71855	Ozan	Hempstead
+71857	Prescott	Nevada
+71858	Rosston	Nevada
+71859	Saratoga	Howard
+71860	Stamps	Lafayette
+71861	Taylor	Columbia
+71862	Washington	Hempstead
+71866	Winthrop	Little River
+71901	Hot Springs National Park	Garland
+71909	Hot Springs Village	Garland
+71913	Hot Springs National Park	Garland
+71921	Amity	Clark
+71923	Arkadelphia	Clark
+71929	Bismarck	Hot Spring
+71933	Bonnerdale	Hot Spring
+71935	Caddo Gap	Montgomery
+71937	Cove	Polk
+71940	Delight	Pike
+71941	Donaldson	Hot Spring
+71943	Glenwood	Pike
+71944	Grannis	Polk
+71945	Hatfield	Polk
+71949	Jessieville	Garland
+71950	Kirby	Pike
+71952	Langley	Pike
+71953	Mena	Polk
+71956	Mountain Pine	Garland
+71957	Mount Ida	Montgomery
+71958	Murfreesboro	Pike
+71959	Newhope	Pike
+71960	Norman	Montgomery
+71961	Oden	Montgomery
+71962	Okolona	Clark
+71964	Pearcy	Garland
+71965	Pencil Bluff	Montgomery
+71968	Royal	Garland
+71969	Sims	Montgomery
+71970	Story	Montgomery
+71971	Umpire	Howard
+71972	Vandervoort	Polk
+71973	Wickes	Polk
+71998	Arkadelphia	Clark
+71999	Arkadelphia	Clark
+72001	Adona	Perry
+72002	Alexander	Saline
+72003	Almyra	Arkansas
+72004	Altheimer	Jefferson
+72005	Amagon	Jackson
+72006	Augusta	Woodruff
+72007	Austin	Lonoke
+72010	Bald Knob	White
+72011	Bauxite	Saline
+72012	Beebe	White
+72013	Bee Branch	Van Buren
+72015	Benton	Saline
+72015	Benton	Saline
+72017	Biscoe	Prairie
+72019	Benton	Saline
+72019	Benton	Saline
+72020	Bradford	White
+72021	Brinkley	Monroe
+72022	Bryant	Saline
+72022	Bryant	Saline
+72023	Cabot	Lonoke
+72024	Carlisle	Lonoke
+72025	Casa	Perry
+72026	Casscoe	Arkansas
+72027	Center Ridge	Conway
+72029	Clarendon	Monroe
+72030	Cleveland	Conway
+72031	Clinton	Van Buren
+72032	Conway	Faulkner
+72034	Conway	Faulkner
+72035	Conway	Faulkner
+72036	Cotton Plant	Woodruff
+72038	Crocketts Bluff	Arkansas
+72039	Damascus	Van Buren
+72040	Des Arc	Prairie
+72041	De Valls Bluff	Prairie
+72042	De Witt	Arkansas
+72044	Edgemont	Cleburne
+72045	El Paso	White
+72046	England	Lonoke
+72047	Enola	Faulkner
+72048	Ethel	Arkansas
+72051	Fox	Stone
+72055	Gillett	Arkansas
+72057	Grapevine	Grant
+72058	Greenbrier	Faulkner
+72060	Griffithville	White
+72061	Guy	Faulkner
+72063	Hattieville	Conway
+72064	Hazen	Prairie
+72065	Hensley	Saline
+72067	Higden	Cleburne
+72068	Higginson	White
+72069	Holly Grove	Monroe
+72070	Houston	Perry
+72072	Humnoke	Lonoke
+72073	Humphrey	Jefferson
+72076	Jacksonville	Pulaski
+72079	Jefferson	Jefferson
+72080	Jerusalem	Conway
+72081	Judsonia	White
+72082	Kensett	White
+72084	Leola	Grant
+72086	Lonoke	Lonoke
+72087	Lonsdale	Garland
+72088	Fairfield Bay	Van Buren
+72099	Little Rock Air Force Base	Pulaski
+72101	Mc Crory	Woodruff
+72102	Mc Rae	White
+72103	Mabelvale	Saline
+72104	Malvern	Hot Spring
+72106	Mayflower	Faulkner
+72110	Morrilton	Conway
+72111	Mount Vernon	Faulkner
+72112	Newport	Jackson
+72113	Maumelle	Pulaski
+72114	North Little Rock	Pulaski
+72116	North Little Rock	Pulaski
+72117	North Little Rock	Pulaski
+72118	North Little Rock	Pulaski
+72120	Sherwood	Pulaski
+72121	Pangburn	White
+72122	Paron	Saline
+72125	Perry	Perry
+72126	Perryville	Perry
+72127	Plumerville	Conway
+72128	Poyen	Grant
+72129	Prattsville	Grant
+72130	Prim	Cleburne
+72131	Quitman	Cleburne
+72132	Redfield	Jefferson
+72134	Roe	Monroe
+72135	Roland	Pulaski
+72136	Romance	White
+72137	Rose Bud	White
+72140	Saint Charles	Arkansas
+72141	Scotland	Van Buren
+72142	Scott	Pulaski
+72143	Searcy	White
+72149	Searcy	White
+72150	Sheridan	Grant
+72152	Sherrill	Jefferson
+72153	Shirley	Van Buren
+72156	Solgohachia	Conway
+72157	Springfield	Conway
+72160	Stuttgart	Arkansas
+72165	Thida	Independence
+72166	Tichnor	Arkansas
+72167	Traskwood	Saline
+72168	Tucker	Jefferson
+72173	Vilonia	Faulkner
+72175	Wabbaseka	Jefferson
+72176	Ward	Lonoke
+72179	Wilburn	Cleburne
+72181	Wooster	Faulkner
+72199	North Little Rock	Pulaski
+72201	Little Rock	Pulaski
+72202	Little Rock	Pulaski
+72204	Little Rock	Pulaski
+72205	Little Rock	Pulaski
+72206	Little Rock	Pulaski
+72207	Little Rock	Pulaski
+72209	Little Rock	Pulaski
+72210	Little Rock	Pulaski
+72211	Little Rock	Pulaski
+72212	Little Rock	Pulaski
+72223	Little Rock	Pulaski
+72227	Little Rock	Pulaski
+72255	Little Rock	Pulaski
+72301	West Memphis	Crittenden
+72315	Blytheville	Mississippi
+72320	Brickeys	Lee
+72324	Cherry Valley	Cross
+72326	Colt	Saint Francis
+72327	Crawfordsville	Crittenden
+72330	Dyess	Mississippi
+72331	Earle	Crittenden
+72333	Elaine	Phillips
+72335	Forrest City	Saint Francis
+72338	Frenchmans Bayou	Mississippi
+72342	Helena	Phillips
+72346	Heth	Saint Francis
+72347	Hickory Ridge	Cross
+72348	Hughes	Saint Francis
+72350	Joiner	Mississippi
+72354	Lepanto	Poinsett
+72355	Lexa	Phillips
+72358	Luxora	Mississippi
+72360	Marianna	Lee
+72364	Marion	Crittenden
+72365	Marked Tree	Poinsett
+72366	Marvell	Phillips
+72368	Moro	Lee
+72370	Osceola	Mississippi
+72372	Palestine	Saint Francis
+72373	Parkin	Cross
+72374	Poplar Grove	Phillips
+72376	Proctor	Crittenden
+72384	Turrell	Crittenden
+72386	Tyronza	Poinsett
+72390	West Helena	Phillips
+72392	Wheatley	Saint Francis
+72394	Widener	Saint Francis
+72395	Wilson	Mississippi
+72396	Wynne	Cross
+72401	Jonesboro	Craighead
+72404	Jonesboro	Craighead
+72405	Jonesboro	Craighead
+72411	Bay	Craighead
+72412	Beech Grove	Greene
+72413	Biggers	Randolph
+72414	Black Oak	Craighead
+72415	Black Rock	Lawrence
+72416	Bono	Craighead
+72417	Brookland	Craighead
+72419	Caraway	Craighead
+72421	Cash	Craighead
+72422	Corning	Clay
+72425	Delaplaine	Greene
+72428	Etowah	Mississippi
+72429	Fisher	Poinsett
+72430	Greenway	Clay
+72432	Harrisburg	Poinsett
+72434	Imboden	Lawrence
+72435	Knobel	Clay
+72435	Knobel	Clay
+72436	Lafe	Greene
+72437	Lake City	Craighead
+72438	Leachville	Mississippi
+72440	Lynn	Lawrence
+72442	Manila	Mississippi
+72443	Marmaduke	Greene
+72444	Maynard	Randolph
+72447	Monette	Craighead
+72450	Paragould	Greene
+72453	Peach Orchard	Clay
+72454	Piggott	Clay
+72455	Pocahontas	Randolph
+72456	Pollard	Clay
+72458	Powhatan	Lawrence
+72459	Ravenden	Lawrence
+72460	Ravenden Springs	Randolph
+72461	Rector	Clay
+72466	Smithville	Lawrence
+72469	Strawberry	Lawrence
+72470	Success	Clay
+72471	Swifton	Jackson
+72472	Trumann	Poinsett
+72473	Tuckerman	Jackson
+72476	Walnut Ridge	Lawrence
+72479	Weiner	Poinsett
+72482	Williford	Sharp
+72501	Batesville	Independence
+72512	Horseshoe Bend	Izard
+72513	Ash Flat	Sharp
+72517	Brockwell	Izard
+72519	Calico Rock	Izard
+72520	Camp	Fulton
+72521	Cave City	Sharp
+72523	Concord	Cleburne
+72524	Cord	Independence
+72527	Desha	Independence
+72528	Dolph	Izard
+72529	Cherokee Village	Sharp
+72530	Drasco	Cleburne
+72531	Elizabeth	Fulton
+72532	Evening Shade	Sharp
+72533	Fifty Six	Stone
+72534	Floral	Independence
+72536	Franklin	Izard
+72537	Gamaliel	Baxter
+72538	Gepp	Fulton
+72539	Glencoe	Fulton
+72540	Guion	Izard
+72542	Hardy	Sharp
+72543	Heber Springs	Cleburne
+72544	Henderson	Baxter
+72545	Heber Springs	Cleburne
+72546	Ida	Cleburne
+72550	Locust Grove	Independence
+72554	Mammoth Spring	Fulton
+72555	Marcella	Stone
+72556	Melbourne	Izard
+72560	Mountain View	Stone
+72561	Mount Pleasant	Izard
+72562	Newark	Independence
+72564	Oil Trough	Independence
+72565	Oxford	Izard
+72567	Pleasant Grove	Stone
+72568	Pleasant Plains	Independence
+72569	Poughkeepsie	Sharp
+72571	Rosie	Independence
+72572	Saffell	Lawrence
+72573	Sage	Izard
+72576	Salem	Fulton
+72577	Sidney	Sharp
+72578	Sturkie	Fulton
+72579	Sulphur Rock	Independence
+72581	Tumbling Shoals	Cleburne
+72583	Viola	Fulton
+72584	Violet Hill	Izard
+72587	Wiseman	Izard
+72601	Harrison	Boone
+72611	Alpena	Boone
+72616	Berryville	Carroll
+72617	Big Flat	Baxter
+72619	Bull Shoals	Marion
+72623	Clarkridge	Baxter
+72624	Compton	Newton
+72626	Cotter	Baxter
+72628	Deer	Newton
+72629	Dennard	Van Buren
+72631	Eureka Springs	Carroll
+72632	Eureka Springs	Carroll
+72633	Everton	Boone
+72634	Flippin	Marion
+72635	Gassville	Baxter
+72638	Green Forest	Carroll
+72639	Harriet	Searcy
+72640	Hasty	Newton
+72641	Jasper	Newton
+72642	Lakeview	Baxter
+72644	Lead Hill	Boone
+72645	Leslie	Searcy
+72648	Marble Falls	Newton
+72650	Marshall	Searcy
+72651	Midway	Baxter
+72653	Mountain Home	Baxter
+72655	Mount Judea	Newton
+72657	Timbo	Stone
+72658	Norfork	Baxter
+72659	Norfork	Baxter
+72660	Oak Grove	Carroll
+72661	Oakland	Marion
+72662	Omaha	Boone
+72663	Onia	Stone
+72666	Parthenon	Newton
+72668	Peel	Marion
+72670	Ponca	Newton
+72675	Saint Joe	Searcy
+72679	Tilly	Pope
+72680	Timbo	Stone
+72682	Valley Springs	Boone
+72683	Vendor	Newton
+72685	Western Grove	Newton
+72686	Witts Springs	Searcy
+72687	Yellville	Marion
+72701	Fayetteville	Washington
+72703	Fayetteville	Washington
+72704	Fayetteville	Washington
+72712	Bentonville	Benton
+72713	Bentonville	Benton
+72716	Bentonville	Benton
+72717	Canehill	Washington
+72718	Cave Springs	Benton
+72719	Centerton	Benton
+72721	Combs	Madison
+72722	Decatur	Benton
+72727	Elkins	Washington
+72729	Evansville	Washington
+72730	Farmington	Washington
+72730	Farmington	Washington
+72732	Garfield	Benton
+72734	Gentry	Benton
+72736	Gravette	Benton
+72738	Hindsville	Madison
+72739	Hiwasse	Benton
+72740	Huntsville	Madison
+72742	Kingston	Madison
+72744	Lincoln	Washington
+72745	Lowell	Benton
+72747	Maysville	Benton
+72749	Morrow	Washington
+72751	Pea Ridge	Benton
+72752	Pettigrew	Madison
+72753	Prairie Grove	Washington
+72756	Rogers	Benton
+72758	Rogers	Benton
+72760	Saint Paul	Madison
+72761	Siloam Springs	Benton
+72762	Springdale	Washington
+72764	Springdale	Washington
+72764	Springdale	Washington
+72768	Sulphur Springs	Benton
+72769	Summers	Washington
+72773	Wesley	Madison
+72774	West Fork	Washington
+72776	Witter	Madison
+72801	Russellville	Pope
+72802	Russellville	Pope
+72821	Altus	Franklin
+72823	Atkins	Pope
+72824	Belleville	Yell
+72827	Bluffton	Yell
+72830	Clarksville	Johnson
+72832	Coal Hill	Johnson
+72833	Danville	Yell
+72834	Dardanelle	Yell
+72835	Delaware	Logan
+72837	Dover	Pope
+72838	Gravelly	Yell
+72839	Hagarville	Johnson
+72840	Hartman	Johnson
+72841	Harvey	Scott
+72842	Havana	Yell
+72843	Hector	Pope
+72845	Knoxville	Johnson
+72846	Lamar	Johnson
+72847	London	Pope
+72851	New Blaine	Logan
+72852	Oark	Johnson
+72853	Ola	Yell
+72854	Ozone	Johnson
+72855	Paris	Logan
+72856	Pelsor	Pope
+72857	Plainview	Yell
+72858	Pottsville	Pope
+72860	Rover	Yell
+72863	Scranton	Logan
+72865	Subiaco	Logan
+72901	Fort Smith	Sebastian
+72903	Fort Smith	Sebastian
+72904	Fort Smith	Sebastian
+72905	Fort Smith	Sebastian
+72908	Fort Smith	Sebastian
+72916	Fort Smith	Sebastian
+72919	Fort Smith	Sebastian
+72921	Alma	Crawford
+72926	Boles	Scott
+72927	Booneville	Logan
+72928	Branch	Franklin
+72930	Cecil	Franklin
+72932	Cedarville	Crawford
+72933	Charleston	Franklin
+72934	Chester	Crawford
+72936	Greenwood	Sebastian
+72937	Hackett	Sebastian
+72938	Hartford	Sebastian
+72940	Huntington	Sebastian
+72941	Lavaca	Sebastian
+72943	Magazine	Logan
+72944	Mansfield	Scott
+72946	Mountainburg	Crawford
+72947	Mulberry	Crawford
+72948	Natural Dam	Crawford
+72949	Ozark	Franklin
+72950	Parks	Scott
+72951	Ratcliff	Logan
+72952	Rudy	Crawford
+72955	Uniontown	Crawford
+72956	Van Buren	Crawford
+72958	Waldron	Scott
+72959	Winslow	Washington
