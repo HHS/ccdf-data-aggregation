@@ -1,0 +1,1538 @@
+{
+    "hanaResponseStatus": {
+        "responseStatusMessage": "Success",
+        "responseCode": 200,
+        "requestReceivedAt": "2025-03-21T06:53:45.559-1000",
+        "responseReturnedAt": "2025-03-21T06:53:46.009-1000"
+    },
+    "hanaResponse": {
+        "results": [
+            {
+                "providerId": 383,
+                "providerType": "CG",
+                "name": "PYLE, KUNIKO N",
+                "services": [
+                    {
+                        "serviceId": 44488,
+                        "providerId": 383,
+                        "serviceType": "02",
+                        "serviceName": "KUNIKO AND DAVID PYLE",
+                        "area": "AEAQIG"
+                    }
+                ]
+            },
+            {
+                "providerId": 426,
+                "providerType": "CG",
+                "name": "SANTOS, MAELISA",
+                "services": [
+                    {
+                        "serviceId": 83922,
+                        "providerId": 426,
+                        "serviceType": "02",
+                        "serviceName": "MAELISA & CLIFFORD SANTOS",
+                        "area": "AEATDQ"
+                    }
+                ]
+            },
+            {
+                "providerId": 461,
+                "providerType": "CG",
+                "name": "BARCAI, VERNA M",
+                "services": [
+                    {
+                        "serviceId": 126,
+                        "providerId": 461,
+                        "serviceType": "02",
+                        "serviceName": "VERNA BARCAI",
+                        "area": "AEAQBO"
+                    }
+                ]
+            },
+            {
+                "providerId": 914,
+                "providerType": "CG",
+                "name": "PAA, KELLY J",
+                "services": [
+                    {
+                        "serviceId": 11276,
+                        "providerId": 914,
+                        "serviceType": "02",
+                        "serviceName": "KELLY & EDWARD PAA",
+                        "area": "AEARCC"
+                    }
+                ]
+            },
+            {
+                "providerId": 5324,
+                "providerType": "CG",
+                "name": "FERNANDEZ, MARILYN M",
+                "services": [
+                    {
+                        "serviceId": 42766,
+                        "providerId": 5324,
+                        "serviceType": "02",
+                        "serviceName": "MELVIN & MARILYN FERNANDEZ",
+                        "area": "ACAJBL"
+                    }
+                ]
+            },
+            {
+                "providerId": 13862,
+                "providerType": "CG",
+                "name": "BALLESTEROS, BRENDA A",
+                "services": [
+                    {
+                        "serviceId": 38119,
+                        "providerId": 13862,
+                        "serviceType": "02",
+                        "serviceName": "BRENDA AND HAPHIL BALLESTEROS",
+                        "area": "AGAYBRIZ"
+                    }
+                ]
+            },
+            {
+                "providerId": 14844,
+                "providerType": "CG",
+                "name": "OSHIRO, YUJI",
+                "services": [
+                    {
+                        "serviceId": 60320,
+                        "providerId": 14844,
+                        "serviceType": "02",
+                        "serviceName": "YUJI AND KATHERINE OSHIRO",
+                        "area": "AGBBCX"
+                    }
+                ]
+            },
+            {
+                "providerId": 18532,
+                "providerType": "CG",
+                "name": "MAYEDA, HAROLDYNE P",
+                "services": [
+                    {
+                        "serviceId": 1277,
+                        "providerId": 18532,
+                        "serviceType": "02",
+                        "serviceName": "HAROLDYNE & MAX MAYEDA",
+                        "area": "AGBAGG"
+                    }
+                ]
+            },
+            {
+                "providerId": 19321,
+                "providerType": "CG",
+                "name": "THAPA, SAROJ S",
+                "services": [
+                    {
+                        "serviceId": 1872,
+                        "providerId": 19321,
+                        "serviceType": "02",
+                        "serviceName": "SAROJ AND YADAB THAPA",
+                        "area": "AGBAFI"
+                    }
+                ]
+            },
+            {
+                "providerId": 23074,
+                "providerType": "CG",
+                "name": "KUAHUIA, CHEYENNE M",
+                "services": [
+                    {
+                        "serviceId": 79921,
+                        "providerId": 23074,
+                        "serviceType": "02",
+                        "serviceName": "CHEYENNE KUAHUIA & JAMES KANE",
+                        "area": "AGBBCW"
+                    }
+                ]
+            },
+            {
+                "providerId": 26230,
+                "providerType": "CG",
+                "name": "KINEL, MERCEDITA B",
+                "services": [
+                    {
+                        "serviceId": 20940,
+                        "providerId": 26230,
+                        "serviceType": "02",
+                        "serviceName": "MERCEDITA KINEL",
+                        "area": "AGBACR"
+                    }
+                ]
+            },
+            {
+                "providerId": 29469,
+                "providerType": "OR",
+                "name": "ALL SAINTS PRESCHOOL",
+                "services": [
+                    {
+                        "serviceId": 66,
+                        "providerId": 29469,
+                        "serviceType": "03",
+                        "serviceName": "ALL SAINTS PRESCHOOL",
+                        "area": "ACAKCA"
+                    }
+                ]
+            },
+            {
+                "providerId": 29561,
+                "providerType": "OR",
+                "name": "CHAMINADE UNIVERSITY OF HONOLULU",
+                "services": [
+                    {
+                        "serviceId": 208,
+                        "providerId": 29561,
+                        "serviceType": "03",
+                        "serviceName": "L ROBERT ALLEN MONTESSORI CENTER",
+                        "area": "AGBAJG"
+                    }
+                ]
+            },
+            {
+                "providerId": 29568,
+                "providerType": "OR",
+                "name": "CHILD & FAMILY SERVICE",
+                "services": [
+                    {
+                        "serviceId": 224,
+                        "providerId": 29568,
+                        "serviceType": "03",
+                        "serviceName": "KOLOA HEAD START",
+                        "area": "ACAMDI"
+                    },
+                    {
+                        "serviceId": 219,
+                        "providerId": 29568,
+                        "serviceType": "03",
+                        "serviceName": "KAPAA HEAD START",
+                        "area": "ACAKCA"
+                    },
+                    {
+                        "serviceId": 85108,
+                        "providerId": 29568,
+                        "serviceType": "03",
+                        "serviceName": "KEKAHA HEAD START",
+                        "area": "ACANEC"
+                    },
+                    {
+                        "serviceId": 85109,
+                        "providerId": 29568,
+                        "serviceType": "03",
+                        "serviceName": "LIHUE HEAD START",
+                        "area": "ACAJBL"
+                    }
+                ]
+            },
+            {
+                "providerId": 15,
+                "providerType": "CG",
+                "name": "DOUGHERTY, NOREEN",
+                "services": [
+                    {
+                        "serviceId": 92971,
+                        "providerId": 15,
+                        "serviceType": "02",
+                        "serviceName": "NOREEN DOUGHERTY",
+                        "area": "ACAKIH"
+                    }
+                ]
+            },
+            {
+                "providerId": 436,
+                "providerType": "CG",
+                "name": "TANICALA, LORI A",
+                "services": [
+                    {
+                        "serviceId": 14141,
+                        "providerId": 436,
+                        "serviceType": "02",
+                        "serviceName": "LORI & CRAWFORD TANICALA",
+                        "area": "AEATDQ"
+                    }
+                ]
+            },
+            {
+                "providerId": 1826,
+                "providerType": "CG",
+                "name": "FONTANILLA, JASMINE R",
+                "services": [
+                    {
+                        "serviceId": 17475,
+                        "providerId": 1826,
+                        "serviceType": "02",
+                        "serviceName": "JASMINE FONTANILLA",
+                        "area": "AGBAFM"
+                    }
+                ]
+            },
+            {
+                "providerId": 2325,
+                "providerType": "CG",
+                "name": "REMIGIO, BELINDA M",
+                "services": [
+                    {
+                        "serviceId": 36837,
+                        "providerId": 2325,
+                        "serviceType": "02",
+                        "serviceName": "BELINDA AND STEVEN REMIGIO",
+                        "area": "AGBAJT"
+                    }
+                ]
+            },
+            {
+                "providerId": 9551,
+                "providerType": "CG",
+                "name": "GONSALVES, LINDA M",
+                "services": [
+                    {
+                        "serviceId": 74646,
+                        "providerId": 9551,
+                        "serviceType": "02",
+                        "serviceName": "LINDA AND WILLIAM GONSALVES",
+                        "area": "AGBBCU"
+                    }
+                ]
+            },
+            {
+                "providerId": 14872,
+                "providerType": "CG",
+                "name": "STREADBECK, TARA-LYN K",
+                "services": [
+                    {
+                        "serviceId": 25443,
+                        "providerId": 14872,
+                        "serviceType": "02",
+                        "serviceName": "TARA-LYN AND LINCOLN STREADBECK",
+                        "area": "AGBBCT"
+                    }
+                ]
+            },
+            {
+                "providerId": 17875,
+                "providerType": "CG",
+                "name": "GAUTAM, KHIMA K",
+                "services": [
+                    {
+                        "serviceId": 407,
+                        "providerId": 17875,
+                        "serviceType": "02",
+                        "serviceName": "KHIMA KUMARI GAUTAM",
+                        "area": "AGBACQ"
+                    }
+                ]
+            },
+            {
+                "providerId": 19642,
+                "providerType": "CG",
+                "name": "DAVIS, MAILE M",
+                "services": [
+                    {
+                        "serviceId": 85654,
+                        "providerId": 19642,
+                        "serviceType": "02",
+                        "serviceName": "MAILE DAVIS",
+                        "area": "AEARCC"
+                    }
+                ]
+            },
+            {
+                "providerId": 21176,
+                "providerType": "CG",
+                "name": "MATEO, KATERINA E",
+                "services": [
+                    {
+                        "serviceId": 67584,
+                        "providerId": 21176,
+                        "serviceType": "02",
+                        "serviceName": "KATERINA MATEO",
+                        "area": "ACAMDJ"
+                    }
+                ]
+            },
+            {
+                "providerId": 29475,
+                "providerType": "OR",
+                "name": "ALOHA SCHOOL EARLY LEARNING CENTER",
+                "services": [
+                    {
+                        "serviceId": 73,
+                        "providerId": 29475,
+                        "serviceType": "03",
+                        "serviceName": "ALOHA SCHOOL EARLY LEARNING CENTER",
+                        "area": "ACALCY"
+                    }
+                ]
+            },
+            {
+                "providerId": 29486,
+                "providerType": "OR",
+                "name": "ANGELS AT PLAY PRESCHOOL & KINDERGARTEN",
+                "services": [
+                    {
+                        "serviceId": 96,
+                        "providerId": 29486,
+                        "serviceType": "03",
+                        "serviceName": "ANGELS AT PLAY PRESCHOOL & KINDERGARTEN",
+                        "area": "AGBAFH"
+                    }
+                ]
+            },
+            {
+                "providerId": 29538,
+                "providerType": "OR",
+                "name": "CALVARY UNITED PENTECOSTAL CHURCH",
+                "services": [
+                    {
+                        "serviceId": 173,
+                        "providerId": 29538,
+                        "serviceType": "03",
+                        "serviceName": "CALVARY CHILD CARE CENTER",
+                        "area": "AGAXBH"
+                    }
+                ]
+            },
+            {
+                "providerId": 386,
+                "providerType": "CG",
+                "name": "TURNER, JACQUELINE L",
+                "services": [
+                    {
+                        "serviceId": 14675,
+                        "providerId": 386,
+                        "serviceType": "02",
+                        "serviceName": "JACQUELINE & PATRICK TURNER",
+                        "area": "AEAQBO"
+                    }
+                ]
+            },
+            {
+                "providerId": 393,
+                "providerType": "CG",
+                "name": "RAZO, KAREN M",
+                "services": [
+                    {
+                        "serviceId": 84290,
+                        "providerId": 393,
+                        "serviceType": "02",
+                        "serviceName": "KAREN AND CONRAD RAZO",
+                        "area": "AEAQBN"
+                    }
+                ]
+            },
+            {
+                "providerId": 918,
+                "providerType": "CG",
+                "name": "POLENDEY, KIMBERLY J",
+                "services": [
+                    {
+                        "serviceId": 82109,
+                        "providerId": 918,
+                        "serviceType": "02",
+                        "serviceName": "KIMBERLY POLENDEY",
+                        "area": "AEARCE"
+                    }
+                ]
+            },
+            {
+                "providerId": 1532,
+                "providerType": "CG",
+                "name": "FARLEY, TIMENA M",
+                "services": [
+                    {
+                        "serviceId": 16384,
+                        "providerId": 1532,
+                        "serviceType": "02",
+                        "serviceName": "TIMENA FARLEY",
+                        "area": "AGDEDC"
+                    }
+                ]
+            },
+            {
+                "providerId": 5667,
+                "providerType": "CG",
+                "name": "RIECK, MARIE G",
+                "services": [
+                    {
+                        "serviceId": 74862,
+                        "providerId": 5667,
+                        "serviceType": "02",
+                        "serviceName": "MARIE'S MONTESSORI HALE",
+                        "area": "ABAHBYHP"
+                    }
+                ]
+            },
+            {
+                "providerId": 7516,
+                "providerType": "CG",
+                "name": "KEOHOHOU, TIHANEI J",
+                "services": [
+                    {
+                        "serviceId": 68292,
+                        "providerId": 7516,
+                        "serviceType": "02",
+                        "serviceName": "TIHANEI AND GLENN KEOHOHOU, JR",
+                        "area": "AGBBCT"
+                    }
+                ]
+            },
+            {
+                "providerId": 9642,
+                "providerType": "CG",
+                "name": "MARTIN, BRENDA",
+                "services": [
+                    {
+                        "serviceId": 84415,
+                        "providerId": 9642,
+                        "serviceType": "02",
+                        "serviceName": "JOHN AND BRENDA MARTIN",
+                        "area": "ACAKIH"
+                    }
+                ]
+            },
+            {
+                "providerId": 10954,
+                "providerType": "CG",
+                "name": "STEPHENS, DAWN D",
+                "services": [
+                    {
+                        "serviceId": 88858,
+                        "providerId": 10954,
+                        "serviceType": "02",
+                        "serviceName": "DAWN STEPHENS",
+                        "area": "AGBDDV"
+                    }
+                ]
+            },
+            {
+                "providerId": 11493,
+                "providerType": "CG",
+                "name": "CRIVELLO, TARITA S",
+                "services": [
+                    {
+                        "serviceId": 268,
+                        "providerId": 11493,
+                        "serviceType": "02",
+                        "serviceName": "TARITA AND ROWELL CRIVELLO",
+                        "area": "AGBEEQG1"
+                    }
+                ]
+            },
+            {
+                "providerId": 13694,
+                "providerType": "CG",
+                "name": "RIVERA, JOAN N",
+                "services": [
+                    {
+                        "serviceId": 24825,
+                        "providerId": 13694,
+                        "serviceType": "02",
+                        "serviceName": "JOAN & BUDDY RIVERA",
+                        "area": "AGAYBUJN"
+                    }
+                ]
+            },
+            {
+                "providerId": 13880,
+                "providerType": "CG",
+                "name": "CAMACHO, MARYJANE",
+                "services": [
+                    {
+                        "serviceId": 3928,
+                        "providerId": 13880,
+                        "serviceType": "02",
+                        "serviceName": "MARY JANE CAMACHO",
+                        "area": "ABAHBXHB"
+                    }
+                ]
+            },
+            {
+                "providerId": 17327,
+                "providerType": "CG",
+                "name": "SILVA, RASIKA N",
+                "services": [
+                    {
+                        "serviceId": 29966,
+                        "providerId": 17327,
+                        "serviceType": "02",
+                        "serviceName": "RASIKA & WASANTHA SILVA",
+                        "area": "AGBAFU"
+                    }
+                ]
+            },
+            {
+                "providerId": 21663,
+                "providerType": "CG",
+                "name": "JAVIER, KANOEMAIOKALANI J",
+                "services": [
+                    {
+                        "serviceId": 89502,
+                        "providerId": 21663,
+                        "serviceType": "02",
+                        "serviceName": "KANOEMAIOKALANI JAVIER",
+                        "area": "AEAQBN"
+                    }
+                ]
+            },
+            {
+                "providerId": 23179,
+                "providerType": "CG",
+                "name": "MEDEIROS, MAUDLYN K",
+                "services": [
+                    {
+                        "serviceId": 40336,
+                        "providerId": 23179,
+                        "serviceType": "02",
+                        "serviceName": "MAUDLYN AND ROBERT MEDEIROS, JR.",
+                        "area": "ABAHBW"
+                    }
+                ]
+            },
+            {
+                "providerId": 1425,
+                "providerType": "CG",
+                "name": "PARILLA, CHRISTINA L",
+                "services": [
+                    {
+                        "serviceId": 85206,
+                        "providerId": 1425,
+                        "serviceType": "02",
+                        "serviceName": "CHRISTINA AND DWIGHT PARILLA",
+                        "area": "AEAQBN"
+                    }
+                ]
+            },
+            {
+                "providerId": 1638,
+                "providerType": "CG",
+                "name": "JACOBS, DALE",
+                "services": [
+                    {
+                        "serviceId": 18657,
+                        "providerId": 1638,
+                        "serviceType": "02",
+                        "serviceName": "DALE JACOBS",
+                        "area": "ACALCZ"
+                    }
+                ]
+            },
+            {
+                "providerId": 9223,
+                "providerType": "CG",
+                "name": "YAMASHITA, LINDA C",
+                "services": [
+                    {
+                        "serviceId": 83295,
+                        "providerId": 9223,
+                        "serviceType": "02",
+                        "serviceName": "LINDA AND  ROSS YAMASHITA",
+                        "area": "ABAIDWEU"
+                    }
+                ]
+            },
+            {
+                "providerId": 9788,
+                "providerType": "CG",
+                "name": "MARTIN, VIRGINIA L",
+                "services": [
+                    {
+                        "serviceId": 28628,
+                        "providerId": 9788,
+                        "serviceType": "09",
+                        "serviceName": "MERRY GO ROUND PRESCHOOL",
+                        "area": "ACAKCA"
+                    }
+                ]
+            },
+            {
+                "providerId": 11021,
+                "providerType": "CG",
+                "name": "DUMLAO, CHIHARU T",
+                "services": [
+                    {
+                        "serviceId": 62003,
+                        "providerId": 11021,
+                        "serviceType": "02",
+                        "serviceName": "CHIHARU & RODOLFO DUMLAO",
+                        "area": "AEAQBO"
+                    }
+                ]
+            },
+            {
+                "providerId": 11238,
+                "providerType": "CG",
+                "name": "PEILER, MICHELLE K",
+                "services": [
+                    {
+                        "serviceId": 74213,
+                        "providerId": 11238,
+                        "serviceType": "02",
+                        "serviceName": "MICHELLE AND RON PEILER",
+                        "area": "AGAYBRIY"
+                    }
+                ]
+            },
+            {
+                "providerId": 14461,
+                "providerType": "CG",
+                "name": "KOGAMI, JUDITH F",
+                "services": [
+                    {
+                        "serviceId": 8391,
+                        "providerId": 14461,
+                        "serviceType": "02",
+                        "serviceName": "JUDITH AND NORMAN KOGAMI",
+                        "area": "AGAYBSJL"
+                    }
+                ]
+            },
+            {
+                "providerId": 15938,
+                "providerType": "CG",
+                "name": "THAPA, BHIMA D",
+                "services": [
+                    {
+                        "serviceId": 1870,
+                        "providerId": 15938,
+                        "serviceType": "02",
+                        "serviceName": "BHIMA DEVI THAPA & MANDHOJ RAI",
+                        "area": "AGBAFV"
+                    }
+                ]
+            },
+            {
+                "providerId": 18188,
+                "providerType": "CG",
+                "name": "CAMPBELL, SHAROLYN N",
+                "services": [
+                    {
+                        "serviceId": 447,
+                        "providerId": 18188,
+                        "serviceType": "02",
+                        "serviceName": "SHAROLYN & ADAM CAMPBELL",
+                        "area": "AGBEER"
+                    }
+                ]
+            },
+            {
+                "providerId": 22346,
+                "providerType": "CG",
+                "name": "MILAR-OKINAKA, DESIREE P",
+                "services": [
+                    {
+                        "serviceId": 28528,
+                        "providerId": 22346,
+                        "serviceType": "02",
+                        "serviceName": "DESIREE MILAR-OKINAKA AND IVAN OKINAKA",
+                        "area": "ABAHBW"
+                    }
+                ]
+            },
+            {
+                "providerId": 25504,
+                "providerType": "CG",
+                "name": "ALMAREZ, CHERYL ANN H",
+                "services": [
+                    {
+                        "serviceId": 47090,
+                        "providerId": 25504,
+                        "serviceType": "02",
+                        "serviceName": "CHERYL-ANN AND JAMES ALMAREZ",
+                        "area": "AGBBCX"
+                    }
+                ]
+            },
+            {
+                "providerId": 26904,
+                "providerType": "CG",
+                "name": "RIVERA, TRISH A",
+                "services": [
+                    {
+                        "serviceId": 51074,
+                        "providerId": 26904,
+                        "serviceType": "02",
+                        "serviceName": "WENTWORTH II & TRISH RIVERA",
+                        "area": "ACAKBZ"
+                    }
+                ]
+            },
+            {
+                "providerId": 1287,
+                "providerType": "CG",
+                "name": "DOUCETTE, JUDY A",
+                "services": [
+                    {
+                        "serviceId": 84595,
+                        "providerId": 1287,
+                        "serviceType": "02",
+                        "serviceName": "JUDY DOUCETTE",
+                        "area": "AEARCC"
+                    }
+                ]
+            },
+            {
+                "providerId": 7987,
+                "providerType": "CG",
+                "name": "FREITAS, MELISSA M",
+                "services": [
+                    {
+                        "serviceId": 22712,
+                        "providerId": 7987,
+                        "serviceType": "02",
+                        "serviceName": "BYRON AND MELISSA FREITAS",
+                        "area": "ACAMDH"
+                    }
+                ]
+            },
+            {
+                "providerId": 8357,
+                "providerType": "CG",
+                "name": "MADAMBA, LORELYN C",
+                "services": [
+                    {
+                        "serviceId": 28631,
+                        "providerId": 8357,
+                        "serviceType": "02",
+                        "serviceName": "LORELYN MADAMBA",
+                        "area": "ABAHBW"
+                    }
+                ]
+            },
+            {
+                "providerId": 12174,
+                "providerType": "CG",
+                "name": "HERRON, KUUIPO S",
+                "services": [
+                    {
+                        "serviceId": 89172,
+                        "providerId": 12174,
+                        "serviceType": "02",
+                        "serviceName": "KUUIPO HERRON",
+                        "area": "AGAYBUJN"
+                    }
+                ]
+            },
+            {
+                "providerId": 12791,
+                "providerType": "CG",
+                "name": "OKAMURA, BETH M",
+                "services": [
+                    {
+                        "serviceId": 1440,
+                        "providerId": 12791,
+                        "serviceType": "02",
+                        "serviceName": "BETH & CLEVE OKAMURA",
+                        "area": "AGBEEQGD"
+                    }
+                ]
+            },
+            {
+                "providerId": 16888,
+                "providerType": "CG",
+                "name": "RHODEN, JULLIET S",
+                "services": [
+                    {
+                        "serviceId": 79108,
+                        "providerId": 16888,
+                        "serviceType": "02",
+                        "serviceName": "JULLIET RHODEN",
+                        "area": "AGBACQ"
+                    }
+                ]
+            },
+            {
+                "providerId": 17303,
+                "providerType": "CG",
+                "name": "LAU, GIGI S",
+                "services": [
+                    {
+                        "serviceId": 25999,
+                        "providerId": 17303,
+                        "serviceType": "02",
+                        "serviceName": "GIGI AND FRANKLYN LAU",
+                        "area": "AGBAGG"
+                    }
+                ]
+            },
+            {
+                "providerId": 18231,
+                "providerType": "CG",
+                "name": "MARTIN, SARAHANNE M",
+                "services": [
+                    {
+                        "serviceId": 41606,
+                        "providerId": 18231,
+                        "serviceType": "02",
+                        "serviceName": "SARAH & BEN MARTIN",
+                        "area": "AEAQBN"
+                    }
+                ]
+            },
+            {
+                "providerId": 18522,
+                "providerType": "CG",
+                "name": "GURULUWANA, RAMYALATHA G",
+                "services": [
+                    {
+                        "serviceId": 449,
+                        "providerId": 18522,
+                        "serviceType": "02",
+                        "serviceName": "RAMYALATHA GURULUWANA",
+                        "area": "AGBAGG"
+                    }
+                ]
+            },
+            {
+                "providerId": 18996,
+                "providerType": "CG",
+                "name": "LINDSAY, JEANETTE J",
+                "services": [
+                    {
+                        "serviceId": 1182,
+                        "providerId": 18996,
+                        "serviceType": "02",
+                        "serviceName": "JEANETTE  LINDSAY",
+                        "area": "AGBEEQGC"
+                    }
+                ]
+            },
+            {
+                "providerId": 29322,
+                "providerType": "CG",
+                "name": "SANTOSBRAS, DARCY K",
+                "services": [
+                    {
+                        "serviceId": 96042,
+                        "providerId": 29322,
+                        "serviceType": "02",
+                        "serviceName": "DARCY & JOSEPH SANTOSBRAS",
+                        "area": "AEATDP"
+                    }
+                ]
+            },
+            {
+                "providerId": 457,
+                "providerType": "CG",
+                "name": "ALO, ROCHELLE C",
+                "services": [
+                    {
+                        "serviceId": 55477,
+                        "providerId": 457,
+                        "serviceType": "02",
+                        "serviceName": "ROCHELLE AND MARK ALO",
+                        "area": "AEARCC"
+                    }
+                ]
+            },
+            {
+                "providerId": 3266,
+                "providerType": "CG",
+                "name": "LEASAU, CLARA M",
+                "services": [
+                    {
+                        "serviceId": 1162,
+                        "providerId": 3266,
+                        "serviceType": "02",
+                        "serviceName": "CLARA LEASAU",
+                        "area": "ACAMIR"
+                    }
+                ]
+            },
+            {
+                "providerId": 8975,
+                "providerType": "CG",
+                "name": "YAMAGUCHI, SHERYL ANN A",
+                "services": [
+                    {
+                        "serviceId": 92572,
+                        "providerId": 8975,
+                        "serviceType": "09",
+                        "serviceName": "GUCHI'S CHILD CARE SERVICE, A LICENSED DP",
+                        "area": "AGBBCX"
+                    }
+                ]
+            },
+            {
+                "providerId": 15244,
+                "providerType": "CG",
+                "name": "LORENZO, LORNAANN P",
+                "services": [
+                    {
+                        "serviceId": 61702,
+                        "providerId": 15244,
+                        "serviceType": "02",
+                        "serviceName": "LORNA LORENZO AND BRAD FELICIANO",
+                        "area": "ABAIDXHE"
+                    }
+                ]
+            },
+            {
+                "providerId": 16926,
+                "providerType": "CG",
+                "name": "LAUAKI, KAREN M",
+                "services": [
+                    {
+                        "serviceId": 89980,
+                        "providerId": 16926,
+                        "serviceType": "02",
+                        "serviceName": "KAREN AND HELAMAN LAUAKI",
+                        "area": "AGDEDC"
+                    }
+                ]
+            },
+            {
+                "providerId": 19494,
+                "providerType": "CG",
+                "name": "SUWAL MAHARJAN, SURYA L",
+                "services": [
+                    {
+                        "serviceId": 1824,
+                        "providerId": 19494,
+                        "serviceType": "02",
+                        "serviceName": "SURYA SUWAL MAHARJAN & RAJU MAHARJAN SHRESTHA",
+                        "area": "AGBAFO"
+                    }
+                ]
+            },
+            {
+                "providerId": 21626,
+                "providerType": "CG",
+                "name": "SILVA, INDRIKA P",
+                "services": [
+                    {
+                        "serviceId": 26985,
+                        "providerId": 21626,
+                        "serviceType": "02",
+                        "serviceName": "INDRIKA AND ASOKA SILVA",
+                        "area": "AGBAFH"
+                    }
+                ]
+            },
+            {
+                "providerId": 25428,
+                "providerType": "CG",
+                "name": "HUNTER, MARNI R",
+                "services": [
+                    {
+                        "serviceId": 29502,
+                        "providerId": 25428,
+                        "serviceType": "02",
+                        "serviceName": "MARNI HUNTER AND EMAILE QUINTAL",
+                        "area": "ABAIDYHU"
+                    }
+                ]
+            },
+            {
+                "providerId": 27588,
+                "providerType": "CG",
+                "name": "THOMPSON, IRIS A",
+                "services": [
+                    {
+                        "serviceId": 94839,
+                        "providerId": 27588,
+                        "serviceType": "02",
+                        "serviceName": "IRIS THOMPSON",
+                        "area": "ABAIDWEU"
+                    }
+                ]
+            },
+            {
+                "providerId": 29451,
+                "providerType": "OR",
+                "name": "AE KAMALII PRESCHOOL",
+                "services": [
+                    {
+                        "serviceId": 21,
+                        "providerId": 29451,
+                        "serviceType": "03",
+                        "serviceName": "AE KAMALII PRESCHOOL",
+                        "area": "ACAJBL"
+                    }
+                ]
+            },
+            {
+                "providerId": 176,
+                "providerType": "CG",
+                "name": "DOLE, SHYAMA R",
+                "services": [
+                    {
+                        "serviceId": 57042,
+                        "providerId": 176,
+                        "serviceType": "02",
+                        "serviceName": "SHYAMA AND TUAN DOLE",
+                        "area": "AEAQBN"
+                    }
+                ]
+            },
+            {
+                "providerId": 648,
+                "providerType": "CG",
+                "name": "FREITAS, LIANA A",
+                "services": [
+                    {
+                        "serviceId": 54585,
+                        "providerId": 648,
+                        "serviceType": "02",
+                        "serviceName": "LIANA & KAMAKA FREITAS",
+                        "area": "AEATDQ"
+                    }
+                ]
+            },
+            {
+                "providerId": 2421,
+                "providerType": "CG",
+                "name": "CARTER, COLLEEN L",
+                "services": [
+                    {
+                        "serviceId": 15635,
+                        "providerId": 2421,
+                        "serviceType": "02",
+                        "serviceName": "COLLEEN & DALLAS CARTER",
+                        "area": "AGAYBRIY"
+                    }
+                ]
+            },
+            {
+                "providerId": 2550,
+                "providerType": "CG",
+                "name": "AMASOL, SOPHIA M",
+                "services": [
+                    {
+                        "serviceId": 89,
+                        "providerId": 2550,
+                        "serviceType": "02",
+                        "serviceName": "SOPHIA & RUDOLPH AMASOL",
+                        "area": "AGBBCV"
+                    }
+                ]
+            },
+            {
+                "providerId": 3030,
+                "providerType": "CG",
+                "name": "LEE, JOYCE S",
+                "services": [
+                    {
+                        "serviceId": 1164,
+                        "providerId": 3030,
+                        "serviceType": "02",
+                        "serviceName": "JOYCE & GARY LEE",
+                        "area": "AGBBCU"
+                    }
+                ]
+            },
+            {
+                "providerId": 3200,
+                "providerType": "CG",
+                "name": "TAMASHIRO, SHARLENE C",
+                "services": [
+                    {
+                        "serviceId": 1844,
+                        "providerId": 3200,
+                        "serviceType": "02",
+                        "serviceName": "SHARLENE & NOLAN TAMASHIRO",
+                        "area": "AGAYBRIY"
+                    }
+                ]
+            },
+            {
+                "providerId": 3256,
+                "providerType": "CG",
+                "name": "IWASAKI, DANEL N",
+                "services": [
+                    {
+                        "serviceId": 69316,
+                        "providerId": 3256,
+                        "serviceType": "02",
+                        "serviceName": "DANEL AND SCOTT IWASAKI",
+                        "area": "ABAHBW"
+                    }
+                ]
+            },
+            {
+                "providerId": 3842,
+                "providerType": "CG",
+                "name": "VILLAFANIA, DIAHNN F",
+                "services": [
+                    {
+                        "serviceId": 17201,
+                        "providerId": 3842,
+                        "serviceType": "02",
+                        "serviceName": "DIAHNN & JEFFREY VILLAFANIA",
+                        "area": "ABAIDWEU"
+                    }
+                ]
+            },
+            {
+                "providerId": 7696,
+                "providerType": "CG",
+                "name": "HEE, PRISCILLA Y",
+                "services": [
+                    {
+                        "serviceId": 54412,
+                        "providerId": 7696,
+                        "serviceType": "02",
+                        "serviceName": "PRISCILLA & BRADLEY HEE",
+                        "area": "AGBAJV"
+                    }
+                ]
+            },
+            {
+                "providerId": 13249,
+                "providerType": "CG",
+                "name": "LOVELL, DORIAN K",
+                "services": [
+                    {
+                        "serviceId": 92839,
+                        "providerId": 13249,
+                        "serviceType": "02",
+                        "serviceName": "DORIAN KUUPUA LOVELL",
+                        "area": "ABAHBYHP"
+                    }
+                ]
+            },
+            {
+                "providerId": 15952,
+                "providerType": "CG",
+                "name": "TSAI, ROWENA C",
+                "services": [
+                    {
+                        "serviceId": 86869,
+                        "providerId": 15952,
+                        "serviceType": "02",
+                        "serviceName": "ROWENA AND STEPHEN TSAI",
+                        "area": "AGBEEQG1"
+                    }
+                ]
+            },
+            {
+                "providerId": 29455,
+                "providerType": "OR",
+                "name": "AHA PUNANA LEO INC",
+                "services": [
+                    {
+                        "serviceId": 34,
+                        "providerId": 29455,
+                        "serviceType": "03",
+                        "serviceName": "PUNANA LEO O MOLOKAI",
+                        "area": "AFAWEK"
+                    },
+                    {
+                        "serviceId": 37,
+                        "providerId": 29455,
+                        "serviceType": "03",
+                        "serviceName": "PUNANA LEO O KAUAI",
+                        "area": "ACAJBM"
+                    },
+                    {
+                        "serviceId": 41,
+                        "providerId": 29455,
+                        "serviceType": "03",
+                        "serviceName": "PUNANA LEO O KONA",
+                        "area": "ABAIDYHY"
+                    },
+                    {
+                        "serviceId": 42,
+                        "providerId": 29455,
+                        "serviceType": "03",
+                        "serviceName": "PUNANA LEO O WAIMEA",
+                        "area": "ABAIDXHE"
+                    },
+                    {
+                        "serviceId": 36317,
+                        "providerId": 29455,
+                        "serviceType": "03",
+                        "serviceName": "PUNANA LEO O WAIANAE",
+                        "area": "AGBDDS"
+                    },
+                    {
+                        "serviceId": 66910,
+                        "providerId": 29455,
+                        "serviceType": "03",
+                        "serviceName": "PUNANA LEO O MANOA",
+                        "area": "AGBAGZ"
+                    },
+                    {
+                        "serviceId": 69731,
+                        "providerId": 29455,
+                        "serviceType": "03",
+                        "serviceName": "PUNANA LEO O KO'OLAU POKO",
+                        "area": "AGBEER"
+                    },
+                    {
+                        "serviceId": 74216,
+                        "providerId": 29455,
+                        "serviceType": "05",
+                        "serviceName": "PUNANA LEO O WAIANAE HI'I PEPE",
+                        "area": "AGBDDS"
+                    },
+                    {
+                        "serviceId": 95296,
+                        "providerId": 29455,
+                        "serviceType": "03",
+                        "serviceName": "PUNANA LEO O LAHAINA",
+                        "area": "AEAUEI"
+                    },
+                    {
+                        "serviceId": 92964,
+                        "providerId": 29455,
+                        "serviceType": "03",
+                        "serviceName": "PUNANA LEO O MAUI",
+                        "area": "AEAQBN"
+                    },
+                    {
+                        "serviceId": 88998,
+                        "providerId": 29455,
+                        "serviceType": "03",
+                        "serviceName": "PUNANA LEO O WAIALUA",
+                        "area": "AGDEDG"
+                    },
+                    {
+                        "serviceId": 92021,
+                        "providerId": 29455,
+                        "serviceType": "05",
+                        "serviceName": "PUNANA LEO O HILO INFANT TODDLER",
+                        "area": "ABAHBYHP"
+                    },
+                    {
+                        "serviceId": 40,
+                        "providerId": 29455,
+                        "serviceType": "03",
+                        "serviceName": "PUNANA LEO O HILO",
+                        "area": "ABAHBYHP"
+                    },
+                    {
+                        "serviceId": 89533,
+                        "providerId": 29455,
+                        "serviceType": "03",
+                        "serviceName": "PUNANA LEO O NUUANU",
+                        "area": "AGBAFV"
+                    }
+                ]
+            },
+            {
+                "providerId": 1001,
+                "providerType": "CG",
+                "name": "BELL, REBECCA J",
+                "services": [
+                    {
+                        "serviceId": 80655,
+                        "providerId": 1001,
+                        "serviceType": "02",
+                        "serviceName": "REBECCA BELL",
+                        "area": "AEARCC"
+                    }
+                ]
+            },
+            {
+                "providerId": 3139,
+                "providerType": "CG",
+                "name": "RAPOZA, DELORSE J",
+                "services": [
+                    {
+                        "serviceId": 62307,
+                        "providerId": 3139,
+                        "serviceType": "02",
+                        "serviceName": "DELORSE & PAUL RAPOZA",
+                        "area": "AGAYBPIU"
+                    }
+                ]
+            },
+            {
+                "providerId": 3260,
+                "providerType": "CG",
+                "name": "KNIGHT, MARYANN K",
+                "services": [
+                    {
+                        "serviceId": 66492,
+                        "providerId": 3260,
+                        "serviceType": "02",
+                        "serviceName": "MARYANN KNIGHT",
+                        "area": "ACAMDJ"
+                    }
+                ]
+            },
+            {
+                "providerId": 7052,
+                "providerType": "CG",
+                "name": "KAPELA, SANDY L",
+                "services": [
+                    {
+                        "serviceId": 50034,
+                        "providerId": 7052,
+                        "serviceType": "02",
+                        "serviceName": "SANDY KAPELA",
+                        "area": "AGBBCT"
+                    }
+                ]
+            },
+            {
+                "providerId": 7369,
+                "providerType": "CG",
+                "name": "NUNES, GLORIA A",
+                "services": [
+                    {
+                        "serviceId": 1424,
+                        "providerId": 7369,
+                        "serviceType": "02",
+                        "serviceName": "GLORIA & ALFREDO NUNES",
+                        "area": "AGAYBRIY"
+                    }
+                ]
+            },
+            {
+                "providerId": 13856,
+                "providerType": "CG",
+                "name": "CHUN, LORIE L",
+                "services": [
+                    {
+                        "serviceId": 23443,
+                        "providerId": 13856,
+                        "serviceType": "02",
+                        "serviceName": "LORIE & MARSHALL CHUN",
+                        "area": "AGAYBRIY"
+                    }
+                ]
+            },
+            {
+                "providerId": 16575,
+                "providerType": "CG",
+                "name": "GOODMAN, CATHERINE J",
+                "services": [
+                    {
+                        "serviceId": 49852,
+                        "providerId": 16575,
+                        "serviceType": "02",
+                        "serviceName": "CATHERINE GOODMAN",
+                        "area": "ABAHBW"
+                    }
+                ]
+            },
+            {
+                "providerId": 17509,
+                "providerType": "CG",
+                "name": "KUPA, SABINA A",
+                "services": [
+                    {
+                        "serviceId": 88097,
+                        "providerId": 17509,
+                        "serviceType": "02",
+                        "serviceName": "SABINA KUPA",
+                        "area": "AGBBCT"
+                    }
+                ]
+            },
+            {
+                "providerId": 20010,
+                "providerType": "CG",
+                "name": "FIGEROA, JOYCELYN F",
+                "services": [
+                    {
+                        "serviceId": 5668,
+                        "providerId": 20010,
+                        "serviceType": "02",
+                        "serviceName": "JOYCELYN & ANDREW FIGEROA",
+                        "area": "AEAQBO"
+                    }
+                ]
+            },
+            {
+                "providerId": 20831,
+                "providerType": "CG",
+                "name": "MARTIN-KING, SARAH R",
+                "services": [
+                    {
+                        "serviceId": 27337,
+                        "providerId": 20831,
+                        "serviceType": "02",
+                        "serviceName": "SARAH AND JONATHAN KING",
+                        "area": "ABAHBW"
+                    }
+                ]
+            },
+            {
+                "providerId": 23580,
+                "providerType": "CG",
+                "name": "PARKER, LISA GAYE L",
+                "services": [
+                    {
+                        "serviceId": 28492,
+                        "providerId": 23580,
+                        "serviceType": "02",
+                        "serviceName": "LISAGAYE & DAVID PARKER",
+                        "area": "AGBEEQG1"
+                    }
+                ]
+            },
+            {
+                "providerId": 24807,
+                "providerType": "CG",
+                "name": "REDDY, LATHA",
+                "services": [
+                    {
+                        "serviceId": 1619,
+                        "providerId": 24807,
+                        "serviceType": "02",
+                        "serviceName": "LATHA & MANOHAR REDDY",
+                        "area": "AGAZCI"
+                    }
+                ]
+            },
+            {
+                "providerId": 26312,
+                "providerType": "CG",
+                "name": "YOUNT, DAWN L",
+                "services": [
+                    {
+                        "serviceId": 36446,
+                        "providerId": 26312,
+                        "serviceType": "02",
+                        "serviceName": "DAWN AND JOHN YOUNT",
+                        "area": "AGAZCI"
+                    }
+                ]
+            },
+            {
+                "providerId": 29476,
+                "providerType": "OR",
+                "name": "ALPHABETLAND PRESCHOOL, LLC",
+                "services": [
+                    {
+                        "serviceId": 76,
+                        "providerId": 29476,
+                        "serviceType": "03",
+                        "serviceName": "ALPHABETLAND PRESCHOOL - PEARL CITY",
+                        "area": "AGAYBSJL"
+                    },
+                    {
+                        "serviceId": 78,
+                        "providerId": 29476,
+                        "serviceType": "03",
+                        "serviceName": "ALPHABETLAND PRESCHOOL - WAIPAHU",
+                        "area": "AGBBCX"
+                    },
+                    {
+                        "serviceId": 75,
+                        "providerId": 29476,
+                        "serviceType": "03",
+                        "serviceName": "ALPHABETLAND PRESCHOOL AND KINDERGARTEN - NEWTOWN",
+                        "area": "AGAYBPIX"
+                    }
+                ]
+            },
+            {
+                "providerId": 29559,
+                "providerType": "OR",
+                "name": "CENTRAL UNION CHURCH",
+                "services": [
+                    {
+                        "serviceId": 203,
+                        "providerId": 29559,
+                        "serviceType": "03",
+                        "serviceName": "CENTRAL UNION CHURCH PRESCHOOL AND KINDERGARTEN",
+                        "area": "AGBAGY"
+                    }
+                ]
+            }
+        ]
+    }
+}
