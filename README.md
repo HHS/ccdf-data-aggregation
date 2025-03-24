@@ -87,7 +87,7 @@ These timelines represent initial plans. Tasks may adjust based on findings from
   - Develop initial data structure for aggregated dataset
   - Begin outreach to states with limited online data
 
-- **Sprint 2: April 14-25 2025**
+- **Sprint 2: April 14-25, 2025**
   - Continue data collection from remaining states
   - Implement data validation and quality checks
   - Begin development of visualization tools
