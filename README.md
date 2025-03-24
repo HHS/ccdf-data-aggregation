@@ -51,7 +51,8 @@ This project will focus on collecting business names and addresses of CCDF-funde
   - Identify and flag potential duplicates or errors
 
 - **Visualization:** The processed data will be visualized through:
-  - An interactive map showing provider locations
+  - An interactive map showing provider locations 
+    - Mapping will be done with Tableau or [Plotly](https://plotly.com/python/tile-scatter-maps/) (Python)
   - Summary statistics by state/region
   - Exportable datasets for further analysis
 
