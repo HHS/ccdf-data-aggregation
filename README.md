@@ -108,7 +108,7 @@ These timelines represent initial plans. Tasks may adjust based on findings from
 - Initial development of visualization tools will use open-source technologies due to potential delays in Tableau access
 
 ## Roles
-- Governement Lead: Jane Yang
+- Government Lead: Jane Yang
 - Project Owner:
 - Project Lead: Daina Bouquin
 - Project Team:
