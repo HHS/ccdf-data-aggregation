@@ -1,2 +1,5 @@
 # To ensure app dependencies are ported from virtual environment/host machine into the container, run 'pip freeze > requirements.txt' in the terminal to overwrite this file
 # Better Alternative: To ensure app dependencies are ported from virtual environment/host machine into the container, run 'pip install pipreqs' then 'pipreqs --ignore .venv --scan-notebooks --force' in the terminal to overwrite this file
+
+tabula-py==2.9.0
+pandas>=2.0.0
