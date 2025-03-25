@@ -43,6 +43,7 @@ base_params = {
 
 #%%
 # Complete list of Georgia zip codes
+# TODO: update to use US_zip_lat_long.csv instead
 ga_zip_codes = [
     '30002', '30004', '30005', '30008', '30009', '30011', '30012', '30013', '30014', '30016',
     '30017', '30018', '30019', '30021', '30022', '30024', '30025', '30028', '30030', '30032',
