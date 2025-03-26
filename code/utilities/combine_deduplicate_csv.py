@@ -28,10 +28,10 @@ def combine_and_deduplicate_csv(directory_path):
     # Read each CSV file and append to the list
     for file in csv_files:
         try:
-            # Read the CSV file
+            # Read the CSV file  
             df = pd.read_csv(file)
             print(f"Read {file}, shape: {df.shape}")
-            
+
             # Append to the list
             all_dataframes.append(df)
         except Exception as e:
@@ -42,7 +42,7 @@ def combine_and_deduplicate_csv(directory_path):
         return None
     
     # Combine all dataframes
-    combined_df = pd.concat(all_dataframes, ignore_index=True)
+    combined_df = pd.concat(all_dataframes, ignore_index=False)
     print(f"Combined dataframe shape: {combined_df.shape}")
     
     # Remove duplicates
@@ -54,7 +54,7 @@ def combine_and_deduplicate_csv(directory_path):
 
 def main():
     # Directory path containing CSV files
-    directory_path = "/Users/dainabouquin/Library/CloudStorage/OneDrive-ArchSystems/CCDF/data/intermediate/NC_child_care_providers"
+    directory_path = "/Users/dainabouquin/Library/CloudStorage/OneDrive-ArchSystems/CCDF/data/raw/MA_child_care_providers"
     
     # Combine and deduplicate CSV files
     result_df = combine_and_deduplicate_csv(directory_path)
@@ -64,7 +64,7 @@ def main():
     
     if result_df is not None:
         # Save the result to a new CSV file
-        output_path = os.path.join(os.path.dirname("/Users/dainabouquin/Library/CloudStorage/OneDrive-ArchSystems/CCDF/data/intermediate/NC_child_care_providers/"), f"NC_child_care_providers_combined_deduplicated_{date}.csv")
+        output_path = os.path.join(os.path.dirname("/Users/dainabouquin/Library/CloudStorage/OneDrive-ArchSystems/CCDF/data/intermediate/"), f"MA_child_care_providers_combined_deduplicated_{date}.csv")
         result_df.to_csv(output_path, index=False)
         print(f"Saved combined and deduplicated data to {output_path}")
 
