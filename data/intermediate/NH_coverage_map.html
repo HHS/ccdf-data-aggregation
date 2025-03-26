@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_fe4ee3bd28c34656f2e3377038fc1ba8 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_fe4ee3bd28c34656f2e3377038fc1ba8" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_fe4ee3bd28c34656f2e3377038fc1ba8 = L.map(
+                "map_fe4ee3bd28c34656f2e3377038fc1ba8",
+                {
+                    center: [43.7, -71.5],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 8,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_c1abf0a0355993386a3b910ae97c4bd1 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_c1abf0a0355993386a3b910ae97c4bd1.addTo(map_fe4ee3bd28c34656f2e3377038fc1ba8);
+        
+    
+            var marker_a678ce8372d219c615f75b4aac8ec4df = L.marker(
+                [43.2081, -71.5376],
+                {
+}
+            ).addTo(map_fe4ee3bd28c34656f2e3377038fc1ba8);
+        
+    
+            var icon_51b91685020b57065f3dec9ddb4480dc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5b4ac05e8647884e31f41fb9bd35dc6a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9c7250a44a62068a58947468bf600b90 = $(`<div id="html_9c7250a44a62068a58947468bf600b90" style="width: 100.0%; height: 100.0%;">Concord (03301)</div>`)[0];
+                popup_5b4ac05e8647884e31f41fb9bd35dc6a.setContent(html_9c7250a44a62068a58947468bf600b90);
+            
+        
+
+        marker_a678ce8372d219c615f75b4aac8ec4df.bindPopup(popup_5b4ac05e8647884e31f41fb9bd35dc6a)
+        ;
+
+        
+    
+    
+            marker_a678ce8372d219c615f75b4aac8ec4df.bindTooltip(
+                `<div>
+                     Concord
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a678ce8372d219c615f75b4aac8ec4df.setIcon(icon_51b91685020b57065f3dec9ddb4480dc);
+            
+    
+            var circle_e09079fcc3a34256e2c228ed62a8b428 = L.circle(
+                [43.2081, -71.5376],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 80467.0, "stroke": true, "weight": 3}
+            ).addTo(map_fe4ee3bd28c34656f2e3377038fc1ba8);
+        
+    
+        var popup_709b389a7b172779c83c2b668159e277 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ef3e0878e7f68bcb58c3c1fc75d217e5 = $(`<div id="html_ef3e0878e7f68bcb58c3c1fc75d217e5" style="width: 100.0%; height: 100.0%;">Concord - 50 mile radius</div>`)[0];
+                popup_709b389a7b172779c83c2b668159e277.setContent(html_ef3e0878e7f68bcb58c3c1fc75d217e5);
+            
+        
+
+        circle_e09079fcc3a34256e2c228ed62a8b428.bindPopup(popup_709b389a7b172779c83c2b668159e277)
+        ;
+
+        
+    
+    
+            var marker_04cff5c6073e4f4f1d27b8db7d173040 = L.marker(
+                [44.4695, -71.1851],
+                {
+}
+            ).addTo(map_fe4ee3bd28c34656f2e3377038fc1ba8);
+        
+    
+            var icon_3672c5af6cdae539493a2a81ff8e533e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4910090e34f913ec6a498e4b0422d930 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_254127eb929539911875b275270821e5 = $(`<div id="html_254127eb929539911875b275270821e5" style="width: 100.0%; height: 100.0%;">Berlin (03570)</div>`)[0];
+                popup_4910090e34f913ec6a498e4b0422d930.setContent(html_254127eb929539911875b275270821e5);
+            
+        
+
+        marker_04cff5c6073e4f4f1d27b8db7d173040.bindPopup(popup_4910090e34f913ec6a498e4b0422d930)
+        ;
+
+        
+    
+    
+            marker_04cff5c6073e4f4f1d27b8db7d173040.bindTooltip(
+                `<div>
+                     Berlin
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_04cff5c6073e4f4f1d27b8db7d173040.setIcon(icon_3672c5af6cdae539493a2a81ff8e533e);
+            
+    
+            var circle_4032a14d555173518a4201f67537f9f3 = L.circle(
+                [44.4695, -71.1851],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 80467.0, "stroke": true, "weight": 3}
+            ).addTo(map_fe4ee3bd28c34656f2e3377038fc1ba8);
+        
+    
+        var popup_d8f6e8c8e14aac5996d3ebb3d74a34b1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c2e030ef88eb18edc7c3287d45112b39 = $(`<div id="html_c2e030ef88eb18edc7c3287d45112b39" style="width: 100.0%; height: 100.0%;">Berlin - 50 mile radius</div>`)[0];
+                popup_d8f6e8c8e14aac5996d3ebb3d74a34b1.setContent(html_c2e030ef88eb18edc7c3287d45112b39);
+            
+        
+
+        circle_4032a14d555173518a4201f67537f9f3.bindPopup(popup_d8f6e8c8e14aac5996d3ebb3d74a34b1)
+        ;
+
+        
+    
+    
+            var marker_4b756d362448e9b09d652c74231aedeb = L.marker(
+                [44.2156, -71.9106],
+                {
+}
+            ).addTo(map_fe4ee3bd28c34656f2e3377038fc1ba8);
+        
+    
+            var icon_f908e8934034e022cae8855499c2e352 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_124c3605a05b86c7b95d548d56ae400d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ab7a15799690f8c84621405ec6be9a8a = $(`<div id="html_ab7a15799690f8c84621405ec6be9a8a" style="width: 100.0%; height: 100.0%;">Lisbon (03585)</div>`)[0];
+                popup_124c3605a05b86c7b95d548d56ae400d.setContent(html_ab7a15799690f8c84621405ec6be9a8a);
+            
+        
+
+        marker_4b756d362448e9b09d652c74231aedeb.bindPopup(popup_124c3605a05b86c7b95d548d56ae400d)
+        ;
+
+        
+    
+    
+            marker_4b756d362448e9b09d652c74231aedeb.bindTooltip(
+                `<div>
+                     Lisbon
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_4b756d362448e9b09d652c74231aedeb.setIcon(icon_f908e8934034e022cae8855499c2e352);
+            
+    
+            var circle_882fd3c3bd89e4fc1504d2047d9eb80e = L.circle(
+                [44.2156, -71.9106],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 80467.0, "stroke": true, "weight": 3}
+            ).addTo(map_fe4ee3bd28c34656f2e3377038fc1ba8);
+        
+    
+        var popup_ceef57bc8b93422cf0771a222aada85e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_570053228feb32dc1fe3423bcb01ce75 = $(`<div id="html_570053228feb32dc1fe3423bcb01ce75" style="width: 100.0%; height: 100.0%;">Lisbon - 50 mile radius</div>`)[0];
+                popup_ceef57bc8b93422cf0771a222aada85e.setContent(html_570053228feb32dc1fe3423bcb01ce75);
+            
+        
+
+        circle_882fd3c3bd89e4fc1504d2047d9eb80e.bindPopup(popup_ceef57bc8b93422cf0771a222aada85e)
+        ;
+
+        
+    
+    
+            var marker_0377fbce26da53eecfc9cdecdb1dff63 = L.marker(
+                [43.3044, -70.9761],
+                {
+}
+            ).addTo(map_fe4ee3bd28c34656f2e3377038fc1ba8);
+        
+    
+            var icon_a5631a0ceb4784b978a3c613d0a29a4d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e00e0b63dc3482c4b3800aae8d8de03a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9be738971653b0c2f4a49db5c144be1e = $(`<div id="html_9be738971653b0c2f4a49db5c144be1e" style="width: 100.0%; height: 100.0%;">Rochester (03867)</div>`)[0];
+                popup_e00e0b63dc3482c4b3800aae8d8de03a.setContent(html_9be738971653b0c2f4a49db5c144be1e);
+            
+        
+
+        marker_0377fbce26da53eecfc9cdecdb1dff63.bindPopup(popup_e00e0b63dc3482c4b3800aae8d8de03a)
+        ;
+
+        
+    
+    
+            marker_0377fbce26da53eecfc9cdecdb1dff63.bindTooltip(
+                `<div>
+                     Rochester
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0377fbce26da53eecfc9cdecdb1dff63.setIcon(icon_a5631a0ceb4784b978a3c613d0a29a4d);
+            
+    
+            var circle_75891eb508e96a37ca736f4d8a227461 = L.circle(
+                [43.3044, -70.9761],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 80467.0, "stroke": true, "weight": 3}
+            ).addTo(map_fe4ee3bd28c34656f2e3377038fc1ba8);
+        
+    
+        var popup_7e1f1feaadc5a5ae3c8d773dc95d6a38 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f43d85d58763795034732d2ea9434960 = $(`<div id="html_f43d85d58763795034732d2ea9434960" style="width: 100.0%; height: 100.0%;">Rochester - 50 mile radius</div>`)[0];
+                popup_7e1f1feaadc5a5ae3c8d773dc95d6a38.setContent(html_f43d85d58763795034732d2ea9434960);
+            
+        
+
+        circle_75891eb508e96a37ca736f4d8a227461.bindPopup(popup_7e1f1feaadc5a5ae3c8d773dc95d6a38)
+        ;
+
+        
+    
+    
+            var marker_1c2d2ec21ee9b9957249b6207c0536a9 = L.marker(
+                [42.9337, -72.2779],
+                {
+}
+            ).addTo(map_fe4ee3bd28c34656f2e3377038fc1ba8);
+        
+    
+            var icon_0d791d46e5a8294c9631f3701d491170 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4d568e6ee55d0ed425d84e415758d235 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3cb7fbb3130ae93a51eb0d92ab2f1e8a = $(`<div id="html_3cb7fbb3130ae93a51eb0d92ab2f1e8a" style="width: 100.0%; height: 100.0%;">Keene (03431)</div>`)[0];
+                popup_4d568e6ee55d0ed425d84e415758d235.setContent(html_3cb7fbb3130ae93a51eb0d92ab2f1e8a);
+            
+        
+
+        marker_1c2d2ec21ee9b9957249b6207c0536a9.bindPopup(popup_4d568e6ee55d0ed425d84e415758d235)
+        ;
+
+        
+    
+    
+            marker_1c2d2ec21ee9b9957249b6207c0536a9.bindTooltip(
+                `<div>
+                     Keene
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1c2d2ec21ee9b9957249b6207c0536a9.setIcon(icon_0d791d46e5a8294c9631f3701d491170);
+            
+    
+            var circle_6c3ce056a6925757e3fec56706873b1c = L.circle(
+                [42.9337, -72.2779],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 80467.0, "stroke": true, "weight": 3}
+            ).addTo(map_fe4ee3bd28c34656f2e3377038fc1ba8);
+        
+    
+        var popup_19ad665dc15e458a3a318e85d9a5f3fc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c4a51dee5c804475086d3584fb163468 = $(`<div id="html_c4a51dee5c804475086d3584fb163468" style="width: 100.0%; height: 100.0%;">Keene - 50 mile radius</div>`)[0];
+                popup_19ad665dc15e458a3a318e85d9a5f3fc.setContent(html_c4a51dee5c804475086d3584fb163468);
+            
+        
+
+        circle_6c3ce056a6925757e3fec56706873b1c.bindPopup(popup_19ad665dc15e458a3a318e85d9a5f3fc)
+        ;
+
+        
+    
+    
+            var marker_a4d2f7aaab73057a25569ca96ec77d9e = L.marker(
+                [45.0513, -71.3989],
+                {
+}
+            ).addTo(map_fe4ee3bd28c34656f2e3377038fc1ba8);
+        
+    
+            var icon_6381fae8c6e8e977d10bc35d56cd1951 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkred",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_db7b87c7d15325c3555bc50a555e612f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_06e541578deea79b21352ba7a2071f8c = $(`<div id="html_06e541578deea79b21352ba7a2071f8c" style="width: 100.0%; height: 100.0%;">Pittsburg (03592)</div>`)[0];
+                popup_db7b87c7d15325c3555bc50a555e612f.setContent(html_06e541578deea79b21352ba7a2071f8c);
+            
+        
+
+        marker_a4d2f7aaab73057a25569ca96ec77d9e.bindPopup(popup_db7b87c7d15325c3555bc50a555e612f)
+        ;
+
+        
+    
+    
+            marker_a4d2f7aaab73057a25569ca96ec77d9e.bindTooltip(
+                `<div>
+                     Pittsburg
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a4d2f7aaab73057a25569ca96ec77d9e.setIcon(icon_6381fae8c6e8e977d10bc35d56cd1951);
+            
+    
+            var circle_91779ce3b2ee2bf893a46517f2fd23de = L.circle(
+                [45.0513, -71.3989],
+                {"bubblingMouseEvents": true, "color": "darkred", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkred", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 80467.0, "stroke": true, "weight": 3}
+            ).addTo(map_fe4ee3bd28c34656f2e3377038fc1ba8);
+        
+    
+        var popup_2c21877ddfc2aaf31c634740076f505e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_053075384b8fdb2283f13c1f8877f9c3 = $(`<div id="html_053075384b8fdb2283f13c1f8877f9c3" style="width: 100.0%; height: 100.0%;">Pittsburg - 50 mile radius</div>`)[0];
+                popup_2c21877ddfc2aaf31c634740076f505e.setContent(html_053075384b8fdb2283f13c1f8877f9c3);
+            
+        
+
+        circle_91779ce3b2ee2bf893a46517f2fd23de.bindPopup(popup_2c21877ddfc2aaf31c634740076f505e)
+        ;
+
+        
+    
+</script>
+</html>
