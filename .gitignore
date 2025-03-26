@@ -13,6 +13,7 @@ __pycache__/
 docs/images/
 docs/CCDF_dashboard_slides/
 references/how-to.md
+data/raw/NC_child_care_providers/*.pdf
 
 # Distribution / packaging
 .Python
