@@ -54,7 +54,7 @@ def combine_and_deduplicate_csv(directory_path):
 
 def main():
     # Directory path containing CSV files
-    directory_path = "/Users/dainabouquin/Library/CloudStorage/OneDrive-ArchSystems/CCDF/data/raw/MA_child_care_providers"
+    directory_path = "/Users/dainabouquin/Library/CloudStorage/OneDrive-ArchSystems/CCDF/data/intermediate/NC_child_care_providers"
     
     # Combine and deduplicate CSV files
     result_df = combine_and_deduplicate_csv(directory_path)
@@ -64,7 +64,7 @@ def main():
     
     if result_df is not None:
         # Save the result to a new CSV file
-        output_path = os.path.join(os.path.dirname("/Users/dainabouquin/Library/CloudStorage/OneDrive-ArchSystems/CCDF/data/intermediate/"), f"MA_child_care_providers_combined_deduplicated_{date}.csv")
+        output_path = os.path.join(os.path.dirname("/Users/dainabouquin/Library/CloudStorage/OneDrive-ArchSystems/CCDF/data/intermediate/NC_child_care_providers/"), f"NC_child_care_providers_combined_deduplicated_{date}.csv")
         result_df.to_csv(output_path, index=False)
         print(f"Saved combined and deduplicated data to {output_path}")
 
