@@ -95,7 +95,7 @@ for i in range(0, len(lines), 2):
     records.append([provider_name, address, provider_type, license_id, capacity, ages_served, hours])
 
 # Define the CSV file path
-csv_file = '/Users/dainabouquin/Library/CloudStorage/OneDrive-ArchSystems/CCDF/data/processed/KS_child_care_providers.csv'
+csv_file = '/Users/dainabouquin/Library/CloudStorage/OneDrive-ArchSystems/CCDF/data/intermediate/KS_child_care_providers.csv'
 
 # Write to CSV
 with open(csv_file, mode='w', newline='') as file:
