@@ -1,0 +1,854 @@
+FormId,ProviderName,ProviderId,City,ZIP,CCAP,Address,Availability,Rating,ProviderUpdateRequestId,CreatedDate,ReportedDateTime,SubmittedDateTime,FullSubmittedDateTime,PhoneNumber,Serves,Setting,Status,RoleID
+,Annie Burke,1157,Barrington,,No,,Contact Program,0,,,,,,,,Home,Active,0
+,Apple Blossom Preschool- ELC,3834,Barrington,,No,,Contact Program,0,,,,,,,,Center,Active,0
+,Barrington Early Childhood Center,961,Barrington,,No,,Contact Program,0,,,,,,,,Center,Active,0
+,Bayside YMCA @ Hampden Meadows,5163,Barrington,,No,,Contact Program,0,,,,,,,,Center,Active,0
+,Bayside YMCA @ MAIN Y Site,303,Barrington,,Yes,,Contact Program,3,,,,,,,,Center,Active,0
+,"Kids Junction, Inc",902,Barrington,,Yes,,Contact Program,4,,,,,,,,Center,Active,0
+,Manouchky Satine,3606,Barrington,,Yes,,Contact Program,1,,,,,,,,Home,Active,0
+,Montessori of Barrington,5053,Barrington,,No,,Contact Program,1,,,,,,,,Center,Active,0
+,Mother's Morning Out,890,Barrington,,No,,Contact Program,0,,,,,,,,Center,Active,0
+,Oliver Day School Barrington,5145,Barrington,,No,,Contact Program,2,,,,,,,,Center,Active,0
+,Primrose Hill School,1077,Barrington,,No,,Contact Program,5,,,,,,,,School,Active,0
+,Red Brick School,934,Barrington,,No,,Contact Program,0,,,,,,,,Center,Active,0
+,Sharon Senechal,1003,Barrington,,No,,Contact Program,0,,,,,,,,Home,Active,0
+,Adventure Kids Club,880,Bristol,,Yes,,Contact Program,1,,,,,,,,Center,Active,0
+,Bristol's Lil Angels Child Care LL,3824,Bristol,,Yes,,Contact Program,1,,,,,,,,Center,Active,0
+,Lori Accardi,745,Bristol,,No,,Contact Program,0,,,,,,,,Home,Active,0
+,Paula Hanson,545,Bristol,,No,,Contact Program,1,,,,,,,,Home,Active,0
+,Ruth Maille,321,Bristol,,No,,Contact Program,1,,,,,,,,Home,Active,0
+,The Learning Journey PS & CC Corp.,4915,Bristol,,No,,Contact Program,1,,,,,,,,Center,Active,0
+,Bright Beginnings,1058,Warren,,Yes,,Contact Program,1,,,,,,,,Center,Active,0
+,Bristol Warren COZ - Colt Andrew,247,Warren,,Yes,,Contact Program,3,,,,,,,,Center,Active,0
+,Bristol Warren COZ - Guiteras,246,Warren,,Yes,,Contact Program,0,,,,,,,,Center,Active,0
+,Bristol Warren COZ - Hugh Cole,244,Warren,,Yes,,Contact Program,4,,,,,,,,Center,Active,0
+,Bristol Warren COZ - Rockwell,245,Warren,,Yes,,Contact Program,3,,,,,,,,Center,Active,0
+,Hugh Cole School,1124,Warren,,No,,Contact Program,5,,,,,,,,School,Active,0
+,Raggedy Ann Nursery School,972,Warren,,No,,Contact Program,0,,,,,,,,Center,Active,0
+,Tami Stallings,4544,Warren,,Yes,,Contact Program,4,,,,,,,,Home,Active,0
+,The Garden Playschool,900,Warren,,No,,Contact Program,0,,,,,,,,Center,Active,0
+,Treehouse Academy,5289,Warren,,No,,Contact Program,0,,,,,,,,Center,Active,0
+,"All About Kids Too, Inc.",518,Coventry,,Yes,,Contact Program,3,,,,,,,,Center,Active,0
+,Brooke Bourget,5195,Coventry,,No,,Contact Program,0,,,,,,,,Home,Active,0
+,Child Care Plus Learning Center,5170,Coventry,,No,,Contact Program,4,,,,,,,,Center,Active,0
+,"CHILD, Inc. - Cady Street",218,Coventry,,Yes,,Contact Program,5,,,,,,,,Center,Active,0
+,Club Creative,1151,Coventry,,Yes,,Contact Program,3,,,,,,,,Center,Active,0
+,"Creative Child,Inc",823,Coventry,,Yes,,Contact Program,4,,,,,,,,Center,Active,0
+,Doreen Marietti,50,Coventry,,No,,Contact Program,0,,,,,,,,Home,Active,0
+,Lisa Casavant,399,Coventry,,Yes,,Contact Program,1,,,,,,,,Home,Active,0
+,Munchkin Land Learning Academy LLC,1072,Coventry,,Yes,,Contact Program,2,,,,,,,,Center,Active,0
+,The Early Learning Ctr of RI - Cov,909,Coventry,,Yes,,Contact Program,2,,,,,,,,Center,Active,0
+,Washington Oak School,1083,Coventry,,No,,Contact Program,5,,,,,,,,School,Active,0
+,Greenwich Village School,248,West Greenwich,,No,,Contact Program,2,,,,,,,,Center,Active,0
+,Me & My Friends Child Care &,988,West Greenwich,,Yes,,Contact Program,2,,,,,,,,Center,Active,0
+,Mildred E. Lineham School,1125,West Greenwich,,No,,Contact Program,4,,,,,,,,School,Active,0
+,Munchkin Land Preschool 2,3670,West Greenwich,,Yes,,Contact Program,1,,,,,,,,Center,Active,0
+,Aim High Early Learning Center,848,East Greenwich,,No,,Contact Program,5,,,,,,,,Center,Active,0
+,Anchor Point Early Learning East,5105,East Greenwich,,Yes,,Contact Program,0,,,,,,,,Center,Active,0
+,Ashley Kerstetter,4669,East Greenwich,,No,,Contact Program,0,,,,,,,,Home,Active,0
+,Barbara M. Tufts Coop. Preschool,958,East Greenwich,,No,,Contact Program,5,,,,,,,,Center,Active,0
+,Cadence Academy Preschool EG,4358,East Greenwich,,Yes,,Contact Program,3,,,,,,,,Center,Active,0
+,Dr. Day Care - East Greenwich,5110,East Greenwich,,No,,Contact Program,4,,,,,,,,Center,Active,0
+,Little Red Hen Preschool & K,128,East Greenwich,,Yes,,Contact Program,0,,,,,,,,Center,Active,0
+,London Bridge Child Care Center,330,East Greenwich,,Yes,,Contact Program,1,,,,,,,,Center,Active,0
+,Meadowbrook Farms School,1089,East Greenwich,,No,,Contact Program,3,,,,,,,,School,Active,0
+,Montessori of Greenwich Bay Inc,915,East Greenwich,,No,,Contact Program,0,,,,,,,,Center,Active,0
+,Paper Crown Preschool,4780,East Greenwich,,No,,Contact Program,0,,,,,,,,Center,Active,0
+,Playground Prep LLC,896,East Greenwich,,No,,Contact Program,0,,,,,,,,Center,Active,0
+,Sunshine at Happy Hearts Learning,5128,East Greenwich,,No,,Contact Program,4,,,,,,,,Center,Active,0
+,Sweet Peas Village,117,East Greenwich,,Yes,,Contact Program,3,,,,,,,,Center,Active,0
+,The Early Learning Ctr of RI - EG,908,East Greenwich,,Yes,,Contact Program,2,,,,,,,,Center,Active,0
+,The Early Learning Ctr of RI - EP,910,East Greenwich,,Yes,,Contact Program,2,,,,,,,,Center,Active,0
+,The Early Learning Ctr of RI - Rum,911,East Greenwich,,Yes,,Contact Program,2,,,,,,,,Center,Active,0
+,The Early Learning Ctr of RI-Barrington,907,East Greenwich,,Yes,,Contact Program,2,,,,,,,,Center,Active,0
+,Toddler House Montessori of GB,5281,East Greenwich,,No,,Contact Program,0,,,,,,,,Center,Active,0
+,AlphaBEST Cedar Hill,5197,Warwick,,Yes,,Contact Program,0,,,,,,,,Center,Active,0
+,AlphaBEST Robertson,5198,Warwick,,Yes,,Contact Program,0,,,,,,,,Center,Active,0
+,AlphaBEST- Scott,5273,Warwick,,No,,Contact Program,0,,,,,,,,Center,Active,0
+,Building Blocks Child Care Center,146,Warwick,,Yes,,Contact Program,5,,,,,,,,Center,Active,0
+,Buttonwoods School For Young Ch.,153,Warwick,,No,,Contact Program,3,,,,,,,,Center,Active,0
+,"CHILD, Inc. - Centerville Road",220,Warwick,,Yes,,Contact Program,5,,,,,,,,Center,Active,0
+,Clubhouse Kids Early Learning Cent,4464,Warwick,,Yes,,Contact Program,2,,,,,,,,Center,Active,0
+,Julianne Hopgood,52,Warwick,,No,,Contact Program,0,,,,,,,,Home,Active,0
+,Kent County Y at Greenbush School,5045,Warwick,,Yes,,Contact Program,1,,,,,,,,Center,Active,0
+,Kent County Y at Meadowbrook,284,Warwick,,No,,Contact Program,1,,,,,,,,Center,Active,0
+,Kent County Y at Wakefield Hills,5120,Warwick,,No,,Contact Program,1,,,,,,,,Center,Active,0
+,Kent County Y School's Out,283,Warwick,,Yes,,Contact Program,3,,,,,,,,Center,Active,0
+,Laugh and Learn Academy,4999,Warwick,,Yes,,Contact Program,2,,,,,,,,Center,Active,0
+,Little Learners of Kent County,4995,Warwick,,Yes,,Contact Program,2,,,,,,,,Center,Active,0
+,Magic Years Child Care Gallery,135,Warwick,,Yes,,Contact Program,4,,,,,,,,Center,Active,0
+,Marilyn Palumbo,412,Warwick,,No,,Contact Program,0,,,,,,,,Home,Active,0
+,My Learning Tree - Warwick,5101,Warwick,,No,,Contact Program,1,,,,,,,,Center,Active,0
+,Owl Always Daycare,5185,Warwick,,Yes,,Contact Program,2,,,,,,,,Center,Active,0
+,Precious Years Nursery,108,Warwick,,Yes,,Contact Program,3,,,,,,,,Center,Active,0
+,Progressive Learning Center,170,Warwick,,Yes,,Contact Program,1,,,,,,,,Center,Active,0
+,Stork's Nest Child Academy,163,Warwick,,Yes,,Contact Program,4,,,,,,,,Center,Active,0
+,Stork's Nest Child Academy III,583,Warwick,,Yes,,Contact Program,4,,,,,,,,Center,Active,0
+,Tender Hearts CC & Learning Center,768,Warwick,,Yes,,Contact Program,1,,,,,,,,Center,Active,0
+,WonderKids Early Learning Center,93,Warwick,,Yes,,Contact Program,3,,,,,,,,Center,Active,0
+,Boys & Girls Club of Warwick,166,Warwick,,Yes,,Contact Program,4,,,,,,,,Center,Active,0
+,"Liddle Tots II Teen, LTD.",126,Warwick,,Yes,,Contact Program,5,,,,,,,,Center,Active,0
+,Melissa Gomez de Viloria,5089,Warwick,,No,,Contact Program,1,,,,,,,,Home,Active,0
+,Precious Angel's Child Center,496,Warwick,,No,,Contact Program,1,,,,,,,,Center,Active,0
+,The Greenhouse Preschool,5207,Warwick,,No,,Contact Program,1,,,,,,,,Center,Active,0
+,The Learning Experience,3858,Warwick,,Yes,,Contact Program,2,,,,,,,,Center,Active,0
+,Warwick Early Learning Center at John Brown Francis,1116,Warwick,,No,,Contact Program,0,,,,,,,,School,Active,0
+,Westbay Children's Center,208,Warwick,,Yes,,Contact Program,3,,,,,,,,Center,Active,0
+,A Family Tree Early Learning Cente,3811,Warwick,,Yes,,Contact Program,4,,,,,,,,Center,Active,0
+,A Family Tree III,879,Warwick,,Yes,,Contact Program,4,,,,,,,,Center,Active,0
+,A Family Tree School Age II,878,Warwick,,Yes,,Contact Program,2,,,,,,,,Center,Active,0
+,All About Kids Learning Center,5228,Warwick,,No,,Contact Program,1,,,,,,,,Center,Active,0
+,AlphaBEST Education Inc-Sherman,5159,Warwick,,Yes,,Contact Program,0,,,,,,,,Center,Active,0
+,AlphaBEST-Warwick Neck,5285,Warwick,,No,,Contact Program,0,,,,,,,,Center,Active,0
+,Boys & Girls Club - Oakland Beach,4991,Warwick,,Yes,,Contact Program,0,,,,,,,,Center,Active,0
+,"CHILD, Inc. - Draper Avenue",217,Warwick,,Yes,,Contact Program,4,,,,,,,,Center,Active,0
+,Hong's World Class Taekwondo,5132,Warwick,,No,,Contact Program,1,,,,,,,,Center,Active,0
+,Kayla Gardner,5204,Warwick,,No,,Contact Program,0,,,,,,,,Home,Active,0
+,Oakland Beach Elementary School,1192,Warwick,,No,,Contact Program,0,,,,,,,,School,Active,0
+,The Learning Garden Children's Ctr,5124,Warwick,,No,,Contact Program,1,,,,,,,,Center,Active,0
+,The Light House Preschool,1051,Warwick,,Yes,,Contact Program,2,,,,,,,,Center,Active,0
+,Academy For Little Children,171,West Warwick,,Yes,,Contact Program,4,,,,,,,,Center,Active,0
+,Academy For Little Children-Linc,547,West Warwick,,Yes,,Contact Program,4,,,,,,,,Center,Active,0
+,Adriana Thompson,372,West Warwick,,Yes,,Contact Program,1,,,,,,,,Home,Active,0
+,Alexandra Rhodes Soriano,5180,West Warwick,,No,,Contact Program,1,,,,,,,,Home,Active,0
+,Crisolide Rodriguez,5036,West Warwick,,Yes,,Contact Program,1,,,,,,,,Home,Active,0
+,Dreamland Learning Center Inc,997,West Warwick,,Yes,,Contact Program,2,,,,,,,,Center,Active,0
+,Greenbush Elementary School,1120,West Warwick,,No,,Contact Program,0,,,,,,,,School,Active,0
+,Joyful Noise,96,West Warwick,,Yes,,Contact Program,3,,,,,,,,Center,Active,0
+,Joyful Noise - Legris Avenue,97,West Warwick,,Yes,,Contact Program,2,,,,,,,,Center,Active,0
+,Karen Goodson,349,West Warwick,,No,,Contact Program,1,,,,,,,,Home,Active,0
+,Maisie E. Quinn Elementary School,1119,West Warwick,,No,,Contact Program,4,,,,,,,,School,Active,0
+,Orchid Montessori School,5186,West Warwick,,No,,Contact Program,1,,,,,,,,Center,Active,0
+,Wakefield Hills Elementary School,1121,West Warwick,,No,,Contact Program,0,,,,,,,,School,Active,0
+,Deanne Zeek,458,Jamestown,,No,,Contact Program,0,,,,,,,,Home,Active,0
+,Jamestown Early Learning Center,141,Jamestown,,Yes,,Contact Program,3,,,,,,,,Center,Active,0
+,Jamestown School-Melrose,1092,Jamestown,,No,,Contact Program,3,,,,,,,,School,Active,0
+,Little Compton Community Center,478,Little Compton,,Yes,,Contact Program,1,,,,,,,,Center,Active,0
+,Little Peeps Montessori Naturskola,1032,Little Compton,,No,,Contact Program,0,,,,,,,,Center,Active,0
+,Wilbur and McMahon Schools,4527,Little Compton,,No,,Contact Program,0,,,,,,,,School,Active,0
+,Boys & Girls Club of Newport Cty.,320,Newport,,Yes,,Contact Program,5,,,,,,,,Center,Active,0
+,Champion Childcare Program at Pell,206,Newport,,Yes,,Contact Program,5,,,,,,,,Center,Active,0
+,Claiborne Pell Elementary School,1179,Newport,,No,,Contact Program,3,,,,,,,,School,Active,0
+,EBCAP Head Start @ Mary V Quirk Sc,205,Newport,,No,,Contact Program,5,,,,,,,,Center,Active,0
+,EBCAP Head Start at Newport,201,Newport,,Yes,,Contact Program,4,,,,,,,,Center,Active,0
+,EBCAP Head Start at Willett Avenue,202,Newport,,Yes,,Contact Program,5,,,,,,,,Center,Active,0
+,EBCAP/Tiverton Center,203,Newport,,No,,Contact Program,4,,,,,,,,Center,Active,0
+,Jacqueline Toracinta,86,Newport,,No,,Contact Program,0,,,,,,,,Home,Active,0
+,Martin Luther King Center Day Care,151,Newport,,Yes,,Contact Program,2,,,,,,,,Center,Active,0
+,St. Michael's Country Day School,4917,Newport,,No,,Contact Program,0,,,,,,,,Center,Active,0
+,Aquidneck School,1096,Middletown,,No,,Contact Program,3,,,,,,,,School,Active,0
+,"Bloom, LLC",1005,Middletown,,No,,Contact Program,0,,,,,,,,Center,Active,0
+,Bright Ideas,4154,Middletown,,No,,Contact Program,0,,,,,,,,Center,Active,0
+,Calvary Christian Preschool,966,Middletown,,No,,Contact Program,0,,,,,,,,Center,Active,0
+,"Coggeshall Club, LLC.",4522,Middletown,,Yes,,Contact Program,1,,,,,,,,Center,Active,0
+,EBCAP HS @ Aquidneck School,5193,Middletown,,No,,Contact Program,0,,,,,,,,Center,Active,0
+,EBCAP HS @ Forest Aveune School,5192,Middletown,,No,,Contact Program,0,,,,,,,,Center,Active,0
+,Fresh Start Learning Center,3977,Middletown,,Yes,,Contact Program,1,,,,,,,,Center,Active,0
+,Haven Middletown,5136,Middletown,,Yes,,Contact Program,1,,,,,,,,Center,Active,0
+,Newport County Y-Aquidneck,192,Middletown,,Yes,,Contact Program,3,,,,,,,,Center,Active,0
+,Newport County Y-Forest Avenue,193,Middletown,,Yes,,Contact Program,3,,,,,,,,Center,Active,0
+,Newport County Y-Twice As Nice,191,Middletown,,Yes,,Contact Program,3,,,,,,,,Center,Active,0
+,Newport County YMCA at Gaudet Midd,1160,Middletown,,Yes,,Contact Program,1,,,,,,,,Center,Active,0
+,Salt Air Early Learning Center Inc,5111,Middletown,,Yes,,Contact Program,2,,,,,,,,Center,Active,0
+,Sandpipers Early Learning Center,237,Middletown,,Yes,,Contact Program,4,,,,,,,,Center,Active,0
+,Silveira Kindergarten & Nursery Sc,949,Middletown,,Yes,,Contact Program,1,,,,,,,,Center,Active,0
+,Terri Traeger,5201,Middletown,,No,,Contact Program,0,,,,,,,,Home,Active,0
+,Countryside Children's Center,133,Portsmouth,,Yes,,Contact Program,3,,,,,,,,Center,Active,0
+,Lily Frog,725,Portsmouth,,Yes,,Contact Program,4,,,,,,,,Center,Active,0
+,Lisa Mailloux,5086,Portsmouth,,No,,Contact Program,0,,,,,,,,Home,Active,0
+,Mary Watson,5275,Portsmouth,,No,,Contact Program,1,,,,,,,,Home,Active,0
+,Melville Elementary School,1106,Portsmouth,,No,,Contact Program,4,,,,,,,,School,Active,0
+,Paper Crown Preschool - Portsmouth,5121,Portsmouth,,No,,Contact Program,0,,,,,,,,Center,Active,0
+,Portsmouth Nursery School,946,Portsmouth,,No,,Contact Program,0,,,,,,,,Center,Active,0
+,The Children's School,985,Portsmouth,,No,,Contact Program,0,,,,,,,,Center,Active,0
+,The Island Childcare & Day School,387,Portsmouth,,Yes,,Contact Program,0,,,,,,,,Center,Active,0
+,Fort Barton School,1114,Tiverton,,No,,Contact Program,0,,,,,,,,School,Active,0
+,Future Scholars Preschool,140,Tiverton,,Yes,,Contact Program,1,,,,,,,,Center,Active,0
+,Jean Bento,17,Tiverton,,Yes,,Contact Program,1,,,,,,,,Home,Active,0
+,Little Willow,5059,Tiverton,,No,,Contact Program,0,,,,,,,,Center,Active,0
+,Pocasset School,1115,Tiverton,,No,,Contact Program,0,,,,,,,,School,Active,0
+,Sakonnet Early Learning Center,138,Tiverton,,Yes,,Contact Program,4,,,,,,,,Center,Active,0
+,Chepachet Village Schoolhouse,5144,Chepachet,,No,,Contact Program,1,,,,,,,,Center,Active,0
+,Glocester Childcare Center,4469,Chepachet,,Yes,,Contact Program,2,,,,,,,,Center,Active,0
+,Harmony Child Care & Learning Ctr.,751,Chepachet,,Yes,,Contact Program,2,,,,,,,,Center,Active,0
+,The Learning Place,368,Chepachet,,Yes,,Contact Program,5,,,,,,,,Center,Active,0
+,Clayville Elementary School,1111,Clayville,,No,,Contact Program,1,,,,,,,,School,Active,0
+,"Acorn Academy, LLC",5141,Foster,,No,,Contact Program,3,,,,,,,,Center,Active,0
+,Bright Start Academy,691,Greenville,,No,,Contact Program,1,,,,,,,,Center,Active,0
+,Greenville Nursery School,969,Greenville,,Yes,,Contact Program,1,,,,,,,,Center,Active,0
+,My Learning Tree Greenville Inc,5181,Greenville,,No,,Contact Program,1,,,,,,,,Center,Active,0
+,Smithfield YMCA,90,Greenville,,Yes,,Contact Program,1,,,,,,,,Center,Active,0
+,Austin T. Levy School,1078,Harrisville,,No,,Contact Program,0,,,,,,,,School,Active,0
+,Burrillville Extended at A.T.Levy,4637,Harrisville,,Yes,,Contact Program,1,,,,,,,,Center,Active,0
+,Burrillville Extended Callahan,243,Harrisville,,Yes,,Contact Program,2,,,,,,,,Center,Active,0
+,Burrillville Extended Steere Farm,242,Harrisville,,Yes,,Contact Program,2,,,,,,,,Center,Active,0
+,Harrisville Pre-School,106,Harrisville,,Yes,,Contact Program,0,,,,,,,,Center,Active,0
+,Me Too Preschool Il,406,Burrillville,,Yes,,Contact Program,1,,,,,,,,Center,Active,0
+,Susan Chiovitti,53,Harrisville,,Yes,,Contact Program,1,,,,,,,,Home,Active,0
+,Dawn Joly,5169,Manville,,No,,Contact Program,3,,,,,,,,Home,Active,0
+,Olivia Villamil,5286,Manville,,No,,Contact Program,0,,,,,,,,Home,Active,0
+,Scituate Early Learning Center,826,North Scituate,,Yes,,Contact Program,2,,,,,,,,Center,Active,0
+,Burrillville Children's Academy,5137,Pascoag,,No,,Contact Program,1,,,,,,,,Center,Active,0
+,Jeannette Arroyo Llanos,5280,Pascoag,,No,,Contact Program,0,,,,,,,,Home,Active,0
+,Altagracia Ciprian,403,Pawtucket,,Yes,,Contact Program,2,,,,,,,,Home,Active,0
+,Amparo Moreno,3417,Pawtucket,,Yes,,Contact Program,1,,,,,,,,Home,Active,0
+,Betty Padilla,831,Pawtucket,,Yes,,Contact Program,2,,,,,,,,Home,Active,0
+,Betty Reyes,5183,Pawtucket,,No,,Contact Program,2,,,,,,,,Home,Active,0
+,Blackstone Valley ELC,5150,Pawtucket,,No,,Contact Program,1,,,,,,,,Center,Active,0
+,Boys & Girls Club of Pawtucket,173,Pawtucket,,No,,Contact Program,4,,,,,,,,Center,Active,0
+,Children's Friend @ Heritage Park,5278,Pawtucket,,No,,Contact Program,0,,,,,,,,Center,Active,0
+,Crayons and Lolllipops,916,Pawtucket,,Yes,,Contact Program,1,,,,,,,,Center,Active,0
+,Diana Restrepo-Garcia,811,Pawtucket,,Yes,,Contact Program,3,,,,,,,,Home,Active,0
+,El Bebe Day Care II,783,Pawtucket,,Yes,,Contact Program,2,,,,,,,,Center,Active,0
+,"First Step, Inc.",89,Pawtucket,,Yes,,Contact Program,1,,,,,,,,Center,Active,0
+,Four Corners YMCA Early Learning C,699,Pawtucket,,Yes,,Contact Program,4,,,,,,,,Center,Active,0
+,Francis J. Varieur School,1105,Pawtucket,,No,,Contact Program,4,,,,,,,,School,Active,0
+,Gladys Nunez,633,Pawtucket,,Yes,,Contact Program,1,,,,,,,,Home,Active,0
+,Gloria Lambert,483,Pawtucket,,Yes,,Contact Program,2,,,,,,,,Home,Active,0
+,Irma Miranda,543,Pawtucket,,Yes,,Contact Program,1,,,,,,,,Home,Active,0
+,Johani Villegas,561,Pawtucket,,Yes,,Contact Program,2,,,,,,,,Home,Active,0
+,Joyful Hearts Childcare - Pawt.,979,Pawtucket,,Yes,,Contact Program,4,,,,,,,,Center,Active,0
+,Joyful Hearts Discovery Learning,5155,Pawtucket,,No,,Contact Program,2,,,,,,,,Center,Active,0
+,Lincoln Child Development Center,694,Pawtucket,,Yes,,Contact Program,4,,,,,,,,Center,Active,0
+,Lisette Nunez,1141,Pawtucket,,Yes,,Contact Program,2,,,,,,,,Home,Active,0
+,MacColl YMCA,708,Pawtucket,,Yes,,Contact Program,2,,,,,,,,Center,Active,0
+,MacColl YMCA @ BVP Broad St.,1196,Pawtucket,,Yes,,Contact Program,2,,,,,,,,Center,Active,0
+,Maria Lopes,673,Pawtucket,,Yes,,Contact Program,2,,,,,,,,Home,Active,0
+,Nicauri Diaz de Artiles,5098,Pawtucket,,No,,Contact Program,1,,,,,,,,Home,Active,0
+,Oldimisa Depina,5212,Pawtucket,,No,,Contact Program,1,,,,,,,,Home,Active,0
+,Pawtucket Family YMCA,702,Pawtucket,,Yes,,Contact Program,2,,,,,,,,Center,Active,0
+,Pawtucket Y/Heritage Park ELC,701,Pawtucket,,Yes,,Contact Program,4,,,,,,,,Center,Active,0
+,Sheri Dumas,5,Pawtucket,,Yes,,Contact Program,1,,,,,,,,Home,Active,0
+,Small Wonders Daycare,5093,Pawtucket,,Yes,,Contact Program,2,,,,,,,,Center,Active,0
+,Snow White Home Daycare,344,Pawtucket,,Yes,,Contact Program,2,,,,,,,,Home,Active,0
+,The Children's Workshop Foundation,5149,Pawtucket,,No,,Contact Program,0,,,,,,,,Center,Active,0
+,The Y at Blackstone Valley Prep,707,Pawtucket,,Yes,,Contact Program,2,,,,,,,,Center,Active,0
+,U.S. Taekwondo Pawtucket,3892,Pawtucket,,Yes,,Contact Program,1,,,,,,,,Center,Active,0
+,Yolanda Feliciano,256,Pawtucket,,Yes,,Contact Program,1,,,,,,,,Home,Active,0
+,ASTRO Academy,5058,Pawtucket,,Yes,,Contact Program,1,,,,,,,,Center,Active,0
+,Darlington Early Childhood Center,147,Pawtucket,,Yes,,Contact Program,2,,,,,,,,Center,Active,0
+,Daysi De los Santos,456,Pawtucket,,Yes,,Contact Program,2,,,,,,,,Home,Active,0
+,Diane Lacroix,677,Pawtucket,,No,,Contact Program,0,,,,,,,,Home,Active,0
+,Dreamland Learning Center III,4752,Pawtucket,,Yes,,Contact Program,1,,,,,,,,Center,Active,0
+,Fallon Memorial School,1104,Pawtucket,,No,,Contact Program,4,,,,,,,,School,Active,0
+,Flora S. Curtis Memorial School,1185,Pawtucket,,No,,Contact Program,4,,,,,,,,School,Active,0
+,Gargi Majumdar,5249,Pawtucket,,No,,Contact Program,0,,,,,,,,Home,Active,0
+,Joyce Laramee,740,Pawtucket,,Yes,,Contact Program,1,,,,,,,,Home,Active,0
+,Joyful Hearts Early Education,5096,Pawtucket,,No,,Contact Program,3,,,,,,,,Center,Active,0
+,Maria De Barros Martins,4998,Pawtucket,,Yes,,Contact Program,1,,,,,,,,Home,Active,0
+,Migdalia Rosa,862,Pawtucket,,Yes,,Contact Program,1,,,,,,,,Home,Active,0
+,Nathanael Greene School,4094,Pawtucket,,No,,Contact Program,4,,,,,,,,School,Active,0
+,Nery's Land Learning Center,5178,Pawtucket,,No,,Contact Program,1,,,,,,,,Center,Active,0
+,St. Cecilia School,5189,Pawtucket,,No,,Contact Program,0,,,,,,,,School,Active,0
+,Yesenia Hayden,1001,Pawtucket,,Yes,,Contact Program,2,,,,,,,,Home,Active,0
+,Altagracia Rojas,422,Central Falls,,Yes,,Contact Program,2,,,,,,,,Home,Active,0
+,Aracelys Perez,1021,Central Falls,,Yes,,Contact Program,1,,,,,,,,Home,Active,0
+,Capt. G. Harold Hunt School,1079,Central Falls,,No,,Contact Program,4,,,,,,,,School,Active,0
+,Claudia Montero Castillo,5248,Central Falls,,No,,Contact Program,1,,,,,,,,Home,Active,0
+,Dora Rodriguez,788,Central Falls,,Yes,,Contact Program,1,,,,,,,,Home,Active,0
+,Doris Gil,850,Central Falls,,Yes,,Contact Program,1,,,,,,,,Home,Active,0
+,Dr. Day Care Central Falls,5231,Central Falls,,No,,Contact Program,1,,,,,,,,Center,Active,0
+,Elisa Goncalves,587,Central Falls,,Yes,,Contact Program,1,,,,,,,,Home,Active,0
+,Fermina Figueroa,1011,Central Falls,,Yes,,Contact Program,1,,,,,,,,Home,Active,0
+,Gladis Mazo,5219,Central Falls,,No,,Contact Program,1,,,,,,,,Home,Active,0
+,Glenis Peralta,1589,Central Falls,,Yes,,Contact Program,2,,,,,,,,Home,Active,0
+,Josefina Lorenzo,421,Central Falls,,Yes,,Contact Program,2,,,,,,,,Home,Active,0
+,Karolina Blandon,794,Central Falls,,Yes,,Contact Program,1,,,,,,,,Home,Active,0
+,Marlene Berganza,5290,Central Falls,,No,,Contact Program,0,,,,,,,,Home,Active,0
+,Ofelia Christopher Home Daycare,675,Central Falls,,Yes,,Contact Program,2,,,,,,,,Home,Active,0
+,Progresso Excellence Academy,98,Central Falls,,Yes,,Contact Program,4,,,,,,,,Center,Active,0
+,Silvia Benitez,720,Central Falls,,Yes,,Contact Program,1,,,,,,,,Home,Active,0
+,The Children's Workshop CF,4907,Central Falls,,Yes,,Contact Program,3,,,,,,,,Center,Active,0
+,The Children's Workshop Pawtucket,4909,Central Falls,,Yes,,Contact Program,3,,,,,,,,Center,Active,0
+,The Children's Workshop Providence,4908,Central Falls,,Yes,,Contact Program,4,,,,,,,,Center,Active,0
+,The Children's Workshop Rumford,4910,Central Falls,,Yes,,Contact Program,4,,,,,,,,Center,Active,0
+,The Children's Workshop Warren,4911,Central Falls,,Yes,,Contact Program,4,,,,,,,,Center,Active,0
+,Zoraida Rodriguez,724,Central Falls,,Yes,,Contact Program,1,,,,,,,,Home,Active,0
+,Boys & Girls Club of Cumb-Lincoln,2287,Cumberland,,Yes,,Contact Program,4,,,,,,,,Center,Active,0
+,Cheryl Delva,323,Cumberland,,Yes,,Contact Program,1,,,,,,,,Home,Active,0
+,Cumberland Preschool Center,1088,Cumberland,,No,,Contact Program,1,,,,,,,,School,Active,0
+,Gabrielle Fillion,5095,Cumberland,,No,,Contact Program,0,,,,,,,,Home,Active,0
+,Giovanna Avallone,5266,Cumberland,,No,,Contact Program,0,,,,,,,,Home,Active,0
+,Kid's Play,373,Cumberland,,Yes,,Contact Program,1,,,,,,,,Center,Active,0
+,Maple Hill Early Learning,1144,Cumberland,,Yes,,Contact Program,4,,,,,,,,Center,Active,0
+,Michaela Champagne,5168,Cumberland,,No,,Contact Program,1,,,,,,,,Home,Active,0
+,Monica Raspallo,589,Cumberland,,No,,Contact Program,0,,,,,,,,Home,Active,0
+,Neighborhood Nursery Preschool,951,Cumberland,,No,,Contact Program,0,,,,,,,,Center,Active,0
+,"Paintbox Preschool, llc",929,Cumberland,,No,,Contact Program,0,,,,,,,,Center,Active,0
+,Rebecca Mello,1016,Cumberland,,No,,Contact Program,0,,,,,,,,Home,Active,0
+,Sarah Tejada,5103,Cumberland,,No,,Contact Program,4,,,,,,,,Home,Active,0
+,Shine Bright,5090,Cumberland,,No,,Contact Program,1,,,,,,,,Center,Active,0
+,Ana Roque,816,Lincoln,,No,,Contact Program,0,,,,,,,,Home,Active,0
+,Cadence Academy Preschool Lincoln,4359,Lincoln,,Yes,,Contact Program,1,,,,,,,,Center,Active,0
+,Davies Early Learning Center,5123,Lincoln,,No,,Contact Program,1,,,,,,,,Center,Active,0
+,Diane Nelson,11,Lincoln,,No,,Contact Program,0,,,,,,,,Home,Active,0
+,Donna Adams,3,Lincoln,,No,,Contact Program,1,,,,,,,,Home,Active,0
+,Hand in Hand Christian Pre  LLC,1041,Lincoln,,Yes,,Contact Program,5,,,,,,,,Center,Active,0
+,Kids Klub Inc @ Central Elementary,5269,Lincoln,,No,,Contact Program,0,,,,,,,,Center,Active,0
+,Little Acorn Academy Inc,1143,Lincoln,,Yes,,Contact Program,3,,,,,,,,Center,Active,0
+,"Little Acorn Academy Two, Inc",3472,Lincoln,,Yes,,Contact Program,0,,,,,,,,Center,Active,0
+,Lonsdale Elementary School,1178,Lincoln,,No,,Contact Program,2,,,,,,,,School,Active,0
+,Monica Colin,842,Lincoln,,Yes,,Contact Program,1,,,,,,,,Home,Active,0
+,Northern Lincoln Elementary School,1095,Manville,,No,,Contact Program,2,,,,,,,,School,Active,0
+,The Owl's Nest Day School,5267,Lincoln,,No,,Contact Program,0,,,,,,,,Center,Active,0
+,Vikki DeLuca,479,Lincoln,,Yes,,Contact Program,1,,,,,,,,Home,Active,0
+,Wesly Powell,5122,Lincoln,,No,,Contact Program,4,,,,,,,,Home,Active,0
+,Deborah Bailey-Scotto,70,Slatersville,,No,,Contact Program,0,,,,,,,,Home,Active,0
+,Angimer Lora Toribio,5188,Woonsocket,,No,,Contact Program,1,,,,,,,,Home,Active,0
+,CCF - Chaplin/Perez School-Age,363,Woonsocket,,Yes,,Contact Program,4,,,,,,,,Center,Active,0
+,CCF - Hope St. Early Learning,364,Woonsocket,,Yes,,Contact Program,4,,,,,,,,Center,Active,0
+,Diamela Belisle,74,Woonsocket,,Yes,,Contact Program,1,,,,,,,,Home,Active,0
+,Good Shepard Catholic Regional ,5049,Woonsocket,,Yes,,Contact Program,1,,,,,,,,Center,Active,0
+,Governor Aram J. Pothier School,1122,Woonsocket,,No,,Contact Program,0,,,,,,,,School,Active,0
+,"Hamlet Learning Center, Inc.",4655,Woonsocket,,Yes,,Contact Program,2,,,,,,,,Center,Active,0
+,"Me Too Preschool, Inc.",405,Woonsocket,,Yes,,Contact Program,1,,,,,,,,Center,Active,0
+,Orleny Dorrejo Almonte,5142,Woonsocket,,No,,Contact Program,1,,,,,,,,Home,Active,0
+,Sharon Fontaine,342,Woonsocket,,Yes,,Contact Program,2,,,,,,,,Home,Active,0
+,Victoria Recinos,5260,Woonsocket,,No,,Contact Program,1,,,,,,,,Home,Active,0
+,Wee Wonders Day Care,179,Woonsocket,,Yes,,Contact Program,0,,,,,,,,Center,Active,0
+,Woonsocket Head St/Karen Bouchard,255,Woonsocket,,Yes,,Contact Program,5,,,,,,,,Center,Active,0
+,Woonsocket Head Start/Bourdon Blvd,254,Woonsocket,,Yes,,Contact Program,5,,,,,,,,Center,Active,0
+,Woonsocket Head Start/Cass Park,252,Woonsocket,,Yes,,Contact Program,4,,,,,,,,Center,Active,0
+,Woonsocket HeadStart/Benoit-Brown,253,Woonsocket,,Yes,,Contact Program,5,,,,,,,,Center,Active,0
+,YWCA Rhode Island,164,Woonsocket,,Yes,,Contact Program,4,,,,,,,,Center,Active,0
+,YWCA RI Steam Engine,1128,Woonsocket,,Yes,,Contact Program,4,,,,,,,,Center,Active,0
+,Anchor Point Early Learning Academ,4502,North Smithfield,,No,,Contact Program,0,,,,,,,,Center,Active,0
+,AnneMarie Almeida,5091,North Smithfield,,No,,Contact Program,0,,,,,,,,Home,Active,0
+,Constance Lepine,41,North Smithfield,,Yes,,Contact Program,1,,,,,,,,Home,Active,0
+,Donna Chartier,26,North Smithfield,,No,,Contact Program,1,,,,,,,,Home,Active,0
+,North Smithfield ELC,5232,North Smithfield,,No,,Contact Program,1,,,,,,,,Center,Active,0
+,North Smithfield Elementary School,1103,North Smithfield,,No,,Contact Program,2,,,,,,,,School,Active,0
+,Aristomedia Taveras,4428,Providence,,Yes,,Contact Program,3,,,,,,,,Home,Active,0
+,Children's Friend @ Althea,4581,Providence,,Yes,,Contact Program,5,,,,,,,,Center,Active,0
+,Children's Friend @ Dean,183,Providence,,Yes,,Contact Program,5,,,,,,,,Center,Active,0
+,Children's Friend @ Dexter,180,Providence,,Yes,,Contact Program,3,,,,,,,,Center,Active,0
+,Children's Friend @ Friendship,182,Providence,,Yes,,Contact Program,5,,,,,,,,Center,Active,0
+,Dr. Pat Feinstein Child Dev.Center,892,Providence,,Yes,,Contact Program,5,,,,,,,,Center,Active,0
+,Eskarly Parra,5174,Providence,,No,,Contact Program,2,,,,,,,,Home,Active,0
+,John Hope Day Care Center,190,Providence,,Yes,,Contact Program,1,,,,,,,,Center,Active,0
+,The Nowell Child Center,4905,Providence,,Yes,,Contact Program,2,,,,,,,,Center,Active,0
+,A Child's View Inc.,874,North Providence,,Yes,,Contact Program,1,,,,,,,,Center,Active,0
+,Alexandra Burgos,5134,Providence,,No,,Contact Program,2,,,,,,,,Home,Active,0
+,Carmen Quinones,5215,North Providence,,No,,Contact Program,1,,,,,,,,Home,Active,0
+,Christine Harrop,381,North Providence,,Yes,,Contact Program,1,,,,,,,,Home,Active,0
+,Eva Carrasquilla,5129,North Providence,,No,,Contact Program,1,,,,,,,,Home,Active,0
+,Francis De los Santos,5209,Providence,,No,,Contact Program,1,,,,,,,,Home,Active,0
+,Gbessay Boima,5050,North Providence,,Yes,,Contact Program,1,,,,,,,,Home,Active,0
+,Janae Page,5073,Providence,,No,,Contact Program,2,,,,,,,,Home,Active,0
+,Lidia Arias Tejada,5176,Providence,,No,,Contact Program,2,,,,,,,,Home,Active,0
+,Luz Duncan,5213,Providence,,No,,Contact Program,0,,,,,,,,Home,Active,0
+,Meri Ulerio Alberto,2933,Providence,,Yes,,Contact Program,1,,,,,,,,Home,Active,0
+,MK Taekwondo Inc,5139,Providence,,No,,Contact Program,1,,,,,,,,Center,Active,0
+,The Learning Academy,871,North Providence,,Yes,,Contact Program,1,,,,,,,,Center,Active,0
+,Yaribel Tejeda,5203,Providence,,No,,Contact Program,2,,,,,,,,Home,Active,0
+,YMCA Schools Out @ Fortes Lima Ann,305,Providence,,Yes,,Contact Program,2,,,,,,,,Center,Active,0
+,Ada Perez,3359,Providence,,Yes,,Contact Program,1,,,,,,,,Home,Active,0
+,Adys Laboy,4487,Providence,,Yes,,Contact Program,1,,,,,,,,Home,Active,0
+,Aguasanta Gomez,832,Providence,,Yes,,Contact Program,2,,,,,,,,Home,Active,0
+,Ana Rivas,670,Providence,,Yes,,Contact Program,1,,,,,,,,Home,Active,0
+,Ana Salcie,3066,Providence,,Yes,,Contact Program,1,,,,,,,,Home,Active,0
+,Andy Rodriguez,648,Providence,,Yes,,Contact Program,2,,,,,,,,Home,Active,0
+,Annette Jordan,24,Cranston,,Yes,,Contact Program,1,,,,,,,,Home,Active,0
+,Araminta McIntosh,5172,Providence,,No,,Contact Program,0,,,,,,,,Home,Active,0
+,Australia Ramos,524,Providence,,Yes,,Contact Program,2,,,,,,,,Home,Active,0
+,Beautiful Beginnings @ Liston CCRI,4903,Providence,,No,,Contact Program,5,,,,,,,,Center,Active,0
+,Bishop McVinney Regional School,161,Providence,,Yes,,Contact Program,1,,,,,,,,Center,Active,0
+,Boys & Girls Club Prov-Meeting St,5276,Providence,,No,,Contact Program,0,,,,,,,,Center,Active,0
+,Bright Horizons Children's Center,314,Providence,,No,,Contact Program,0,,,,,,,,Center,Active,0
+,Candy Lora,5048,Providence,,Yes,,Contact Program,1,,,,,,,,Home,Active,0
+,Carlixta Acosta,1007,Providence,,Yes,,Contact Program,0,,,,,,,,Home,Active,0
+,CCAP -Broad Street,5069,Cranston,,No,,Contact Program,0,,,,,,,,Center,Active,0
+,CCAP Child Development Center,4801,Cranston,,Yes,,Contact Program,4,,,,,,,,Center,Active,0
+,Claudia Taveras,3978,Providence,,Yes,,Contact Program,1,,,,,,,,Home,Active,0
+,Confesora Cordero,1641,Providence,,Yes,,Contact Program,2,,,,,,,,Home,Active,0
+,Cruz Rymer,4996,Cranston,,No,,Contact Program,1,,,,,,,,Home,Active,0
+,Denise Polanco,5164,Providence,,Yes,,Contact Program,1,,,,,,,,Home,Active,0
+,Digna Alcantara,4038,Providence,,Yes,,Contact Program,2,,,,,,,,Home,Active,0
+,Dionicia Reynoso,806,Providence,,Yes,,Contact Program,2,,,,,,,,Home,Active,0
+,Dorka Rodriguez,1252,Cranston,,Yes,,Contact Program,1,,,,,,,,Home,Active,0
+,Edgewood Highland School,3926,Cranston,,No,,Contact Program,4,,,,,,,,School,Active,0
+,Eileen Gonzalez,1423,Providence,,Yes,,Contact Program,1,,,,,,,,Home,Active,0
+,El Bebe Day Care Center,782,Providence,,Yes,,Contact Program,2,,,,,,,,Center,Active,0
+,Fabiola Burns,688,Cranston,,Yes,,Contact Program,2,,,,,,,,Home,Active,0
+,Guillermina Rodriguez,713,Providence,,Yes,,Contact Program,2,,,,,,,,Home,Active,0
+,Hipolita DeLeon,603,Providence,,Yes,,Contact Program,1,,,,,,,,Home,Active,0
+,Idania Reinoso Matias,5258,Providence,,No,,Contact Program,1,,,,,,,,Home,Active,0
+,Iluminada Santiago Mena,914,Providence,,Yes,,Contact Program,2,,,,,,,,Home,Active,0
+,Jonka Cruz Rafael,5210,Providence,,No,,Contact Program,2,,,,,,,,Home,Active,0
+,Juana Arias,4,Providence,,Yes,,Contact Program,2,,,,,,,,Home,Active,0
+,Julissa Ulloa Tirado,5107,Providence,,No,,Contact Program,2,,,,,,,,Home,Active,0
+,Liades Guance,5070,Providence,,No,,Contact Program,1,,,,,,,,Home,Active,0
+,Little Learners Academy Edgewood,5099,Cranston,,No,,Contact Program,1,,,,,,,,Center,Active,0
+,Lourdes Hernandez,918,Providence,,Yes,,Contact Program,2,,,,,,,,Home,Active,0
+,Love 4 All Child Care - Elmwood,514,Providence,,Yes,,Contact Program,2,,,,,,,,Center,Active,0
+,Love 4 All Learning Center - Eddy,516,Providence,,Yes,,Contact Program,2,,,,,,,,Center,Active,0
+,Maria Feliz,5147,Providence,,No,,Contact Program,3,,,,,,,,Home,Active,0
+,Maria Garcia,2874,Providence,,Yes,,Contact Program,2,,,,,,,,Home,Active,0
+,Marilyn Galicia,4285,Cranston,,Yes,,Contact Program,1,,,,,,,,Home,Active,0
+,Meeting Street Early Learning Cen,1049,Providence,,Yes,,Contact Program,4,,,,,,,,Center,Active,0
+,Miladys Gomez,390,Providence,,Yes,,Contact Program,2,,,,,,,,Home,Active,0
+,Miriam Saldana,423,Providence,,Yes,,Contact Program,2,,,,,,,,Home,Active,0
+,Nelsa Filion,741,Providence,,Yes,,Contact Program,1,,,,,,,,Home,Active,0
+,Ocean State Kidz Club LLC,4353,Cranston,,Yes,,Contact Program,5,,,,,,,,Center,Active,0
+,Omaris Maria,520,Providence,,Yes,,Contact Program,1,,,,,,,,Home,Active,0
+,Pimaxuelivir Lebron Almonte,5205,Providence,,No,,Contact Program,1,,,,,,,,Home,Active,0
+,Ramona Perdomo,5255,Providence,,No,,Contact Program,0,,,,,,,,Home,Active,0
+,Roger Williams Day Care Center,137,Providence,,Yes,,Contact Program,4,,,,,,,,Center,Active,0
+,Rosa Reyes,825,Providence,,Yes,,Contact Program,1,,,,,,,,Home,Active,0
+,Saint Paul School,91,Cranston,,Yes,,Contact Program,2,,,,,,,,Center,Active,0
+,Sakia Araujo,627,Providence,,Yes,,Contact Program,2,,,,,,,,Home,Active,0
+,Susan Inirio,5242,Providence,,No,,Contact Program,0,,,,,,,,Home,Active,0
+,Virginia Arias,5025,Providence,,No,,Contact Program,0,,,,,,,,Home,Active,0
+,Virginia Najarro,477,Providence,,Yes,,Contact Program,5,,,,,,,,Home,Active,0
+,Washington Park Community Center,221,Providence,,Yes,,Contact Program,2,,,,,,,,Center,Active,0
+,Yadira Reyes,2824,Providence,,Yes,,Contact Program,2,,,,,,,,Home,Active,0
+,Yenersi Hernandez,1267,Cranston,,Yes,,Contact Program,2,,,,,,,,Home,Active,0
+,Brown-Fox Point EC Ed Center,165,Providence,,Yes,,Contact Program,5,,,,,,,,Center,Active,0
+,Catherine Bothe,765,Providence,,No,,Contact Program,0,,,,,,,,Home,Active,0
+,Child's Play,95,Providence,,No,,Contact Program,5,,,,,,,,Center,Active,0
+,Cozy Corner Child Care Center,4825,Providence,,No,,Contact Program,0,,,,,,,,Center,Active,0
+,David Isenberg Family Learning Chi,112,Providence,,Yes,,Contact Program,2,,,,,,,,Center,Active,0
+,"Dr. Martin Luther King, Jr. Elementary School",2734,Providence,,No,,Contact Program,2,,,,,,,,School,Active,0
+,East Side Nursery School,935,Providence,,No,,Contact Program,0,,,,,,,,Center,Active,0
+,Eastside Early Learning Center,110,Providence,,No,,Contact Program,2,,,,,,,,Center,Active,0
+,Imagine Preschool,2931,Providence,,Yes,,Contact Program,5,,,,,,,,Center,Active,0
+,Lincoln School- Carriage House,157,Providence,,No,,Contact Program,0,,,,,,,,Center,Active,0
+,Mount Hope Child Care Center,300,Providence,,Yes,,Contact Program,3,,,,,,,,Center,Active,0
+,Mt. Hope Learning Center,1132,Providence,,Yes,,Contact Program,1,,,,,,,,Center,Active,0
+,Providence Ctr.Therapeutic Daycare,209,Providence,,No,,Contact Program,0,,,,,,,,Center,Active,0
+,The Little School at Lincoln,4902,Providence,,No,,Contact Program,0,,,,,,,,Center,Active,0
+,Alba Jimenez Cuba de Cast,3854,Providence,,Yes,,Contact Program,2,,,,,,,,Home,Active,0
+,Alexandra Jimenez,5166,Providence,,No,,Contact Program,1,,,,,,,,Home,Active,0
+,Alfa Belliard,4913,Providence,,Yes,,Contact Program,1,,,,,,,,Home,Active,0
+,Ana Bencosme,3822,Providence,,Yes,,Contact Program,3,,,,,,,,Home,Active,0
+,Ana Gutierrez,618,Providence,,Yes,,Contact Program,2,,,,,,,,Home,Active,0
+,Ana Hernandez,730,Providence,,Yes,,Contact Program,1,,,,,,,,Home,Active,0
+,Ana Tejada,361,Providence,,Yes,,Contact Program,2,,,,,,,,Home,Active,0
+,Anania Hernandez,450,Providence,,Yes,,Contact Program,1,,,,,,,,Home,Active,0
+,Anastacia Tejeda,347,Providence,,Yes,,Contact Program,1,,,,,,,,Home,Active,0
+,Asela Garcia,1028,Providence,,Yes,,Contact Program,2,,,,,,,,Home,Active,0
+,Aury Cabral,5182,Providence,,No,,Contact Program,2,,,,,,,,Home,Active,0
+,Beautiful Beginnings,249,Providence,,Yes,,Contact Program,5,,,,,,,,Center,Active,0
+,Carmen Almonte,646,Providence,,Yes,,Contact Program,2,,,,,,,,Home,Active,0
+,Carmen Hiciano,5216,Providence,,No,,Contact Program,1,,,,,,,,Home,Active,0
+,Carmen Sanchez,4784,Providence,,Yes,,Contact Program,2,,,,,,,,Home,Active,0
+,Carolina Rodriguez,2779,Providence,,Yes,,Contact Program,2,,,,,,,,Home,Active,0
+,Chainylee Alvarez,5056,Providence,,Yes,,Contact Program,2,,,,,,,,Home,Active,0
+,Charles N. Fortes Elementary School,1108,Providence,,No,,Contact Program,3,,,,,,,,School,Active,0
+,Children's Friend @ Dorcas Intl.,4596,Providence,,Yes,,Contact Program,5,,,,,,,,Center,Active,0
+,Children's Friend @ McAuley Village,5148,Providence,,Yes,,Contact Program,1,,,,,,,,Center,Active,0
+,Children's Friend @ St. Paul,5066,Providence,,Yes,,Contact Program,3,,,,,,,,Center,Active,0
+,Claribel Mayi Tirado,5118,Providence,,No,,Contact Program,2,,,,,,,,Home,Active,0
+,Cristy Garcia,5084,Providence,,No,,Contact Program,2,,,,,,,,Home,Active,0
+,Daciry Montesino,621,Providence,,Yes,,Contact Program,2,,,,,,,,Home,Active,0
+,Daire Corton,726,Providence,,Yes,,Contact Program,1,,,,,,,,Home,Active,0
+,Dastenia Encarnacion,5079,Providence,,No,,Contact Program,0,,,,,,,,Home,Active,0
+,Delcy Hilario,419,Providence,,Yes,,Contact Program,2,,,,,,,,Home,Active,0
+,Deysi Fuentes,393,Providence,,Yes,,Contact Program,1,,,,,,,,Home,Active,0
+,Dinanylis Gonzalez,5247,Providence,,No,,Contact Program,0,,,,,,,,Home,Active,0
+,Disnalda Melendez,608,Providence,,Yes,,Contact Program,2,,,,,,,,Home,Active,0
+,Elba Dorrejo Marquez,4260,Providence,,Yes,,Contact Program,1,,,,,,,,Home,Active,0
+,Elizabeth Polanco,5087,Providence,,No,,Contact Program,1,,,,,,,,Home,Active,0
+,Eridania Reyes,5236,Providence,,No,,Contact Program,1,,,,,,,,Home,Active,0
+,Estefany Ortiz,3795,Providence,,Yes,,Contact Program,2,,,,,,,,Home,Active,0
+,Estela Rodriguez,475,Providence,,Yes,,Contact Program,2,,,,,,,,Home,Active,0
+,Esther Santana,5153,Providence,,No,,Contact Program,2,,,,,,,,Home,Active,0
+,Eva Polanco,5218,Providence,,No,,Contact Program,1,,,,,,,,Home,Active,0
+,Flor Vargas,404,Providence,,Yes,,Contact Program,2,,,,,,,,Home,Active,0
+,Francia Francisco,526,Providence,,Yes,,Contact Program,1,,,,,,,,Home,Active,0
+,Genesis Child Dev. & Learn. Ctr.,232,Providence,,Yes,,Contact Program,5,,,,,,,,Center,Active,0
+,Ginni Vargas,4912,Providence,,Yes,,Contact Program,1,,,,,,,,Home,Active,0
+,Giomery Tejada,337,Providence,,Yes,,Contact Program,2,,,,,,,,Home,Active,0
+,Highlander Elementary Charter School,4448,Providence,,No,,Contact Program,0,,,,,,,,School,Active,0
+,Hilda De Los Santos,263,Providence,,Yes,,Contact Program,2,,,,,,,,Home,Active,0
+,Hilda Serrano,5051,Providence,,Yes,,Contact Program,5,,,,,,,,Home,Active,0
+,Intown YMCA at Bailey School,298,Providence,,Yes,,Contact Program,3,,,,,,,,Center,Active,0
+,Jarelix Rodriguez,5227,Providence,,No,,Contact Program,1,,,,,,,,Home,Active,0
+,Jeniffer Laureano,5173,Providence,,No,,Contact Program,2,,,,,,,,Home,Active,0
+,Jennifer Reyes Reynoso,5233,Providence,,No,,Contact Program,0,,,,,,,,Home,Active,0
+,Jenny Santana,5052,Providence,,Yes,,Contact Program,1,,,,,,,,Home,Active,0
+,Juana Abreu,365,Providence,,Yes,,Contact Program,1,,,,,,,,Home,Active,0
+,Keyla Lluberes De Ortiz,3973,Providence,,Yes,,Contact Program,1,,,,,,,,Home,Active,0
+,"Latino Learning Center, Inc",776,Providence,,Yes,,Contact Program,1,,,,,,,,Center,Active,0
+,Lidisis Lantigua,2918,Providence,,Yes,,Contact Program,2,,,,,,,,Home,Active,0
+,Lissette Jimenez,5237,Providence,,No,,Contact Program,1,,,,,,,,Home,Active,0
+,Love 4 All Child Care - Metcalf,513,Providence,,Yes,,Contact Program,2,,,,,,,,Center,Active,0
+,Love 4 All Learning- Chalkstone,517,Providence,,Yes,,Contact Program,2,,,,,,,,Center,Active,0
+,Luisa Carrasco,1025,Providence,,Yes,,Contact Program,3,,,,,,,,Home,Active,0
+,Luisanna Sanchez,4826,Providence,,Yes,,Contact Program,1,,,,,,,,Home,Active,0
+,Luiseuny Arias Gomez,5288,Providence,,No,,Contact Program,0,,,,,,,,Home,Active,0
+,Magalis Alvarado,258,Providence,,Yes,,Contact Program,2,,,,,,,,Home,Active,0
+,Maggie's Home Day Care,540,Providence,,Yes,,Contact Program,2,,,,,,,,Home,Active,0
+,Maria Bello,619,Providence,,Yes,,Contact Program,1,,,,,,,,Home,Active,0
+,Maria Duran,999,Providence,,Yes,,Contact Program,2,,,,,,,,Home,Active,0
+,Maria Rivera,13,Providence,,Yes,,Contact Program,2,,,,,,,,Home,Active,0
+,Maria Salazar,778,Providence,,Yes,,Contact Program,2,,,,,,,,Home,Active,0
+,Maria Toribio,5214,Providence,,No,,Contact Program,1,,,,,,,,Home,Active,0
+,Marianela Pimentel,856,Providence,,Yes,,Contact Program,1,,,,,,,,Home,Active,0
+,Maritza Rodriguez,443,Providence,,Yes,,Contact Program,2,,,,,,,,Home,Active,0
+,Miguelina Peguero,461,Providence,,Yes,,Contact Program,3,,,,,,,,Home,Active,0
+,Montessori Community School of RI,1153,Providence,,Yes,,Contact Program,4,,,,,,,,Center,Active,0
+,Nancy Martino,606,Providence,,Yes,,Contact Program,2,,,,,,,,Home,Active,0
+,Nayelin Torres Perez,5234,Providence,,No,,Contact Program,1,,,,,,,,Home,Active,0
+,Nuris Ynoa,359,Providence,,Yes,,Contact Program,5,,,,,,,,Home,Active,0
+,Orbita Lora,548,Providence,,Yes,,Contact Program,2,,,,,,,,Home,Active,0
+,Over the Rainbow Learning Center I,830,Providence,,Yes,,Contact Program,4,,,,,,,,Center,Active,0
+,Pamela Rosario,4997,Providence,,Yes,,Contact Program,2,,,,,,,,Home,Active,0
+,Pasito Kids Learning Center,4916,Providence,,Yes,,Contact Program,1,,,,,,,,Center,Active,0
+,Patience Karmue,984,Providence,,Yes,,Contact Program,2,,,,,,,,Home,Active,0
+,Pilar Frias,358,Providence,,Yes,,Contact Program,1,,,,,,,,Home,Active,0
+,Quircia Ortega,5044,Providence,,Yes,,Contact Program,2,,,,,,,,Home,Active,0
+,Ramona Herrera,763,Providence,,Yes,,Contact Program,2,,,,,,,,Home,Active,0
+,Regina Ramos,3815,Providence,,Yes,,Contact Program,2,,,,,,,,Home,Active,0
+,Renee McClain,42,Providence,,Yes,,Contact Program,1,,,,,,,,Home,Active,0
+,Ricelys Alba,4492,Providence,,Yes,,Contact Program,1,,,,,,,,Home,Active,0
+,Rosa Cabrera,645,Providence,,Yes,,Contact Program,2,,,,,,,,Home,Active,0
+,Rosa Felix,3995,Providence,,Yes,,Contact Program,1,,,,,,,,Home,Active,0
+,Rosario Aponte,510,Providence,,Yes,,Contact Program,2,,,,,,,,Home,Active,0
+,Rosario McGlone,437,Providence,,Yes,,Contact Program,2,,,,,,,,Home,Active,0
+,Rosaury Rodriguez Garcia,3882,Providence,,Yes,,Contact Program,1,,,,,,,,Home,Active,0
+,Ruth Cyrille,5239,Providence,,No,,Contact Program,1,,,,,,,,Home,Active,0
+,Silveria Lantigua,5062,Providence,,No,,Contact Program,2,,,,,,,,Home,Active,0
+,Sobeyda Rivas,1165,Providence,,Yes,,Contact Program,2,,,,,,,,Home,Active,0
+,Trinidad Santos,400,Providence,,Yes,,Contact Program,1,,,,,,,,Home,Active,0
+,Victoria Rodriguez,649,Providence,,Yes,,Contact Program,1,,,,,,,,Home,Active,0
+,Virgilia Cornelio,5220,Providence,,No,,Contact Program,1,,,,,,,,Home,Active,0
+,Wendy De Gomez,5211,Providence,,No,,Contact Program,2,,,,,,,,Home,Active,0
+,West End Child Care Center,238,Providence,,Yes,,Contact Program,3,,,,,,,,Center,Active,0
+,Yafreisy Espinal,5082,Providence,,No,,Contact Program,1,,,,,,,,Home,Active,0
+,Yamilett Quezada,3845,Providence,,Yes,,Contact Program,3,,,,,,,,Home,Active,0
+,Yashana Alba,5274,Providence,,No,,Contact Program,0,,,,,,,,Home,Active,0
+,Ybelka Pena,5199,Providence,,No,,Contact Program,1,,,,,,,,Home,Active,0
+,Yuberkis Cepeda,5117,Providence,,No,,Contact Program,1,,,,,,,,Home,Active,0
+,Yuberkis Rodriguez,743,Providence,,Yes,,Contact Program,2,,,,,,,,Home,Active,0
+,Yuderkis Brito,5284,Providence,,No,,Contact Program,0,,,,,,,,Home,Active,0
+,Yudeyky Urena Polanco,486,Providence,,Yes,,Contact Program,1,,,,,,,,Home,Active,0
+,Zoila Mendez,4486,Providence,,No,,Contact Program,1,,,,,,,,Home,Active,0
+,Altagracia Polanco,66,Providence,,Yes,,Contact Program,1,,,,,,,,Home,Active,0
+,Ana Gomez,797,Providence,,Yes,,Contact Program,2,,,,,,,,Home,Active,0
+,Blessed Sacrament Preschool,2820,Providence,,Yes,,Contact Program,2,,,,,,,,Center,Active,0
+,Capital City-Smith Hill ECLC,196,Providence,,Yes,,Contact Program,5,,,,,,,,Center,Active,0
+,Carmela Minogue,742,Providence,,Yes,,Contact Program,1,,,,,,,,Home,Active,0
+,Carmen Fernandez,451,Providence,,Yes,,Contact Program,2,,,,,,,,Home,Active,0
+,Carmen Ynoa,5072,Providence,,No,,Contact Program,1,,,,,,,,Home,Active,0
+,Children's Friend at Berkshire,181,Providence,,Yes,,Contact Program,4,,,,,,,,Center,Active,0
+,Denny Dominguez,1023,Providence,,Yes,,Contact Program,1,,,,,,,,Home,Active,0
+,Dora Salcedo,939,Providence,,Yes,,Contact Program,2,,,,,,,,Home,Active,0
+,Emma's Home Daycare,812,Providence,,Yes,,Contact Program,1,,,,,,,,Home,Active,0
+,Fannys Reyes,1074,Providence,,Yes,,Contact Program,1,,,,,,,,Home,Active,0
+,Glenys Jimenez,1004,Providence,,Yes,,Contact Program,2,,,,,,,,Home,Active,0
+,Indigo Bethea,4781,Providence,,Yes,,Contact Program,1,,,,,,,,Home,Active,0
+,Ingrid Lapsey,568,Providence,,Yes,,Contact Program,0,,,,,,,,Home,Active,0
+,Janette Gray,598,Providence,,Yes,,Contact Program,1,,,,,,,,Home,Active,0
+,Jennifer Hiciano,5287,Providence,,No,,Contact Program,0,,,,,,,,Home,Active,0
+,Jennifer Martinez Sanchez,5222,Providence,,No,,Contact Program,1,,,,,,,,Home,Active,0
+,Jenny Gonzalez,1210,Providence,,Yes,,Contact Program,1,,,,,,,,Home,Active,0
+,Juana Rosario,5241,Providence,,No,,Contact Program,1,,,,,,,,Home,Active,0
+,Juana Santana,581,Providence,,Yes,,Contact Program,1,,,,,,,,Home,Active,0
+,Juanita Diaz,5109,Providence,,No,,Contact Program,2,,,,,,,,Home,Active,0
+,Lilian Acosta,546,Providence,,Yes,,Contact Program,1,,,,,,,,Home,Active,0
+,Lourdes Fernandez,5261,Providence,,No,,Contact Program,0,,,,,,,,Home,Active,0
+,Luisa Castillo,348,Providence,,Yes,,Contact Program,1,,,,,,,,Home,Active,0
+,Maria Olivo,552,Providence,,Yes,,Contact Program,1,,,,,,,,Home,Active,0
+,Marlyn Ortiz Castillo,5092,Providence,,No,,Contact Program,1,,,,,,,,Home,Active,0
+,Mendrid Peralta,983,Providence,,Yes,,Contact Program,2,,,,,,,,Home,Active,0
+,Mirta Home Daycare,584,Providence,,Yes,,Contact Program,2,,,,,,,,Home,Active,0
+,Nydia Nelson,5184,Providence,,No,,Contact Program,2,,,,,,,,Home,Active,0
+,"Pathway Karate Academy, LLC",4336,Providence,,Yes,,Contact Program,1,,,,,,,,Center,Active,0
+,Rhode Island School for the Deaf,1133,Providence,,No,,Contact Program,4,,,,,,,,School,Active,0
+,Robert F. Kennedy Elementary School,4528,Providence,,No,,Contact Program,0,,,,,,,,School,Active,0
+,Rosa Brol,732,Providence,,Yes,,Contact Program,2,,,,,,,,Home,Active,0
+,Soleny Tirado,4456,Providence,,Yes,,Contact Program,2,,,,,,,,Home,Active,0
+,Sonia Matthew,569,Providence,,Yes,,Contact Program,1,,,,,,,,Home,Active,0
+,Ursula Gomez,813,Providence,,Yes,,Contact Program,1,,,,,,,,Home,Active,0
+,Adis Ruiz Suazo,5259,Providence,,No,,Contact Program,0,,,,,,,,Home,Active,0
+,Alexandra Flores,5061,Providence,,Yes,,Contact Program,3,,,,,,,,Home,Active,0
+,Altagracia Fana,766,Providence,,Yes,,Contact Program,1,,,,,,,,Home,Active,0
+,Ana Jimenez,944,Providence,,Yes,,Contact Program,1,,,,,,,,Home,Active,0
+,Ana Jimenez,1015,Providence,,Yes,,Contact Program,1,,,,,,,,Home,Active,0
+,Ana Ramirez,630,Providence,,Yes,,Contact Program,2,,,,,,,,Home,Active,0
+,Ana Razo,881,Providence,,Yes,,Contact Program,2,,,,,,,,Home,Active,0
+,Anthony Carnevale Elementary School,1110,Providence,,No,,Contact Program,3,,,,,,,,School,Active,0
+,Asa Messer Elementary School,1107,Providence,,No,,Contact Program,3,,,,,,,,School,Active,0
+,Atanasia Adames,1027,Providence,,Yes,,Contact Program,2,,,,,,,,Home,Active,0
+,Austria Rivera,5208,Providence,,No,,Contact Program,1,,,,,,,,Home,Active,0
+,Bernardina Genao,5138,Providence,,No,,Contact Program,1,,,,,,,,Home,Active,0
+,Camelia Salcedo,356,Providence,,Yes,,Contact Program,1,,,,,,,,Home,Active,0
+,Celeste Thomason,82,Providence,,Yes,,Contact Program,1,,,,,,,,Home,Active,0
+,Celinda Hernandez,799,Providence,,Yes,,Contact Program,1,,,,,,,,Home,Active,0
+,Children's Friend @ Hartford,5067,Providence,,Yes,,Contact Program,4,,,,,,,,Center,Active,0
+,Children's Friend @ King Street,186,Providence,,Yes,,Contact Program,5,,,,,,,,Center,Active,0
+,Clara Diaz,408,Providence,,Yes,,Contact Program,1,,,,,,,,Home,Active,0
+,Daysi Gomez,5190,Providence,,No,,Contact Program,1,,,,,,,,Home,Active,0
+,Daysi Restituyo,5257,Providence,,No,,Contact Program,1,,,,,,,,Home,Active,0
+,Dilaida Maria,5265,Providence,,No,,Contact Program,1,,,,,,,,Home,Active,0
+,Dora Iboy,541,Providence,,Yes,,Contact Program,1,,,,,,,,Home,Active,0
+,Dulce Estrella,3924,Providence,,Yes,,Contact Program,1,,,,,,,,Home,Active,0
+,Elizabeth Orellana,771,Providence,,Yes,,Contact Program,1,,,,,,,,Home,Active,0
+,Elsa Orellana,489,Providence,,Yes,,Contact Program,2,,,,,,,,Home,Active,0
+,Erick Dela O,488,Providence,,Yes,,Contact Program,2,,,,,,,,Home,Active,0
+,Ernestina Empuno,752,Providence,,Yes,,Contact Program,3,,,,,,,,Home,Active,0
+,Estefania Laureano,5171,Providence,,No,,Contact Program,1,,,,,,,,Home,Active,0
+,Faustina Dos Santos,839,Providence,,Yes,,Contact Program,1,,,,,,,,Home,Active,0
+,Federal Hill House - School Age,5081,Providence,,Yes,,Contact Program,4,,,,,,,,Center,Active,0
+,Federal Hill House Day Care Center,148,Providence,,Yes,,Contact Program,4,,,,,,,,Center,Active,0
+,Gleny Garcia,5165,Providence,,No,,Contact Program,2,,,,,,,,Home,Active,0
+,Grisel Gomez,500,Providence,,Yes,,Contact Program,1,,,,,,,,Home,Active,0
+,Hilda Ortiz,5085,Providence,,No,,Contact Program,1,,,,,,,,Home,Active,0
+,Idania Salazar,5179,Providence,,No,,Contact Program,2,,,,,,,,Home,Active,0
+,Irma Nunez,5119,Providence,,No,,Contact Program,0,,,,,,,,Home,Active,0
+,Jacqueline Garcia,402,Providence,,Yes,,Contact Program,1,,,,,,,,Home,Active,0
+,Jenni Seri,5114,Providence,,No,,Contact Program,1,,,,,,,,Home,Active,0
+,Jovita Vasquez,329,Providence,,Yes,,Contact Program,1,,,,,,,,Home,Active,0
+,Librada Rosa De Perez,3120,Providence,,Yes,,Contact Program,2,,,,,,,,Home,Active,0
+,Lilia Noriega,714,Providence,,Yes,,Contact Program,1,,,,,,,,Home,Active,0
+,Lizzie Rodriguez,557,Providence,,Yes,,Contact Program,2,,,,,,,,Home,Active,0
+,Maria Garcia,502,Providence,,Yes,,Contact Program,1,,,,,,,,Home,Active,0
+,Maria Hernandez,3868,Providence,,Yes,,Contact Program,2,,,,,,,,Home,Active,0
+,Maria Moreno,1139,Providence,,Yes,,Contact Program,3,,,,,,,,Home,Active,0
+,Maria Nunez,5246,Providence,,No,,Contact Program,0,,,,,,,,Home,Active,0
+,Maria Rufino,738,Providence,,Yes,,Contact Program,2,,,,,,,,Home,Active,0
+,Maria Veras,849,Providence,,Yes,,Contact Program,1,,,,,,,,Home,Active,0
+,Marisol Polanco,5221,Providence,,No,,Contact Program,1,,,,,,,,Home,Active,0
+,Maritza Rivera,380,Providence,,Yes,,Contact Program,1,,,,,,,,Home,Active,0
+,Miguela Rodriguez,898,Providence,,Yes,,Contact Program,1,,,,,,,,Home,Active,0
+,Miledy Laureano,5071,Providence,,No,,Contact Program,1,,,,,,,,Home,Active,0
+,Milka De La Cruz Sanchez,5187,Providence,,No,,Contact Program,2,,,,,,,,Home,Active,0
+,Milvia De Moya,4339,Providence,,Yes,,Contact Program,2,,,,,,,,Home,Active,0
+,Miosotis Fortunato,5080,Providence,,No,,Contact Program,1,,,,,,,,Home,Active,0
+,Monami Carrasco,685,Providence,,Yes,,Contact Program,2,,,,,,,,Home,Active,0
+,Nieves Tejada,715,Providence,,Yes,,Contact Program,1,,,,,,,,Home,Active,0
+,Ofelia Marroquin,5177,Providence,,No,,Contact Program,2,,,,,,,,Home,Active,0
+,Pleasant View School,1109,Providence,,No,,Contact Program,2,,,,,,,,School,Active,0
+,Ramona Botello,276,Providence,,Yes,,Contact Program,2,,,,,,,,Home,Active,0
+,Rebeka Salcedo,457,Providence,,Yes,,Contact Program,2,,,,,,,,Home,Active,0
+,Roseline Choloply,859,Providence,,Yes,,Contact Program,1,,,,,,,,Home,Active,0
+,Rossy E Porras,719,Providence,,Yes,,Contact Program,2,,,,,,,,Home,Active,0
+,Rossy Jimenez,1009,Providence,,Yes,,Contact Program,2,,,,,,,,Home,Active,0
+,Silver Lake Day Care,102,Providence,,Yes,,Contact Program,2,,,,,,,,Center,Active,0
+,Somalis Urena,332,Providence,,Yes,,Contact Program,2,,,,,,,,Home,Active,0
+,Sucely Gudiel,855,Providence,,Yes,,Contact Program,1,,,,,,,,Home,Active,0
+,Tina Velazquez,5108,Providence,,No,,Contact Program,4,,,,,,,,Home,Active,0
+,Urselina Gomez,1166,Providence,,Yes,,Contact Program,2,,,,,,,,Home,Active,0
+,Yudelka Felix,1038,Providence,,No,,Contact Program,1,,,,,,,,Home,Active,0
+,Yuli Reyes de Dorrejo,4670,Providence,,No,,Contact Program,1,,,,,,,,Home,Active,0
+,A Child's University,535,Cranston,,No,,Contact Program,4,,,,,,,,Center,Active,0
+,Arlene Leger,5097,Cranston,,No,,Contact Program,2,,,,,,,,Home,Active,0
+,CCAP -Gansett,235,Cranston,,Yes,,Contact Program,5,,,,,,,,Center,Active,0
+,Chantell Abreu,779,Cranston,,Yes,,Contact Program,2,,,,,,,,Home,Active,0
+,Clara Perez,845,Providence,,Yes,,Contact Program,1,,,,,,,,Home,Active,0
+,Cranston YMCA School's Out,282,Cranston,,Yes,,Contact Program,1,,,,,,,,Center,Active,0
+,Darnetta Kelly,266,Cranston,,Yes,,Contact Program,2,,,,,,,,Home,Active,0
+,Dolores Roberts,1020,Cranston,,Yes,,Contact Program,1,,,,,,,,Home,Active,0
+,Dominga Herrera,4011,Cranston,,Yes,,Contact Program,1,,,,,,,,Home,Active,0
+,Dorca Pichardo,491,Providence,,Yes,,Contact Program,1,,,,,,,,Home,Active,0
+,Erisnely Tamarez,5279,Cranston,,No,,Contact Program,0,,,,,,,,Home,Active,0
+,Esther Cordero,672,Providence,,Yes,,Contact Program,1,,,,,,,,Home,Active,0
+,First Years Learning Center,369,Cranston,,Yes,,Contact Program,1,,,,,,,,Center,Active,0
+,Francis Jimenez Rivas,5277,Cranston,,No,,Contact Program,1,,,,,,,,Home,Active,0
+,Genesis Home Daycare,37,Cranston,,Yes,,Contact Program,2,,,,,,,,Home,Active,0
+,"Henderson Learning Center, Inc",814,Cranston,,Yes,,Contact Program,1,,,,,,,,Center,Active,0
+,Josefina Dorrejo de Rodriguez,5078,Cranston,,No,,Contact Program,1,,,,,,,,Home,Active,0
+,Juana Hernandez,3212,Cranston,,Yes,,Contact Program,2,,,,,,,,Home,Active,0
+,Katy Vicente,844,Cranston,,Yes,,Contact Program,2,,,,,,,,Home,Active,0
+,Marcelina Martinez,888,Cranston,,Yes,,Contact Program,2,,,,,,,,Home,Active,0
+,Marcia Martinez,5130,Cranston,,No,,Contact Program,2,,,,,,,,Home,Active,0
+,Mirtha Tavarez,5065,Cranston,,No,,Contact Program,4,,,,,,,,Home,Active,0
+,Natasha Gonzalez,3768,Cranston,,Yes,,Contact Program,2,,,,,,,,Home,Active,0
+,Ruth Espinal,5202,Cranston,,No,,Contact Program,2,,,,,,,,Home,Active,0
+,Stadium School,4450,Cranston,,No,,Contact Program,3,,,,,,,,School,Active,0
+,The Little Shepherd Preschool,942,Cranston,,No,,Contact Program,0,,,,,,,,Center,Active,0
+,USTC,5127,Cranston,,No,,Contact Program,0,,,,,,,,Center,Active,0
+,Ysabel Canela-de Rosado,553,Cranston,,Yes,,Contact Program,2,,,,,,,,Home,Active,0
+,Centredale School,1101,North Providence,,No,,Contact Program,2,,,,,,,,School,Active,0
+,Greystone School,1102,North Providence,,No,,Contact Program,2,,,,,,,,School,Active,0
+,Miguelina Trinidad,5244,North Providence,,No,,Contact Program,1,,,,,,,,Home,Active,0
+,Once Upon a Time Academy LLC.,899,North Providence,,No,,Contact Program,0,,,,,,,,Center,Active,0
+,Rita Colavita-Hemond,566,North Providence,,Yes,,Contact Program,1,,,,,,,,Home,Active,0
+,Tri-County CAA - Rockwell,2995,North Providence,,Yes,,Contact Program,4,,,,,,,,Center,Active,0
+,Tri-County CAA - Waterman,199,North Providence,,Yes,,Contact Program,5,,,,,,,,Center,Active,0
+,Way to Grow LLC,5194,North Providence,,Yes,,Contact Program,2,,,,,,,,Center,Active,0
+,Briana Bairos,5243,East Providence,,No,,Contact Program,0,,,,,,,,Home,Active,0
+,East Providence Boys & Girls Club,177,East Providence,,Yes,,Contact Program,3,,,,,,,,Center,Active,0
+,Edward R. Martin Middle School Annex,2732,East Providence,,No,,Contact Program,5,,,,,,,,School,Active,0
+,EP Boys and Girls Club-Waddington,5060,East Providence,,Yes,,Contact Program,1,,,,,,,,Center,Active,0
+,Joyful Hearts Early Learning Ctr,4918,East Providence,,Yes,,Contact Program,4,,,,,,,,Center,Active,0
+,Little Red Schoolhouse,374,East Providence,,Yes,,Contact Program,1,,,,,,,,Center,Active,0
+,Littletrax Early Learning Center,5262,East Providence,,No,,Contact Program,1,,,,,,,,Center,Active,0
+,Loren Rivera,5191,East Providence,,No,,Contact Program,2,,,,,,,,Home,Active,0
+,Newman Y at Whiteknact School,287,East Providence,,Yes,,Contact Program,3,,,,,,,,Center,Active,0
+,"Ocean State Montessori School, Inc",114,East Providence,,No,,Contact Program,0,,,,,,,,Center,Active,0
+,Oliver Day School,3733,East Providence,,Yes,,Contact Program,2,,,,,,,,Center,Active,0
+,Sacred Heart School,5206,East Providence,,No,,Contact Program,3,,,,,,,,Center,Active,0
+,Trailside Daycare Inc.,5001,East Providence,,Yes,,Contact Program,4,,,,,,,,Center,Active,0
+,Alice M. Waddington School,1090,Riverside,,No,,Contact Program,0,,,,,,,,School,Active,0
+,Covenant Cooperative Nursery School,172,Riverside,,No,,Contact Program,1,,,,,,,,Center,Active,0
+,EBCAP Head Start @ Turner Avenue,204,Riverside,,Yes,,Contact Program,5,,,,,,,,Center,Active,0
+,James R. D. Oldham School Annex,3937,Riverside,,No,,Contact Program,5,,,,,,,,School,Active,0
+,May Coghlan,407,Riverside,,Yes,,Contact Program,1,,,,,,,,Home,Active,0
+,Newman Y at Silver Spring,5283,Riverside,,No,,Contact Program,0,,,,,,,,Center,Active,0
+,Brown Play School,987,Rumford,,No,,Contact Program,0,,,,,,,,Center,Active,0
+,Little Scholars Preschool,1137,Rumford,,Yes,,Contact Program,1,,,,,,,,Center,Active,0
+,Newman Y at M.J. Francis School,288,Rumford,,Yes,,Contact Program,1,,,,,,,,Center,Active,0
+,Tiger Lily Montessori School,3647,Rumford,,Yes,,Contact Program,1,,,,,,,,Center,Active,0
+,A Child's University - Smithfield,650,Smithfield,,No,,Contact Program,4,,,,,,,,Center,Active,0
+,Anna M. McCabe School,1112,Smithfield,,No,,Contact Program,4,,,,,,,,School,Active,0
+,Breezy Knoll Child Care Center,145,Smithfield,,Yes,,Contact Program,2,,,,,,,,Center,Active,0
+,Cadence Academy Preschool Smith.,4361,Smithfield,,Yes,,Contact Program,3,,,,,,,,Center,Active,0
+,Dr. Day Care - North Providence,5068,Smithfield,,No,,Contact Program,2,,,,,,,,Center,Active,0
+,Dr. Day Care - Pawtucket,1472,Smithfield,,Yes,,Contact Program,3,,,,,,,,Center,Active,0
+,Dr. Day Care - Providence,1130,Smithfield,,Yes,,Contact Program,2,,,,,,,,Center,Active,0
+,Dr. Day Care - Smithfield,993,Smithfield,,Yes,,Contact Program,3,,,,,,,,Center,Active,0
+,Dr. Day Care CDC - Cumberland,991,Smithfield,,Yes,,Contact Program,3,,,,,,,,Center,Active,0
+,Kids Klub @ Greystone,227,Smithfield,,Yes,,Contact Program,4,,,,,,,,Center,Active,0
+,Kids Klub @ McGuire,229,Smithfield,,Yes,,Contact Program,4,,,,,,,,Center,Active,0
+,Kids Klub @ No. Smithfield Elem.,230,Smithfield,,Yes,,Contact Program,5,,,,,,,,Center,Active,0
+,Kids Klub @ Stephen Olney,228,Smithfield,,Yes,,Contact Program,4,,,,,,,,Center,Active,0
+,Kids Klub at Bernon Heights,224,Smithfield,,Yes,,Contact Program,5,,,,,,,,Center,Active,0
+,Kids Klub at Globe Park,223,Smithfield,,Yes,,Contact Program,5,,,,,,,,Center,Active,0
+,Kids Klub at Pothier,225,Smithfield,,Yes,,Contact Program,5,,,,,,,,Center,Active,0
+,Little Learners Academy Smithfield,5196,Smithfield,,No,,Contact Program,1,,,,,,,,Center,Active,0
+,My Learning Tree,2927,Smithfield,,Yes,,Contact Program,1,,,,,,,,Center,Active,0
+,Smithfield YMCA @ Pleasant View,5238,Smithfield,,No,,Contact Program,0,,,,,,,,Center,Active,0
+,The Little Village Schoolhouse,1642,Smithfield,,No,,Contact Program,0,,,,,,,,Center,Active,0
+,Amazing Kids Academy,936,Johnston,,Yes,,Contact Program,2,,,,,,,,Center,Active,0
+,Cherry Hill Pre-School,950,Johnston,,No,,Contact Program,0,,,,,,,,Center,Active,0
+,Creative Center School Age & Pre-K,4567,Johnston,,Yes,,Contact Program,1,,,,,,,,Center,Active,0
+,Creative Early Learn. Ctr LLC U5&4,4404,Johnston,,Yes,,Contact Program,3,,,,,,,,Center,Active,0
+,Creative Early Learning Ctr LLC U3,4403,Johnston,,Yes,,Contact Program,2,,,,,,,,Center,Active,0
+,Deokie Persaud,3644,Johnston,,Yes,,Contact Program,1,,,,,,,,Home,Active,0
+,Dreamland Learning Center II,1140,Johnston,,Yes,,Contact Program,2,,,,,,,,Center,Active,0
+,Graniteville School,1093,Johnston,,No,,Contact Program,4,,,,,,,,School,Active,0
+,Growing Minds PS & Enrichment Ctr,4797,Johnston,,Yes,,Contact Program,1,,,,,,,,Center,Active,0
+,"Imagination Station ELC, Inc.",919,Johnston,,Yes,,Contact Program,2,,,,,,,,Center,Active,0
+,Johana Sornoza,761,Johnston,,Yes,,Contact Program,2,,,,,,,,Home,Active,0
+,Little Angel's Academy Childcare,5229,Johnston,,No,,Contact Program,2,,,,,,,,Center,Active,0
+,"Little Angel's Day Care, Inc.",785,Johnston,,Yes,,Contact Program,2,,,,,,,,Center,Active,0
+,"Lollipop Learning Center, LLC",982,Johnston,,Yes,,Contact Program,1,,,,,,,,Center,Active,0
+,Lourdes Urena,357,Johnston,,Yes,,Contact Program,4,,,,,,,,Home,Active,0
+,Maria Porras,609,Johnston,,Yes,,Contact Program,2,,,,,,,,Home,Active,0
+,Maura Hernandez,774,Johnston,,Yes,,Contact Program,1,,,,,,,,Home,Active,0
+,New Era Enrichment Academy LLC,1063,Johnston,,Yes,,Contact Program,2,,,,,,,,Center,Active,0
+,Onelda Bautista,462,Johnston,,Yes,,Contact Program,2,,,,,,,,Home,Active,0
+,Over The Rainbow Learning Center,829,Johnston,,Yes,,Contact Program,5,,,,,,,,Center,Active,0
+,Sara Oliva,1061,Johnston,,Yes,,Contact Program,1,,,,,,,,Home,Active,0
+,Scribbles Academy,887,Johnston,,Yes,,Contact Program,2,,,,,,,,Center,Active,0
+,Strawberry Fields Early Learning,5055,Johnston,,No,,Contact Program,0,,,,,,,,Center,Active,0
+,The Farm House Preschool,1039,Johnston,,Yes,,Contact Program,2,,,,,,,,Center,Active,0
+,The Schoolhouse Preschool,4246,Johnston,,Yes,,Contact Program,3,,,,,,,,Center,Active,0
+,Tots Town Child Care Center,87,Johnston,,Yes,,Contact Program,3,,,,,,,,Center,Active,0
+,Tri-County CAA - Burrillville,197,Johnston,,Yes,,Contact Program,5,,,,,,,,Center,Active,0
+,Tri-County CAA - Johnston,4575,Johnston,,Yes,,Contact Program,4,,,,,,,,Center,Active,0
+,Tri-County CAA S.K. Head Start,2983,Johnston,,Yes,,Contact Program,4,,,,,,,,Center,Active,0
+,Almerinda Amadio,590,Cranston,,Yes,,Contact Program,1,,,,,,,,Home,Active,0
+,Altagracia Rosa,1164,Cranston,,Yes,,Contact Program,2,,,,,,,,Home,Active,0
+,Annerys Reyes Gonzalez,5282,Cranston,,No,,Contact Program,1,,,,,,,,Home,Active,0
+,Antonia Ferreras,550,Cranston,,Yes,,Contact Program,1,,,,,,,,Home,Active,0
+,Arlington School,4478,Cranston,,No,,Contact Program,4,,,,,,,,School,Active,0
+,Cadence Academy Preschool Cranston,4357,Cranston,,Yes,,Contact Program,4,,,,,,,,Center,Active,0
+,Carmen Carrasco Delgado,857,Cranston,,Yes,,Contact Program,2,,,,,,,,Home,Active,0
+,Carmen Giron,805,Cranston,,Yes,,Contact Program,1,,,,,,,,Home,Active,0
+,CCAP - Atwood,234,Cranston,,Yes,,Contact Program,5,,,,,,,,Center,Active,0
+,Cheryl Lally,1150,Cranston,,No,,Contact Program,0,,,,,,,,Home,Active,0
+,Cornerstone School,322,Cranston,,Yes,,Contact Program,3,,,,,,,,Center,Active,0
+,Early Foundation Academy LLC,4141,Cranston,,Yes,,Contact Program,3,,,,,,,,Center,Active,0
+,Esperanza Arias,1008,Cranston,,Yes,,Contact Program,1,,,,,,,,Home,Active,0
+,Faith Nursery School,1163,Cranston,,No,,Contact Program,0,,,,,,,,Center,Active,0
+,Garden City School                                ,4477,Cranston,,No,,Contact Program,3,,,,,,,,School,Active,0
+,Glen Hills School,1086,Cranston,,No,,Contact Program,1,,,,,,,,School,Active,0
+,Hope Highlands Elementary School,1370,Cranston,,No,,Contact Program,0,,,,,,,,School,Active,0
+,Iris Jimenez,1588,Cranston,,Yes,,Contact Program,2,,,,,,,,Home,Active,0
+,Josefina Javier,5037,Cranston,,Yes,,Contact Program,1,,,,,,,,Home,Active,0
+,Kasselia Torres,5106,Cranston,,No,,Contact Program,1,,,,,,,,Home,Active,0
+,Learning Brooke ECE Center,678,Cranston,,Yes,,Contact Program,0,,,,,,,,Center,Active,0
+,Marcia Estrella,5235,Cranston,,No,,Contact Program,0,,,,,,,,Home,Active,0
+,Maria Pichardo,733,Cranston,,Yes,,Contact Program,1,,,,,,,,Home,Active,0
+,Marlenny Lizardo,903,Cranston,,Yes,,Contact Program,2,,,,,,,,Home,Active,0
+,Master Lee's U.S. Taekwondo,4616,Cranston,,Yes,,Contact Program,1,,,,,,,,Center,Active,0
+,"Miss Lee Ann's, Inc.",870,Cranston,,Yes,,Contact Program,1,,,,,,,,Center,Active,0
+,Ms. Carol's Learning Center LLC,4386,Cranston,,Yes,,Contact Program,2,,,,,,,,Center,Active,0
+,Nancy Morrobel,734,Cranston,,Yes,,Contact Program,0,,,,,,,,Home,Active,0
+,Rossanna Perez,599,Cranston,,Yes,,Contact Program,1,,,,,,,,Home,Active,0
+,Sabrina Durastanti,847,Cranston,,No,,Contact Program,1,,,,,,,,Home,Active,0
+,Sstarbirth Day Care,270,Cranston,,Yes,,Contact Program,1,,,,,,,,Center,Active,0
+,Stone Hill School                                 ,4453,Cranston,,No,,Contact Program,3,,,,,,,,School,Active,0
+,Susan Jorge,259,Cranston,,Yes,,Contact Program,1,,,,,,,,Home,Active,0
+,The Gingerbread House - I/T,852,Cranston,,Yes,,Contact Program,2,,,,,,,,Center,Active,0
+,The Little Village Schoolhouse II,5077,Cranston,,Yes,,Contact Program,1,,,,,,,,Center,Active,0
+,The Little Village Schoolhouse III,5133,Cranston,,No,,Contact Program,3,,,,,,,,Center,Active,0
+,Western Cranston Learning Center,431,Cranston,,Yes,,Contact Program,2,,,,,,,,Center,Active,0
+,Yajaira Theork,5256,Cranston,,No,,Contact Program,1,,,,,,,,Home,Active,0
+,Yosanna Garcia,5245,Cranston,,No,,Contact Program,1,,,,,,,,Home,Active,0
+,Candy Cane LLC.,1076,Cranston,,Yes,,Contact Program,2,,,,,,,,Center,Active,0
+,Colleen Wilmot,555,Cranston,,Yes,,Contact Program,1,,,,,,,,Home,Active,0
+,Kids Club on the Pike,3652,Cranston,,Yes,,Contact Program,1,,,,,,,,Center,Active,0
+,Little Learners Academy Cranston,4098,Cranston,,Yes,,Contact Program,3,,,,,,,,Center,Active,0
+,Orchard Farms Elementary School,4455,Cranston,,No,,Contact Program,5,,,,,,,,School,Active,0
+,Pumpkin Patch Child Center,614,Cranston,,No,,Contact Program,0,,,,,,,,Center,Active,0
+,The Curious Child,1059,Cranston,,Yes,,Contact Program,3,,,,,,,,Center,Active,0
+,The Giving Tree Academy,4618,Cranston,,No,,Contact Program,1,,,,,,,,Center,Active,0
+,Cynthia Dubay,48,Ashaway,,Yes,,Contact Program,1,,,,,,,,Home,Active,0
+,Trinity Lutheran Preschool,955,Ashaway,,No,,Contact Program,2,,,,,,,,Center,Active,0
+,Block Island Early Learning Center,544,Block Island,,Yes,,Contact Program,0,,,,,,,,Center,Active,0
+,Bradford Elementary School,1117,Bradford,,No,,Contact Program,0,,,,,,,,School,Active,0
+,Heather McDonald,928,Bradford,,Yes,,Contact Program,1,,,,,,,,Home,Active,0
+,Charlestown Early Learning Center,974,Charlestown,,Yes,,Contact Program,5,,,,,,,,Center,Active,0
+,Hand-in-Hand Child Care Center,222,Charlestown,,Yes,,Contact Program,1,,,,,,,,Center,Active,0
+,Kimberly Tonn,5264,Charlestown,,No,,Contact Program,0,,,,,,,,Home,Active,0
+,St. Andrew Preschool,975,Charlestown,,Yes,,Contact Program,5,,,,,,,,Center,Active,0
+,Hidden Hills Early Learning Center,884,Exeter,,Yes,,Contact Program,4,,,,,,,,Center,Active,0
+,Mabel Marin Ortega,5226,Exeter,,No,,Contact Program,1,,,,,,,,Home,Active,0
+,The Children's Village,5026,Exeter,,Yes,,Contact Program,2,,,,,,,,Center,Active,0
+,Hope Valley Elementary School,1127,Hope Valley,,No,,Contact Program,2,,,,,,,,School,Active,0
+,Little Beginnings,4503,Hope Valley,,Yes,,Contact Program,2,,,,,,,,Center,Active,0
+,Wood River Preschool,973,Hope Valley,,No,,Contact Program,1,,,,,,,,Center,Active,0
+,Cadence Academy Preschool NK,4360,North Kingstown,,Yes,,Contact Program,3,,,,,,,,Center,Active,0
+,Children's Learning Express,718,North Kingstown,,Yes,,Contact Program,3,,,,,,,,Center,Active,0
+,Christine Portunato,5200,North Kingstown,,No,,Contact Program,0,,,,,,,,Home,Active,0
+,Curious Minds Early Learning Ctr.,4276,North Kingstown,,Yes,,Contact Program,3,,,,,,,,Center,Active,0
+,Fishing Cove Elementary School,1100,North Kingstown,,No,,Contact Program,4,,,,,,,,School,Active,0
+,Kent County Y at Forest Park,1197,North Kingstown,,No,,Contact Program,2,,,,,,,,Center,Active,0
+,Kent County Y at Stony Lane,5046,North Kingstown,,Yes,,Contact Program,2,,,,,,,,Center,Active,0
+,Kristen DiNezza,4533,North Kingstown,,No,,Contact Program,0,,,,,,,,Home,Active,0
+,Sarah Calat,3613,North Kingstown,,No,,Contact Program,0,,,,,,,,Home,Active,0
+,South County Montessori School,159,North Kingstown,,No,,Contact Program,0,,,,,,,,Center,Active,0
+,Sunshine Early Child Care Center,143,North Kingstown,,Yes,,Contact Program,4,,,,,,,,Center,Active,0
+,Tri-County CAA N.K. Head Start,2984,North Kingstown,,Yes,,Contact Program,4,,,,,,,,Center,Active,0
+,West Bay Christian Academy,912,North Kingstown,,No,,Contact Program,4,,,,,,,,Center,Active,0
+,The Early Learning Ctr of RI-Saund,5167,Saunderstown,,No,,Contact Program,2,,,,,,,,Center,Active,0
+,CANE Child Development Center,131,Wakefield,,Yes,,Contact Program,3,,,,,,,,Center,Active,0
+,Growing Children of Rhode Island,1274,Wakefield,,Yes,,Contact Program,2,,,,,,,,Center,Active,0
+,Msgr Clarke School Little Angels,4384,Wakefield,,No,,Contact Program,0,,,,,,,,Center,Active,0
+,Peace Dale Elementary School,4529,Peace Dale,,No,,Contact Program,5,,,,,,,,School,Active,0
+,Phyllis Neilsen,73,South Kingstown,,Yes,,Contact Program,1,,,,,,,,Home,Active,0
+,Reyna Fernandez,1017,Wakefield,,Yes,,Contact Program,2,,,,,,,,Home,Active,0
+,Sandcastles Montessori Preschool,976,South Kingstown,,No,,Contact Program,0,,,,,,,,Center,Active,0
+,Stepping Stone Preschool,932,Wakefield,,No,,Contact Program,0,,,,,,,,Center,Active,0
+,The Goddard School,818,South Kingstown,,No,,Contact Program,2,,,,,,,,Center,Active,0
+,The Village Cooperative Nursery,963,South Kingstown,,No,,Contact Program,0,,,,,,,,Center,Active,0
+,Tri-County CAA Westerly Head Start,2981,Wakefield,,Yes,,Contact Program,4,,,,,,,,Center,Active,0
+,Tri-County Comm. AA - Joyful Learn,3669,South Kingstown,,Yes,,Contact Program,4,,,,,,,,Center,Active,0
+,First Step At Kingston,127,Kingston,,Yes,,Contact Program,1,,,,,,,,Center,Active,0
+,URI Child Development Center,891,Kingston,,Yes,,Contact Program,5,,,,,,,,Center,Active,0
+,Marta San Martino,4676,Narragansett,,No,,Contact Program,0,,,,,,,,Home,Active,0
+,Narragansett Elementary School,1097,Narragansett,,No,,Contact Program,4,,,,,,,,School,Active,0
+,Quest Montessori School,529,Narragansett,,No,,Contact Program,0,,,,,,,,Center,Active,0
+,St. Peter's Pre School,952,Narragansett,,Yes,,Contact Program,2,,,,,,,,Center,Active,0
+,South County Y at Peace Dale,285,Peace Dale,,Yes,,Contact Program,4,,,,,,,,Center,Active,0
+,South County YMCA Childcare Center,313,Peace Dale,,Yes,,Contact Program,3,,,,,,,,Center,Active,0
+,Cadence Academy Preschool Westerly,4362,Westerly,,Yes,,Contact Program,4,,,,,,,,Center,Active,0
+,Central Nursery School,931,Westerly,,No,,Contact Program,0,,,,,,,,Center,Active,0
+,Clark Street Daycare,5140,Westerly,,No,,Contact Program,3,,,,,,,,Center,Active,0
+,Dorothy Gingerella,5175,Westerly,,No,,Contact Program,2,,,,,,,,Home,Active,0
+,Dunn's Corners Early LC/Kid Kare,134,Westerly,,Yes,,Contact Program,4,,,,,,,,Center,Active,0
+,Littlebrook Child Development Ctr.,150,Westerly,,Yes,,Contact Program,2,,,,,,,,Center,Active,0
+,Ocean Comm YMCA @ Springbrook OST,4988,Westerly,,Yes,,Contact Program,0,,,,,,,,Center,Active,0
+,Ocean Comm YMCA @ State Street OST,4990,Westerly,,Yes,,Contact Program,0,,,,,,,,Center,Active,0
+,Westerly Preschool,1031,Westerly,,No,,Contact Program,0,,,,,,,,Center,Active,0
+,Amy Tretton,1054,Richmond,,No,,Contact Program,0,,,,,,,,Home,Active,0
+,Anne Monaghan,34,West Kingston,,No,,Contact Program,0,,,,,,,,Home,Active,0
+,Lisa Craig,533,Richmond,,No,,Contact Program,0,,,,,,,,Home,Active,0
+,South Kingstown Integrated Pre-school,1113,West Kingstown,,No,,Contact Program,0,,,,,,,,School,Active,0
+,West Kingston Elementary School,4530,West Kingston,,No,,Contact Program,0,,,,,,,,School,Active,0
+,Ocean Comm YMCA at Richmond School,5063,Wyoming,,Yes,,Contact Program,0,,,,,,,,Center,Active,0
+,Richmond Elementary School,1126,Wyoming,,No,,Contact Program,2,,,,,,,,School,Active,0
