@@ -1,11 +1,3 @@
-#!/usr/bin/env python3
-"""
-HTML to CSV Extraction Script for Child Care Facilities
-
-This script extracts child care facility information from an HTML file
-and converts it to CSV format.
-"""
-
 import re
 import csv
 import html
