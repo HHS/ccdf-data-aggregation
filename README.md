@@ -4,7 +4,6 @@
 
 The goal of this project is to gather, aggregate, and normalize data about entities that receive CCDF funding through state block grants, with a focus on business names and addresses.
 
-
 ## Project Structure
 
 The repository is organized as follows:
